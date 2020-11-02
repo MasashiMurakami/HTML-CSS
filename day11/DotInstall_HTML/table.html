@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>Table sample</title>
+    </head>
+    <body>
+
+<!--
+<table></table> テーブルタグ
+<thead></thead>　テーブルヘッド
+<tbody>　　　　　テーブル本体
+<tr></tr>　　　　テーブルロウ　行
+<th></th>　　　　ヘッダ
+<td></td>　　　　データ
+
+-->
+        <table>
+            <thead>
+                <tr>
+                    <th>Size</th><th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>S</td><td>150</td>
+                </tr>
+                <tr>
+                    <td>M</td><td>180</td>
+                </tr>
+                <tr>
+                    <td>L</td><td>210</td>
+                </tr>
+                <tr>
+                    <!-- 列の連結 -->
+                    <td colspan="2">Free for Kids</td>
+                </tr>
+            </tbody>
+        </table>
+
+<!--
+フォーム
+    <form class="" action="index.html" method="post">
+        action どこに送るか
+        method get post
+        input 入力
+            text　　　　メールアドレスなど文字列
+            submit　　　アクション
+            password　　パスワード用
+            hidden　　　ユーザーIDなど紐付けられたもの。表示しない
+    </form>
+
+    <textarea name="name" rows="8" cols="80"></textarea>　コメント
+    <button type="button" name="button"></button>　　　　　ボタン
+
+    checkbox　チェックボックス
+    radio　　　ラジオボタン
+    <label for=""></label>　　ラベル
+
+    <select class="" name="">　　ドロップダウンリスト
+    </select>
+
+    <option value=""></option>　リストの要素
+
+-->
+        <<article>
+            <h1>アンケート</h1>
+            <form action="survey.php" method="post">
+                <p>
+                    Phone:
+                        <input type="checkbox" name="Phone" value="android" checked> Android
+                        <input type="checkbox" name="Phone" value="iphone"> iPhone
+                        <label><input type="checkbox" name="Phone" value="android" checked> Android label</label>
+                        <input type="checkbox" name="Phone" value="iphone" id="iphone"><label for="iphone">IDで指定</label>
+                </p>
+                <p>
+                    Color:
+                        <input type="radio" name="Color" value="red" checked> Red
+                        <input type="radio" name="Color" value="blue"> Blue
+                </p>
+
+                <!-- <p>メールアドレス：<input type="text" name="email" size="50" maxlength="5" value="abc"></p> -->
+                <p>メールアドレス：<input type="text" name="email" size="50" placeholder="please enter email"></p>
+
+                <p>
+                    City:
+                        <select name="city">
+                            <option value="tokyo">Tokyo</option>
+                            <option value="nagoya" selected>Nagoya</option>
+                            <option value="kyoto">Kyoto</option>
+                            <option value="osaka">Osaka</option>
+                            <option value="fukuoka">Fukuoka</option>
+                        </select>
+                </p>
+
+                <p>
+                    City multi:
+                        <select name="citymulti" multiple size=5>
+                            <option value="tokyo">Tokyo</option>
+                            <option value="nagoya" selected>Nagoya</option>
+                            <option value="kyoto">Kyoto</option>
+                            <option value="osaka">Osaka</option>
+                            <option value="fukuoka">Fukuoka</option>
+                        </select>
+                </p>
+
+                <p>
+                    コメント：
+                    <textarea name="comment" rows="5" cols="40">コメント</textarea>
+                </p>
+                <p>パスワード：<input type="password" name="password"></p>
+                <input type="hidden" name="user_id" value="2323">
+                <p><input type="submit" name="送信"></p>
+                <p>
+                    <button type="submit" name="button"><strong>ボタンでsubmit</strong></button>
+                </p>
+                <p>
+                    <button type="button></button>" name="button">処理をする</button>
+                </p>
+                <p><input type="submit" value="disabled" disabled></p>
+
+<!-- IDEA:
+    input
+        email
+        number
+        date
+ -->
+                <p>メールアドレス：<input type="email" name="email" size="50" placeholder="please enter email" required></p>
+                <p>料金：<input type="number" name="price"></p>
+                <p>誕生日：<input type="date" name="birthday"></p>
+
+
+            </form>
+
+<!-- IDEA:
+文字参照
+    数値文字参照
+    文字実体参照
+
+< → &#60;（数値文字） &lt;（文字実体）
+> → &gt;
+ -->
+            <h1>文字参照</h1>
+                <p>「&lt;p&gt;タグを段落です」</p>
+                <input type="text" value="区切り文字は&quot;です">
+                <p>「この記号の文字参照は&amp;quot;です。」</p>
+        </article>
+
+<!-- IDEA: 
+タグ
+    カテゴリー：どの分類か
+    コンテンツモデル：どのカテゴリーのタグを入れられるか
+        トランスペアレント：親要素のコンテンツモデルを使う
+ -->
+    <h1>
+        <article class="">
+
+        </article>
+        <a href="#"></a>
+        <select class="" name="">
+
+        </select>
+    </h1>
+
+    </body>
+</html>

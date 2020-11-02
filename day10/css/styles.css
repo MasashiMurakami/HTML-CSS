@@ -1,0 +1,155 @@
+/* 共通 */
+html {
+  font-size: 62.5%;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+.container, .container-box, .logos {
+  margin: 0 auto;
+}
+
+.text-content {
+  margin: 0 auto;
+  width: 1000px;
+  background-color: #FFFFF3;
+  text-align: center;
+}
+
+.text-content h1 {
+ font-size: 3.2rem;
+ font-weight: bold;
+ padding: 100px 0 60px;
+}
+
+.text-content h3 {
+  font-size: 2.0rem;
+  font-weight: bold;
+}
+
+.text-content p {
+  font-size: 1.6rem;
+  line-height: 2.0;
+}
+
+.whited {
+  color: #ffffff;
+}
+
+/* ヘッダー */
+.header-visual {
+  height: 400px;
+  position: relative;
+  background-image: url(/images/bg-main_visual.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-visual img {
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+}
+
+/* メイン */
+main {
+  background-color: #FFFFF3;
+}
+
+#section01 {
+  height: 441px;
+}
+
+#section02 {
+  height: 1512px;
+  width: 100%;
+  background-image: url(/images/bg-content.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  width: 960px;
+  height: 1220px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.container-box {
+  width: 860px;
+  display: flex;
+}
+
+.container-box:nth-child(even) {
+  flex-flow: row-reverse;
+}
+
+.container-box:first-child {
+  padding-top: 50px;
+}
+
+.container-box img {
+  height: 280px;
+  width: 430px;
+}
+
+.container-box .text-content {
+  text-align: left;
+}
+
+.container-box .text-content h3 {
+  font-size: 2.0rem;
+  padding: 40px 0 20px 20px;
+}
+
+.container-box .text-content p {
+  width: 430px;
+  padding-left: 20px;
+  line-height: 1.75;
+}
+
+#section03 {
+  height: 565px;
+}
+
+#section03 p {
+  padding-bottom: 70px;
+}
+
+.logos {
+  width: 800px;
+}
+
+.logos img {
+  padding-right: 60px;
+}
+
+.logos img:last-child {
+  padding-right: 0px;
+}
+
+/* フッター */
+footer {
+  display: flex;
+  height: 60px;
+  width: 100%;
+  min-width: 1000px;
+  background-color: #000000;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+footer p {
+  font-size: 1.2rem;
+}
+
+footer nav {
+  position: absolute;
+  right: 0;
+  padding-right: 20px;
+}
+
+footer nav ul {
+  display: flex;
+}

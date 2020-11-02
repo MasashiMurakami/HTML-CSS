@@ -1,0 +1,148 @@
+body {
+  font-family: 游ゴシック体, YuGothic, "游ゴシック Medium", "Yu Gothic Medium", 游ゴシック, "Yu Gothic", sans-serif;
+  color: rgb(51, 51, 51);
+}
+
+header #top_visual {
+  height: 470px;
+  background-image: url(/images/bg-main_visual.jpg);
+  background-size: cover;
+}
+
+header img {
+  size: 80%;
+  padding-top: 340px;
+  padding-left: 60px;
+}
+
+.content {
+  background-color: #fffff3;
+}
+
+.cont_h2 {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.cont_txt {
+  text-align: center;
+}
+
+#cont01 {
+  padding-bottom: 100px;
+}
+
+#cont01_txt p{
+  padding-top: 16px;
+}
+
+
+#cont02 {
+  padding-bottom: 100px;
+  background-image: url(/images/bg-content.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#cont02_h2 {
+  color: white;
+}
+
+.container {
+  width: 960px;
+  padding: 50px 0px;
+  margin: 0px auto;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.pic-txt {
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pic-txt:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.cont02_pic {
+  width: 430px;
+  height: 280px;
+  background-size: cover;
+}
+
+#cont02_txt {
+  width: 430px;
+  padding: 10px 20px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.8;
+  background-color: #fffff3;
+}
+
+#cont02_txt h3 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#working {
+  background-image: url(/images/img-working.jpg);
+}
+
+#meeting {
+  background-image: url(/images/img-meeting_room.jpg);
+}
+
+#drip {
+  background-image: url(/images/img-drip_machine.jpg);
+}
+
+#bar {
+  background-image: url(/images/img-bar_w2.jpg);
+}
+
+
+#cont03 {
+  padding: 50px 100px;
+}
+
+#cont03 .cont_txt {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+#logos {
+  width: 800px;
+  margin: 60px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: white;
+  font-size: 12px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  position:  relative;
+}
+
+footer nav ul {
+  position: absolute;
+  right: 0;
+  display: flex;
+}
+
+footer nav ul li {
+  padding-right: 10px;
+  text-decoration: underline;
+}

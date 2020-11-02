@@ -1,0 +1,264 @@
+/* 全体 */
+/* html, body {
+  text-align: center;
+} */
+
+
+/* 1番大きな要素 */
+.page-footer, .main-content {
+  margin: 0;
+  padding: 0;
+  /* border: 5px solid red; */
+}
+
+
+/* main-content内の要素 */
+.main-visual, .intro-section {
+  margin: 0;
+  /* border: 5px solid green; */
+}
+
+
+/* intro-section内の要素 */
+.intro-section__header, .intro-section__nav, .intro-section__content {
+  margin: 0;
+  /* border: 5px solid blue; */
+}
+
+
+/* page */
+.inr {
+  width: 960px;
+  margin: 0 auto;
+}
+
+
+/* page-header */
+.page-header {
+  margin: 0;
+  padding: 17px 0;
+}
+
+.page-header__inr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-header__logo {
+  margin: 0;
+}
+
+.page-header__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8rem;
+}
+
+.page-header-info__txt {
+  margin-right: 30px;
+}
+
+.page-header-info__txt span {
+  margin: 0;
+  display: block;
+  font-size: 1.4rem;
+}
+
+.page-header-info__btn {
+  min-width: 155px;
+  padding: calc((50px-(1.6rem*1.5))/2) 0;
+  font-size: 1.6rem;
+  text-align: center;
+  text-decoration-line: none;
+  background-color: #ff0600;
+  color: #fff;
+}
+
+
+/* page-footer */
+.page-footer {
+  padding: 40px 0;
+  background-color: #aaa;
+}
+
+.page-footer small {
+  display: block;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+/* main-visual */
+.main-visual{
+  position: relative;
+  height: 480px;
+  background: center center no-repeat;
+  background-image: url(../img/main-visual.jpg);
+  background-size: cover;
+}
+
+.main-visual__ttl {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  font-weight: normal;
+  font-size: 70px;
+  font-family: "YuGothic", "游ゴシック";
+  transform: translate(-50%,-50%);
+  margin: 0;
+}
+
+
+/* section-header */
+.section-header {
+  position: relative;
+  padding: calc((87px-(30px*1.6))/2) 0;
+  text-align: center;
+  background: #aaa;
+}
+
+/* 帯の下の三角 */
+.section-header::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-color: #aaa transparent transparent transparent;
+  border-style: solid;
+  border-width: 28px 28px 0;
+  transform: translate(-50%, 100%);
+  content: "";
+}
+
+.section-header__ttl {
+  color: #fff;
+  font-weight: normal;
+  font-size: 30px;
+}
+
+/* .intro-section__header {
+  margin-bottom: 100px;
+} */
+
+.intro-section__nav {
+  padding: 88px 0 80px;
+}
+
+.intro-section__nav ol {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 810px;
+  margin: 0 auto;
+}
+
+.intro-section__nav ol li {
+  position: relative;
+}
+
+.intro-section__nav ol li::after {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  transform: translate(-50%) rotate(45deg);
+  content: "";
+}
+
+.intro-section__nav ol li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 230px;
+  height: 230px;
+  padding: 0 25px;
+  color: #000000;
+  font-size: 25px;
+  line-height: 1.2;
+  border: 2px solid #000000;
+  border-radius: 50%;
+}
+
+/* contents */
+.intro-section__block {
+  display: flex;
+  height: 400px;
+}
+
+.intro-section__block > * {
+  width: 50%;
+}
+
+.intro-section__block:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.intro-section__block:nth-child(1) .intro-section__img-area {
+  background-image: url(../img/7.jpg);
+}
+.intro-section__block:nth-child(2) ,.intro-section__img-area {
+  background-image: url(../img/8.jpg);
+}
+.intro-section__block:nth-child(3) ,.intro-section__img-area {
+  background-image: url(../img/9.jpg);
+}
+
+.intro-section__img-area {
+  background: center center no-repeat;
+  background-size: cover;
+}
+
+.intro-section__txt-area {
+  box-sizing: border-box;
+  padding: 30px 20px;
+  color: #fff;
+  background-color: #aaa;
+}
+.intro-section__txt-area h4 {
+  margin-bottom: 24px;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+.intro-section__txt-area p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+/* contact */
+.intro-section__contact {
+  padding: 100px 0;
+}
+
+.contact-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:  40px 55px 40px 147px;
+  background: #aaa;
+}
+
+.contact-block__txt {
+  display: block;
+  font-size: 1.4rem;
+}
+.contact-block__txt span {
+  display: block;
+  font-size: 1.6rem;
+}
+.contact-block__btn {
+  width: 370px;
+  padding: calc((83px-(2.2rem*1.6))/2) 0;
+  color: #fff;
+  font-size: 2.2rem;
+  text-align: center;
+  text-decoration-line: none;
+  background: red;
+}

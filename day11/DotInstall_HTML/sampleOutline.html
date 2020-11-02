@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta title="Outline Sample">
+</head>
+
+<!--
+
+p: パラグラフ
+hr 水平線
+pre htmlソースの改行や字下げを保持
+blockquote 引用
+div スタイリング
+
+リスト色々
+ol Ordered List　　数字付きリスト
+ul Unordered List　数字無しリスト
+li List Item　　　　リスト要素
+dl Definition List　定義用のリスト表示
+dt Definition Term　定義する語
+dd Definition Description　定義の詳細
+
+<strong></strong>　協調
+<br>　　　　　　　　改行
+<span></span>　　　色付けるなどスタイリング
+
+<a href="#"></a> リンク
+ページ内リンクは#つけてid経由で飛ばす
+
+-->
+
+<body>
+  <header>
+      <h1>おいしいごはん！</h1>
+      <nav>
+        - ホーム
+        - このサイトについて
+        - プロフィール
+      </nav>
+  </header>
+
+  <section>
+    <h1>今月のおいしいごはん</h1>
+    <article>
+      <h1>おいしいごはん　#12</h1>
+      <p><img src="ｌｌgohan.jpg" width="150" height="150" alt="画像が表示されないとき用"></p>
+      <div style="background:skyblue;">
+          <p>至高<br>の<strong>オムレツ</strong> -> <a href="more.html">もっとみる</a> -> <a href="#stuff">材料へ</a></p>
+          <h2 id="stuff">材料</h2>
+          <ul>
+              <li><span style="color: gold;">卵</span></li>
+              <li><a href="http://dotinstall.com" target="_blank">しょうゆ</a></li>
+              <li>ごはん</li>
+          </ul>
+          <h2>手順</h2>
+          <ol>
+              <li>まぜる</li>
+              <li>かける</li>
+          </ol>
+          <h2>定義</h2>
+          <dl>
+              <dt>TKG</dt>
+              <dd>たまご　かけ　ごはん</dd>
+          <hr>
+          <p>ことろであの件は・・？</p>
+      </div>
+      <pre>
+          poem
+            poem
+                poem
+    </pre>
+    <blockquote>
+        TKG最高！  by @anonimous
+    </blockquote>
+
+    </article>
+  </section>
+
+  <section>
+    <h1>新着のおいしいごはん</h1>
+    <article>
+      <h1>おいしいごはん　#32</h1>
+      はもしゃぶ
+    </article>
+    <article>
+      <h1>おいしいごはん　#31</h1>
+      スリランカカレー
+    </article>
+  </section>
+
+  <aside>
+    <h1>おすすめレシピ本</h1>
+    - BOOK 1
+    - BOOK 2
+    - BOOK 3
+  </aside>
+
+  <footer>
+  このサイトは@memotaroによって運営されています。
+  </footer>
+</body>
+
+</html>

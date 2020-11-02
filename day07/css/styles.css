@@ -1,0 +1,253 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+/*=======================================
+共通部分
+=======================================*/
+
+/* サイト全体共通 */
+.clearfix:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+body {
+  background-color: #f8f4e7;
+  font-family: 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+header, main, nav.gNavi {
+  margin: 0 auto;
+  width: 1170px;
+}
+
+/* ヘッダー */
+header {
+  background: url(../images/header_back.png) repeat-x;
+  height: 170px;
+}
+
+header .logo {
+  float: left;
+  padding: 30px 0 0 40px;
+}
+
+header .address {
+  float: right;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 50px 30px 0 0;
+}
+
+/* グローバルナビゲーション */
+nav.gNavi {
+  padding: 40px 0 30px;
+}
+
+nav.gNavi ul li a {
+  border-bottom: 3px solid #d6cca2;
+  color: #333;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 25px;
+  padding-bottom: 8px;
+  text-align: center;
+  text-decoration: none;
+  width: 200px;
+}
+
+nav.gNavi ul li a:hover {
+  border-bottom-color: #897101;
+}
+
+nav.gNavi ul .current a {
+  border-bottom-color: #897101;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+/* フッター */
+footer {
+  padding: 20px 0 30px;
+  background-color: #e4ddc6;
+  text-align: center;
+}
+
+footer nav ul {
+  padding: 30px 30px 40px 0;
+}
+
+footer nav ul li a {
+  color: #333;
+  display: block;
+  font-size: 14px;
+  margin-left: 30px;
+  text-decoration: none;
+}
+
+footer .snsBtn li {
+  display: inline-block;
+  margin: 0 12px 20px;
+}
+
+footer .copyright {
+  font-size: 14px;
+}
+
+/* メインコンテンツ共通 */
+main {
+  margin-bottom: 80px;
+}
+
+main p {
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+main a:link {
+  color: #1d297f;
+}
+
+main li {
+  line-height: 1.5;
+}
+
+main h2 {
+  background: #f1e9d1 url(../images/leaf.png) no-repeat 5px 50%;
+  color: #79420d;
+  font-size: 21px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  padding: 15px 15px 15px 50px;
+  font-family: 'Noto Sans Japanese', sans-serif;
+}
+
+#pagetop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+/* メインビジュアル */
+#topMainVisual {
+  margin-bottom: 30px;
+}
+
+/* スライダーのボタン */
+.slick-dots {
+  bottom: 15px;
+}
+
+.slick-dots li {
+  padding: 0 5px;
+}
+
+.slick-dots li button::before {
+  font-size: 14px;
+  color: #fff;
+  opacity: 1.0;
+}
+
+.slick-dots li.slick-active button::before {
+  color: #ed4343;
+  opacity: 1.0;
+}
+
+/* 2段組みのレイアウト */
+.topContentBox {
+  padding-top: 20px;
+}
+
+.topInfoBox {
+  float: left;
+  margin-right: 30px;
+  width: 640px;
+}
+
+.topFacebookBox {
+  float: right;
+  width: 500px;
+}
+
+/* 2段組みのボックスの中身 */
+.topCopy {
+  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", "MS 明朝", serif;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.topInfoBox .accessLink {
+  text-align: right;
+}
+
+.topNews {
+  margin: 0 20px;
+}
+
+.topNews li {
+  border-bottom: 1px dotted #897101;
+  padding: 15px 0;
+}
+
+.topNews li .fas {
+  color: #79420d;
+  padding: 15px 10px 0 0;
+}
+
+/* 3段組みのレイアウト */
+.topLinkBox {
+  clear: both;
+  margin-top: 50px;
+  width: 1170px;
+}
+
+.topLink {
+  float: left;
+  line-height: 0;
+  margin-right: 30px;
+  width: 370px;
+}
+
+.topLink:last-child {
+  margin-right: 0;
+}
+
+/* 3段組みのボックスの中身 */
+.topLink a {
+  display: block;
+  text-align: center;
+}
+
+
+.topLink a:link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.topLink a:visited {
+  color: #ead59d;
+}
+
+.topLink a:hover {
+  opacity: 0.8;
+}
+
+.topLink a img {
+  border-radius: 10px 10px 0 0;
+}
+
+.topLink a span {
+  background-color: #79420d;
+  border-radius: 0 0 10px 10px;
+  display: block;
+  padding: 20px 0;
+}
+
+.topLink a span i {
+  padding: 0 10px;
+}

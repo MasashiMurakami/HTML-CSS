@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lesson ひまわりパン － 新宿御苑そばの小さなパンや</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+  </head>
+  <body>
+    <header>
+      <p class="logo">
+        <a href="index.html"><img src="images/header_logo.png" alt="ひまわりパン"></a> 
+      </p>
+      <p class="address">
+        〒160-0022
+        <br>東京都新宿区新宿1-99-300
+        <br>TEL : 03-9900-6802
+      </p>
+    </header>
+    
+    <nav class="gNavi">
+      <ul>
+        <li class="current"><a href="index.html" >HOME</a></li>
+        <li><a href="kodawari.html">ひまわりのこだわり</a></li>
+        <li><a href="teiban.html">定番のパン</a></li>
+        <li><a href="access.html">アクセス</a></li>
+        <li><a href="contact.html">ご予約・お問い合わせ</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1>ご予約・お問合せ</h1>
+      <!-- 問い合わせ先一覧 -->
+      <h2>問い合わせ先</h2>
+      <p>お電話・FAX・メール・フォームにてお問い合わせを受け付けております。お気軽にご連絡ください。
+      </p>
+      <div class="contactBox">
+        <h3>お電話</h3>
+        <p><strong>03-9900-6802</strong><br>（受付時間：平日9:00〜18:00）</p>
+      </div>
+      <div class="contactBox">
+        <h3>FAX</h3>
+        <p><strong>03-9900-6803</strong><br>（24時間受付）</p>
+      </div>
+      <div class="contactBox">
+        <h3>メール</h3>
+        <p><strong>cantact@fc0.vc</strong><br>（3日以内にお返事します）</p>
+      </div>
+      <!-- 問い合わせフォーム -->
+      <h2>お問い合わせ・ご予約フォーム</h2>
+      <p>以下にご記入の上、「送信する」ボタンを押してください。
+        <br><sup>＊</sup>は必須項目です。
+      </p>
+      <form id="contact">
+        <fieldset>
+          <legend>お客様情報</legend>
+          <p>
+            <label><span class="itemName"><sup>＊</sup>お名前：</span> 
+              <input type="text" name="name" size="50" maxlength="50">
+            </label>
+          </p>
+          <p>
+            <label><span class="itemName"><sup>＊</sup>メールアドレス：</span> 
+              <input type="email" name="email" size="50" maxlength="50" placeholder="aaa@bbbbb.com" required>
+            </label>
+          </p>
+          <p>
+            <label><span class="itemName"><sup>＊</sup>お電話番号：</span> 
+              <input type="tel" name="telNumber" size="20" maxlength="17" placeholder="00-0000-0000" required>
+            </label>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>お問い合わせ内容</legend>
+          <p>
+            <span class="itemName"><sup>＊</sup>お問い合せ種別：</span>
+            <label>
+              <input type="radio" value="ご予約" name="genre" checked>ご予約
+            </label>
+            <label>
+              <input type="radio" value="お問い合わせ" name="genre">お問い合わせ
+            </label>
+          </p>
+          <p>
+            <span class="itemName">ご予約希望日：<br></span>
+            <label>第1希望：
+              <input type="date" name="date1" min="2017-01-01" max="2017-05-31">
+            </label>
+            <label>第2希望：
+              <input type="date" name="date1" min="2017-01-01" max="2017-05-31">
+            </label>
+            <label>第3希望：
+              <input type="date" name="date1" min="2017-01-01" max="2017-05-31">
+            </label>
+          </p>
+          <p>
+            <label><span class="itemName">お問い合わせ内容：<br></span> 
+              <textarea name="message" cols="100" rows="5" wrap="hard" placeholder="ご自由にお書きください"></textarea>
+            </label>
+          </p>
+        </fieldset>
+        
+        <fieldset>
+          <legend>アンケートにお答えください</legend>
+          <p>
+            <span class="itemName">当店を知ったきっかけ：</span>
+            <label>
+              <input type="checkbox" value="インターネット" name="trigger">インターネット
+            </label>
+            <label>
+             <input type="checkbox" value="チラシ" name="trigger">チラシ
+            </label>
+            <label>
+              <input type="checkbox" value="イベント" name="trigger">イベント
+            </label>
+            <label>
+              <input type="checkbox" value="ポスター" name="trigger">ポスター
+            </label>
+            <label>
+              <input type="checkbox" value="知人から聞いて" name="trigger">知人から聞いて
+            </label>
+            <label>
+              <input type="checkbox" value="その他" name="trigger">その他
+            </label>
+          </p>
+          <p>
+            <label for="bread"><span class="itemName">好きなパンの種類：</span></label>
+            <select id="bread" name="bread">
+              <option value="--">選択してください</option>
+              <option value="食パン">食パン</option>
+              <option value="フランスパン">フランスパン</option>
+              <option value="クロワッサン">クロワッサン</option>
+              <option value="あんパン">あんパン</option>
+              <option value="惣菜パン">惣菜パン</option>
+              <option value="揚げパン">揚げパン</option>
+              <option value="メロンパン">メロンパン</option>
+              <option value="カレーパン">カレーパン</option>
+            </select>
+          </p>
+        </fieldset>
+        <p>
+          <input type="submit" value="送信する" form="contact">
+        </p>
+      </form>
+    </main>
+
+    <footer class="clearfix">
+      <p>
+        <a href="index.html"><img src="images/logo.png" alt="ひまわりパン"></a> 
+      </p>
+      <nav>
+        <ul>
+          <li class="current"><a href="index.html" >HOME</a></li>
+          <li><a href="kodawari.html">ひまわりのこだわり</a></li>
+          <li><a href="teiban.html">定番のパン</a></li>
+          <li><a href="access.html">アクセス</a></li>
+          <li><a href="contact.html">ご予約・お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <ul class="snsBtn">
+        <li><a href="https://twitter.com/share?url=http%3A%2F%2Ffc0.me%2Fhimawari%2F&text=%E3%81%B2%E3%81%BE%E3%82%8F%E3%82%8A%E3%83%91%E3%83%B3%20-%20%E6%96%B0%E5%AE%BF%E5%BE%A1%E8%8B%91%E3%81%AE%E5%B0%8F%E3%81%95%E3%81%AA%E3%83%91%E3%83%B3%E5%B1%8B"><img src="images/twitter.png" alt="ひまわりパンのTwitterページへ"></a></li>
+    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://fc0.me/himawari/"><img src="images/facebook.png" alt="ひまわりパンのFacebookページへ"></a></li>
+      </ul>
+      <p class="copyright">
+        Copyright &copy; ひまわりパン
+      </p>
+    </footer>
+
+  </body>
+</html>

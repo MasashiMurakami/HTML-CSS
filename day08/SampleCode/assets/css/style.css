@@ -1,0 +1,128 @@
+@charset "UTF-8";
+/*------------------------------
+ページ共通で使うインナー
+------------------------------*/
+.common-inner {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/*------------------------------
+ページヘッダー
+------------------------------*/
+.page-header {
+  background-color: #5A442A;
+}
+
+.page-header__inner {
+  padding: 24px 0;
+}
+
+.page-header__title {
+  color: #fff;
+  line-height: 1.0;
+}
+
+.page-header__title .large {
+  font-size: 3.2rem;
+}
+
+.page-header__title .small {
+  font-size: 2rem;
+}
+
+.page-header__main-visual img {
+  width: 100%;
+}
+
+/*------------------------------
+メインコンテンツ
+------------------------------*/
+.main-content {
+  padding: 50px 0;
+  background-color: #FAF5ED;
+}
+
+/* コンテンツのヘッダー */
+.section-header {
+  margin-bottom: 30px;
+}
+
+.section-header__title {
+  line-height: 1;
+}
+
+.section-header__title .large {
+  font-size: 3.6rem;
+}
+
+.section-header__title .small {
+  font-size: 2.4rem;
+}
+
+/* 写真のリスト */
+.work-list {
+  margin-bottom: 50px;
+}
+
+.work-list__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+/* 写真＋テキストのブロック */
+.photo-work {
+  display: flex;
+}
+
+.photo-work__image {
+  width: 480px;
+  margin-right: 20px;
+}
+
+.photo-work__text {
+  font-size: 1.6rem;
+}
+
+/* 過去作品へのテキストリンク */
+.old-works {
+  line-height: 1.0;
+  text-align: center;
+}
+
+.old-works a {
+  color: #707070;
+  /*
+      子要素の.largeと.mediumのフォントサイズが異なっているので、
+      text-decoration: underlineでは下線の太さが異なってしまう。
+      そのためborder-bottomで代替する。
+    */
+  text-decoration: none;
+  border-bottom: 2px solid;
+}
+
+.old-works a:hover {
+  border-bottom: none;
+}
+
+.old-works .large {
+  font-size: 3.6rem;
+}
+
+.old-works .small {
+  font-size: 2.4rem;
+}
+
+/*------------------------------
+ページフッター
+------------------------------*/
+.page-footer {
+  padding: 22px 0;
+  background-color: #5A442A;
+}
+
+.page-footer p {
+  font-size: 1.6rem;
+  line-height: 1.0;
+  text-align: center;
+  color: #fff;
+}

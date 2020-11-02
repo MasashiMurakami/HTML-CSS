@@ -1,0 +1,166 @@
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    color: #333;
+    margin: 0;
+}
+
+.container {
+    width: 820px;
+    margin: 0 auto;
+    padding: 60px 0;
+
+}
+
+.orange-bg {
+color: #fff;
+background: url(../img/bg.png);
+background-size: cover;
+}
+
+.section-title {
+    text-align: center;
+    font-weight: normal;
+    font-size: 24px;
+    margin-bottom: 60px;
+    margin-top: 0;
+}
+
+.section-title::after {
+    content: attr(data-subtitle);
+    display: block;
+    font-size: 16px;
+    color: #aaa;
+    padding-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    width: 290px;
+    background: #fff;
+    color: #f39800;
+    text-align: center;
+    text-decoration: none;
+    padding: 8px 0;
+    border-radius: 5px;
+    opacity: 0.9;
+}
+
+.btn:hover {
+    opacity: 1.0;
+}
+
+/* header */
+
+header {
+    margin-top: 0;
+    font-weight: normal;
+}
+
+header h1 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-weight: normal;
+}
+
+header p {
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+
+header .container {
+    position: relative;
+}
+
+header img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* features */
+
+.feature {
+    overflow: hidden;
+}
+
+.feature h1 {
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.feature .desc {
+    width: 360px;
+}
+
+.feature:nth-of-type(odd) .desc {
+    float: right;
+    padding-left: 40px;
+}
+
+.feature:nth-of-type(even) .desc {
+    float: left;
+    padding-right: 40px;
+}
+
+.feature:not(:last-child) {
+    margin-bottom: 60px;
+}
+
+/* voices */
+
+.voices {
+    background: #f8f8f8;
+}
+
+.voices .flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.voice {
+    width: 250px;
+    background: #fff;
+    position: relative;
+    box-sizing: border-box;
+    padding: 60px 40px 25px;
+}
+
+.voice img {
+    border-radius: 50%;
+    border: 10px solid #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: -55px;
+}
+
+.voice h1 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.voices .section-title {
+    margin-bottom: 95px;
+}
+
+/* call-to-action */
+
+.call-to-action {
+    text-align: center;
+}
+
+.call-to-action .section-title {
+    margin-bottom: 15px;
+}
+
+/* footer */
+
+footer {
+    padding-left: 40px 0;
+    text-align: center;
+    color: #aaa;
+}

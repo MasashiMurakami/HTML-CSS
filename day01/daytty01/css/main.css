@@ -1,0 +1,81 @@
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    color: #333;
+    margin: 0;
+}
+
+.container {
+    width: 820px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.bg {
+    background: url(../img/main-vsual-nontitle.png);
+    background-size: auto;
+    text-align: center;
+}
+
+.section-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 60px;
+    margin-top: 0;
+}
+
+header {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-weight: normal;
+}
+
+header ul {
+    margin: 0;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+header li {
+    display: inline-block;
+    padding: 4px 8px;
+    font-size: 12px;
+    padding-right: 0;
+}
+
+header li > a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.feature {
+    overflow: hidden;
+}
+
+.feature .desc{
+    float: right;
+    width: 360px;
+    padding-left: 40px;
+}
+
+.courses .flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.course {
+    width: 250px;
+    position: relative;
+    box-sizing: border-box;
+    padding: 60px 40px 25px;
+}
+
+.call-to-action {
+    text-align: center;
+}
+
+footer {
+    padding-left: 40px 0;
+    text-align: right;
+}

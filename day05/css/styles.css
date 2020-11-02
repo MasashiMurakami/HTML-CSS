@@ -1,0 +1,85 @@
+body {
+  margin: 0px;
+  min-width: 1000px;
+  background-color: #faf5ed;
+  font-family: 游明朝体, YuMincho, "游明朝 Medium", "Yu Mincho Medium", 游明朝, "Yu Mincho", serif;
+  color: rgb(112, 112, 112);
+}
+
+header {
+  background-color: #5a4a2a;
+}
+
+header h1 {
+  margin: 0px;
+  margin-left: 120px;
+  padding: 20px 0;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+}
+
+header h1 span {
+  font-size: 28px;
+}
+
+#header-bg {
+  display: flex;
+  justify-content: center;
+}
+
+.main-header{
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.main-header span {
+  font-size: 32px;
+}
+
+#august {
+  margin: 20px 120px;
+}
+
+#august .content {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#august .content .content-image {
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+}
+
+#august .content .content-txt {
+  min-width: 450px;
+  max-width: 450px;
+  margin: 0px 20px;
+  position: relative;
+}
+
+#august .content .content-txt p {
+  margin: 0px;
+}
+
+#july {
+  text-align: center;
+}
+
+#july a {
+  color: rgb(112, 112, 112);
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  background-color: #5a4a2a;
+  color: white;
+}
+
+footer p {
+  margin: 0px;
+  padding: 20px 0px;
+}

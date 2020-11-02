@@ -1,0 +1,35 @@
+<!--ヘッダー-->
+（ロゴ画像）
+images/header_logo.png
+
+（住所）
+〒160-0022
+東京都新宿区新宿1-99-300
+TEL : 03-9900-6802
+
+<!--グローバルナビゲーション-->
+（テキスト）
+HOME
+ひまわりのこだわり
+定番のパン
+アクセス
+ご予約・お問い合わせ
+
+（リンク先）
+HOME→index.html
+ひまわりのこだわり→kodawari.html
+定番のパン→teiban.html
+アクセス→access.html
+ご予約・お問い合わせ→contact.html
+
+<!--フッター-->
+（ロゴ画像）
+images/logo.png
+
+（Twitterアイコン）
+images/twitter.png
+（Facebookアイコン）
+images/facebook.png
+
+（コピーライト）
+Copyright© ひまわりパン

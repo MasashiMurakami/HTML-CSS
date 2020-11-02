@@ -1,0 +1,101 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: '游明朝体', YuMincho, '游明朝 Medium', 'Yu Mincho Medium', '游明朝', 'Yu Mincho', serif;
+  background-color: #FAF5ED;
+}
+
+.title-header_txt, main, .copyright {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.title-header {
+  height: 80px;
+  background-color: #5A442A;
+}
+
+.title-header_txt {
+  padding: 20px 0 0 20px;
+  color: #ffffff;
+  font-size: 2.0rem;
+  vertical-align: baseline;
+}
+
+.title-header_txt .bigger {
+  font-size: 3.2rem;
+}
+
+.title-visual {
+  height: 400px;
+  background-image: url(/images/main_visual.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  color: #707070;
+}
+
+.section-header {
+  margin: 50px 0 40px 20px;
+  vertical-align: baseline;
+}
+
+.section-header .bigger {
+  font-size: 3.6rem;
+}
+
+.section-header .smaller {
+  font-size: 2.4rem;
+}
+
+.container {
+  margin: 0 20px;
+}
+
+.contents {
+  height: 280px;
+  margin-bottom: 30px;
+}
+
+.contents:last-child {
+  margin-bottom: 0;
+}
+
+.contents_img {
+  margin-right: 20px;
+  float: left;
+}
+
+.contents_txt {
+  font-size: 1.6rem;
+  line-height: 1.75;
+}
+
+.old-work {
+  margin-left: 0;
+  text-align: center;
+}
+
+.old-work a {
+  text-decoration: none;
+  color: #707070;
+  border-bottom: 2px solid #707070;
+}
+
+footer {
+  height: 60px;
+  background-color: #5A442A;
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 20px;
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+

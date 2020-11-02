@@ -1,0 +1,292 @@
+@charset "UTF-8";
+
+
+/* header */
+
+header {
+    height: 80px;
+    /* background-color: pink;
+    background-image: url(../img/header.png);
+    background-size: cover;
+    background-position: center; */
+    background: center/cover pink url(../img/header.png);
+}
+
+
+/* body */
+
+body {
+    font-family: Verdana, 'Arial Black', メイリオ, sans-serif;
+}
+
+.main h1 {
+    color: red;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    text-decoration: line-through;
+}
+
+.p1 {
+    font-weight: bold;
+    text-align: left;
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+}
+
+.p2 {
+    font-size: 16px;
+    /* line-height: 32px;
+    line-height: 2em; */
+    line-height: 2;
+}
+
+.p3 {
+    line-height: 5;
+    background-color: pink;
+}
+
+img {
+    /* vertical-align: top; */
+    vertical-align: bottom;
+}
+
+ul {
+    /* list-style-type: circle;
+    list-style-position: inside;
+    list-style-image: url(../img/icon.png); */
+    list-style: circle inside url(../img/icon.png);
+
+}
+
+ol {
+    list-style-type: lower-alpha;
+    list-style: inside;
+    /* list-style-type: none; */
+}
+
+/* #open {
+    font-weight: bold;
+} */
+
+.title {
+    text-align: right;
+}
+
+h2.title {
+    font-weight: normal;
+}
+
+.box1 {
+    background-color: orange;
+    width: 200px;
+    height: 200px;
+    /* margin: 0 0 20px;
+    margin-left: auto;
+    margin-right: auto; */
+    margin-bottom: 20px;
+}
+
+.box2 {
+    background-color: skyblue;
+    width: 50%;
+    height: 50%;
+    /* overflow: hidden; */
+    /* overflow: scroll; */
+    /* border-width: 2px;
+    border-style: solid;
+    border-color: skyblue; */
+    border: 2px solid blue;
+    /* border-top: 2px solid blue;
+    border-bottom: 2px solid blue; */
+    /* border-bottom: none; */
+    /* border-radius: 10px; */
+    /* padding-top: 20px; */
+    /* padding-left: 40px; */
+}
+
+.box3 {
+    background-color: red;
+    display: none;
+    width: 100px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+}
+
+.mini {
+    width: 30px;
+    height: 30px;
+    background-color: pink;
+}
+
+.box-b {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.box4 {
+    background-color: orange;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* z-index: 1; */
+    z-index: 2;
+}
+
+.box5 {
+    background-color: skyblue;
+    /* position: static; */
+    position: absolute;
+    /* position: fixed; */
+    /* top: 30px; */
+    /* left: 30px; */
+    top: 30px;
+    left: 30px;
+    z-index: 1;
+}
+
+.box6 {
+    background-color: tomato;
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    /* z-index: 0; */
+}
+
+.box7 {
+    background-color: orange;
+    box-shadow: 10px 5px rgba(0,0,0,.3);
+    text-shadow: 10px 5px rgba(0,0,0,.3);
+    margin-bottom: 20px;
+}
+
+.box8 {
+    background-color: skyblue;
+    border: 5px solid blue;
+    box-sizing: border-box;
+    box-shadow: 10px 5px 3px rgba(0,0,0,.3);
+    text-shadow: 10px 5px 3px rgba(0,0,0,.3);
+    margin-bottom: 20px;
+}
+
+.box9 {
+    background-color: tomato;
+    box-shadow: 10px 5px 3px 10px rgba(0,0,0,.3);
+}
+
+section {
+    border: 1px solid silver;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* .main > h1 { */
+/* .main h1 { */
+.main, h1 {
+    border-left: 5px solid skyblue;
+}
+
+/* .pp p{ */
+.pp p + p{
+    /* border-bottom: 1px dashed silver; */
+    border-top: 1px dashed silver;
+    padding-top: 10px;
+}
+
+/* .ppp a[href="#"] { */
+/* .ppp a[href^="https"] { */
+/* .ppp a[href$="com"] { */
+.ppp a[href*="ggl"] {
+    font-weight: bold;
+}
+
+/* .main2 h1::before {
+    content: '- ';
+}
+
+.main2 h1::after {
+    content: ' -';
+} */
+
+h1::after {
+    content: attr(data-subtitle);
+}
+
+/* 疑似クラス
+- 要素の状態に基づいてスタイリング
+疑似要素
+- 要素の特定の部分をスタイリング */
+
+#open {
+    width: 100px;
+    background-color: skyblue;
+    text-align: center;
+    padding: 4px 8px;
+}
+
+#open:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+/* .main3 > p:nth-child(3) {
+    background-color: pink;
+} */
+
+/* .main3 > p:nth-child(3n) {
+    background-color: pink;
+} */
+
+/* .main3 > p:nth-child(odd) {
+    background-color: pink;
+}
+.main3 > p:nth-child(even) {
+    background-color: blue;
+} */
+
+/* .main3 > p:first-child {
+    background-color: pink;
+}
+
+.main3 > p:last-child {
+    background-color: blue; */
+/* } */
+
+/* .main3 > p:not(:last-child) {
+    border-bottom: 1px dashed silver;
+} */
+
+/* .main3 > h2:nth-child(3) {
+    background-color: pink;
+} */
+
+.main3 > p:nth-of-type(3) {
+    background-color: pink;
+}
+
+/* h1 { color: red !important; }
+h1#main.box { color: yellow !important; }
+#about > #main { color: gray; }
+section > #main.title { color: blue; }
+section#about >h1 { color: pink; } */
+
+h1, h2, p {
+    border: 1px solid silver;
+}
+
+img {
+    float: right;
+}
+
+h2 {
+    clear: right;
+    /* clear: left;
+    clear: both; */
+}

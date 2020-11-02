@@ -1,0 +1,110 @@
+header {
+  background-color: #efefef;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+body {
+  color: #333333;
+  font-family: Verdana, sans-serif;
+  /* margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin: 0px; */
+  /* 上記の省略形 */
+  margin: 0;
+}
+
+/* div  -> レイアウト用 */
+.container {
+  /* background-color: pink; */
+  width: 400px;
+  /* 中央よせするテクニックとして、margin-rightとleftとautoにする */
+  margin-right: auto;
+  margin-left: auto;
+  /* 子の要素(divなど)を横並びにする */
+  display: flex;
+  /* 要素を縦方向に中央ぞろえ */
+  align-items: center;
+}
+
+.icon {
+  /* background-color: skyblue; */
+}
+
+.icon img {
+  /* border-radius: 20px; */
+  /* 画像枠の形を丸く。1辺の半径を円の半径とする */
+  border-radius: 50%;
+  /* 画像枠の幅・形・色 */
+  border-width: 4px;
+  border-style: solid;
+  border-color: white;
+}
+
+.information {
+  /* background-color: tomato; */
+  margin-left: 32px;
+}
+
+.information h1 {
+  /* 太さ */
+  font-weight: normal;
+  font-size: 24px;
+  margin: 0;
+}
+
+.information p {
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.information ul {
+  margin: 0;
+  padding: 0;
+  /* リストの黒丸を消す */
+  list-style-type: none;
+  display: flex;
+}
+
+.information ul li {
+  margin-right: 8px;
+}
+
+.works {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* .works h1 -> class = works以下の全てのh1に適用 */
+/* .works > h1 -> class = works直下にあるh1だけに適用 */
+
+.works > h1 {
+  font-weight: normal;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.works > section {
+  margin-bottom: 60px;
+}
+
+.works > section > h1 {
+  font-weight: normal;
+}
+
+.works p{
+  /* 要素内の行の高さを文字サイズの1.8倍にする */
+  line-height: 1.8;
+}
+
+footer p {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 60px;
+  color: gray;
+}

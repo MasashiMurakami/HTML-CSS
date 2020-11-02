@@ -1,0 +1,160 @@
+/* ==========
+共通部分 
+========== */
+
+html {
+  /* 1rem = 10pxとしたいので、htmlにfont-size 62.5%を指定 */
+  font-size: 62.5%;
+}
+
+body {
+  /* コンテンツの最小幅1000pxを指定 */
+  min-width: 1000px;
+  /* コンテンツ共通のフォント設定 */
+  font-family: '游明朝体', YuMincho, '游明朝 Medium', 'Yu Mincho Medium', '游明朝', 'Yu Mincho', serif;
+  line-height: 1.75;
+  color: #707070;
+}
+
+/* ボールド書体についてはEdgeに対応するため別途指定する */
+strong, b, mark, b, .typo-bold {
+  font-family: '游明朝体', YuMincho, '游明朝 Medium', 'Yu Mincho Medium', '游明朝', 'Yu Mincho', serif;
+  font-weight: 700;;
+}
+
+/* デフォルトのボールド指定を解除 */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+img {
+  /* 画像の下に微妙な隙間ができないよう指定 */
+  vertical-align: bottom;
+}
+
+/* 共通インナー */
+.common-inner {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* 写真+テキストのブロック */
+.photo-work {
+  display: flex;
+}
+
+.photo-work__image {
+  width: 480px;
+  margin-right: 20px;
+}
+
+.photo-work__text {
+  font-size: 1.6rem;
+}
+
+/* ヘッダー */
+.page-header {
+  background-color: #5a4a2a;
+}
+
+.page-header__inner {
+  padding: 24px 0;
+}
+
+/* タイトル */
+.page-header__title {
+  color: #ffffff;
+  /* line-heightを1に指定する事で上下に余計な隙間を持たせない */
+  line-height: 1.0;
+  font-weight: normal;
+}
+
+.page-header__title .large {
+  font-size: 3.2rem;
+}
+
+.page-header__title .small {
+  font-size: 2.0rem;
+}
+
+/* 画像 */
+.page-header__main-visual img {
+  /* メインビジュアルの画像は横幅に応じて可変するので幅100％指定 */
+  width: 100%;
+}
+
+/* メイン */
+.main-content {
+  background-color: #FAF5ED;
+  padding: 50px 0;
+}
+
+/* セクションヘッダー */
+.section-header {
+  margin-bottom: 30px;
+}
+
+.section-header__title {
+  line-height: 1.0;
+  font-weight: 600;
+}
+
+.section-header__title .large {
+  font-size: 3.6rem;
+}
+
+.section-header__title .small {
+  font-size: 2.4rem;
+}
+
+.work-list {
+  margin-bottom: 50px;
+}
+
+.work-list__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+/* 別ページへのリンク */
+.old-works {
+  line-height: 1.0;
+  text-align: center;
+  font-weight: 600;
+  /* padding-bottom: 50px; */
+}
+
+.old-works a {
+  color: #707070;
+  /* 
+    子要素の.largeと.mideumのフォントサイズが異なっているので、
+    text-decoration: underlineでは下線の太さが異なってしまう。
+    そのためborder-bottomで代替する。 
+    */
+  text-decoration :none;
+  border-bottom: 2px solid;
+}
+
+.old-works a:hover {
+  border-bottom: none;
+}
+
+.old-works .large {
+  font-size: 3.6rem;
+}
+
+.old-works .small {
+  font-size: 2.4rem;
+}
+
+/* フッター */
+.page-footer {
+  padding: 22px 0;
+  background-color: #5a4a2a;
+}
+
+.page-footer p {
+  font-size: 1.6rem;
+  line-height: 1.0;
+  text-align: center;
+  color: #ffffff;
+}

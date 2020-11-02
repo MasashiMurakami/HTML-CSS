@@ -1,0 +1,33 @@
+body {
+  font-size: 2.4rem;
+  text-align: center;
+  font-weight: bold;
+
+}
+
+.common-inner {
+  background-color: rgba(50, 50, 50, 0.5);
+}
+
+.page-header {
+  padding: 20px 0;
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+.page-header .common-inner {
+  height: 60px;
+}
+
+.main-content {
+  padding: 50px 0;
+  background-color: rgba(0, 255, 0, 0.1);
+}
+
+.main-content .common-inner {
+  height: 400px;
+}
+
+.page-footer {
+  height: 80px;
+  background-color: rgba(0, 0, 255, 0.1);
+}

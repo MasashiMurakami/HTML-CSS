@@ -1,0 +1,106 @@
+/*===================== 
+共通 
+=====================*/
+body {
+  
+  font-family: '游明朝体', YuMincho, '游明朝 Medium', 'Yu Mincho Medium', '游明朝', 'Yu Mincho', serif;;
+}
+
+.title h1, main .content_header, main .content, .copyright p {
+  width: 960px;
+  margin: 0 auto;
+  /* border:solid 1px #000; */
+}
+
+/* ヘッダー */
+header .title {
+  height: 80px;
+  padding: 0 20px;
+  background-color: #5A442A;
+}
+
+header .title h1 {
+  color: #ffffff;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+header h1 strong {
+  font-size: 32px;
+}
+
+header .title_bg {
+  height: 400px;
+  background-image: url(../images/main_visual.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* メイン */
+main {
+  padding: 0 20px;
+  height: 1172px;
+  background-color: #FAF5ED;
+}
+
+main h2, p {
+  color: #707070;
+}
+
+main h2 {
+  padding-top: 50px;
+  padding-bottom: 10px;
+  font-size: 24px;
+}
+
+main h2 strong {
+  font-size: 36px;
+}
+
+main #july {
+  text-align: center;
+}
+
+main h2 a {
+  color: #707070;
+}
+.content {
+  display: flex;
+  width: 960px;
+  height: 280px;
+  padding-top: 30px;
+}
+
+.content img {
+  float: left;
+}
+
+.content .content_txt {
+  float: left;
+  width: 460px;
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+#july a {
+  text-decoration: none;
+  border-bottom: 2px solid;
+}
+
+/* フッター */
+footer {
+  height: 60px;
+  background-color: #5A442A;
+}
+
+footer .copyright {
+  background-color: #5A442A;
+}
+
+footer p {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 16px;
+  color: #ffffff;
+}

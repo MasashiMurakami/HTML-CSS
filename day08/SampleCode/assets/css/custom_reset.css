@@ -1,0 +1,23 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-width: 1000px;
+  font-family: '游明朝体', YuMincho, '游明朝 Medium', 'Yu Mincho Medium', '游明朝', 'Yu Mincho', serif;
+  line-height: 1.75;
+  color: #707070;
+}
+
+strong, b, mark, b, .typo-bold {
+  font-family: '游明朝体', YuMincho, '游明朝', 'Yu Mincho', '游明朝', 'Yu Mincho', serif;
+  font-weight: 700;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+img {
+  vertical-align: bottom;
+}

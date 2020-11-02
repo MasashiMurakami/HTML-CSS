@@ -1,0 +1,337 @@
+body {
+  margin: 0px;
+  font-family: "Noto SansJP", sans-serif;
+}
+
+header {
+  background-image: url(../img/bg_header_pink.jpg);
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+
+header > img {
+  padding-top: 150px;
+}
+
+header > p {
+  color: white;
+  font-size: 16px;
+  padding-bottom: 200px;
+}
+
+header > .applink {
+  padding-top: 20px;
+}
+
+#footnote > p {
+  font-size: 14px;
+  color: white;
+  margin: 0px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.container {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+
+.catch {
+  color: white;
+  text-align: left;
+  font-size: 24px;
+  margin: 0px auto 0px auto;
+  padding: 40px 20px 10px 20px;
+  width: 240px;
+}
+
+.text {
+  color: white;
+  text-align: left;
+  font-size: 14px;
+  margin: 0px auto 0px auto;
+  padding: 10px 20px 250px 20px;
+  width: 240px;
+}
+
+#service01 {
+  background-image: url(../img/bg_service01.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* text-align: center; */
+  flex-grow: 1;
+  
+}
+
+#service02 {
+  background-image: url(../img/bg_service02.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* text-align: center; */
+  flex-grow: 1;
+}
+
+#service03 {
+  background-image: url(../img/bg_service03.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* text-align: center; */
+  flex-grow: 1;
+}
+
+#price {
+  background-color: rgb(245, 245, 245);
+  text-align: center;
+  flex-basis: 50%;
+}
+
+.price-catch {
+  padding-top: 40px;
+}
+
+.price-text {
+  margin-bottom: 0px;
+}
+
+.price-price {
+  margin-top: 0px;
+}
+
+.price-footnote {
+  font-size: 12px;
+}
+
+#frequency {
+  text-align: center;
+  flex-basis: 50%;
+}
+
+#frequency > p {
+  padding-top: 100px;
+}
+
+#flower {
+  background-color: #EAD5DC;
+}
+
+#flower-pic {
+  text-align: center;
+  flex-basis: 50%;
+}
+
+#flower-pic > img {
+  max-width: 100%;
+  max-height: 100%;
+  top: 50%;
+  transform: translate(0, 50%);
+}
+
+#flower-txt {
+  text-align: center;
+  flex-basis: 50%;
+}
+
+#flower-txt > h1 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  font-weight: normal;
+}
+
+#flower-txt > h2 {
+  font-size: 22px;
+  font-weight: normal;
+}
+
+#flower-txt > p {
+  text-align: left;
+  margin: 10px 50px 10px 50px;
+}
+
+#flower-txt .flower-txt-end {
+  margin-bottom: 100px;
+}
+
+#vase {
+  background-color: #e7e3df;
+}
+
+#vase-txt {
+  text-align: center;
+  flex-basis: 50%;
+}
+
+#vase-txt h1 {
+  margin-top: 100px;
+  font-weight: normal;
+}
+
+#vase-txt #vase-txt-sale  {
+  width: 140px;
+  background-color: white;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+#vase-txt-body {
+  margin: 10px 40px 10px 40px;
+  text-align: left;
+}
+
+#vases {
+  margin-left: 40px;
+  margin-right: 40px;
+  justify-content: space-between;
+}
+
+#vases > div {
+  display: flex;
+  width: 100px;
+  height: 150px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 14px;
+}
+
+#vases > div > p {
+  padding-bottom: 10px;
+}
+
+#vases #vase_bell { background-image: url(../img/vase_bell.jpg); }
+#vases #vase_moon { background-image: url(../img/vase_moon.jpg); }
+#vases #vase_candle { background-image: url(../img/vase_candle.jpg); }
+
+#vase-sale-squre p {
+  width: 80px;
+  margin: 0px;
+  margin-left: 40px;
+  padding: 5px;
+  /* flex-basis: 35%; */
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  border: 2px solid #000000;
+  vertical-align: middle;
+}
+
+#vase-sale-squre #vase-sale-price {
+  display: inline;
+  width: 200px;
+  flex-direction: column;
+  /* flex-basis: 60%; */
+  text-align: left;
+  margin-left: 10px;
+  margin-right: 180px;
+}
+
+#vase-price-1 {
+  font-size: 18px;
+}
+
+#vase-price-2 {
+  font-size: 14px;
+}
+
+#vase-txt-app {
+  text-align: left;
+  margin-left: 40px;
+  font-size: 14px;
+  margin-bottom: 100px;
+}
+
+#vase-pic {
+  background-image: url(../img/bg_vase.jpg);
+  background-size: cover;
+  background-position: center;
+  flex-basis: 50%;
+}
+
+#vase-pic > img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#icons {
+  text-align: center;
+}
+
+#icons h1 {
+  margin-top: 100px;
+  margin-bottom: 40px;
+  font-weight: normal;
+}
+
+#icons-body {
+  justify-content: space-evenly;
+  margin-bottom: 100px;
+}
+
+#icons-body img {
+  width: 30%;
+}
+
+#icons-body h1 {
+  margin: 0;
+}
+
+#icons-body p {
+  margin: 5px 0;
+}
+
+#download {
+  background-color: #efdfc5;
+}
+
+#download > div {
+  height: 430px;
+  width: 80%;
+  text-align: right;
+  background-image: url(../img/bg_download2.jpg);
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#download-logo {
+  margin-top: 40px;
+  margin-left: 60%;
+  text-align: center;
+}
+
+#download-logo h3 {
+  font-weight: normal;
+}
+
+footer {
+  background-color: #3f434a;
+}
+
+footer  #footer-link {
+  padding: 20px 10px;
+  text-align: right;
+}
+
+footer #footer-menu {
+  justify-content: space-evenly;
+  margin-right: 80px;
+  margin-bottom: 100px;
+  color: white;
+}
+
+footer #copyright {
+  text-align: center;
+  color: gray;
+  font-size: 12px;
+  padding: 100px 0;
+}

@@ -1,0 +1,41 @@
+html, body {
+  margin: 0;
+  font-size: 62.5%;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 50px 20px;
+  max-width: 1280px;
+}
+
+.box-item {
+  padding: 0 5px;
+  width: 300px;
+}
+
+.box-item-them {
+  width: 100%;
+}
+
+.box-item-them img {
+  width: 100%;
+}
+
+.box-item-title {
+  padding: 10px 0 30px;
+  font-size: 1.6rem;
+}
+
+@media screen and (max-width: 767px) {
+  .box-item {
+    width: 40%;
+  }
+
+  .box-item-title {
+    font-size: 1.4rem;
+  }
+}
