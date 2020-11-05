@@ -1,0 +1,192 @@
+html {
+  font-size: 62.5%;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+body {
+  min-width: 1200px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  /* background-color: #008DD5; */
+}
+/* ==========
+ ヘッダー 
+========== */
+.main-visual {
+  padding-top: 40%;
+  background: url(/images/main_visual.jpg) center top no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.main-visual .logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.main-visual .catch {
+  position: absolute;
+  left: 100px ;
+  bottom: 188px;
+}
+
+.main-visual .catch .catch__txt {
+  /* width: 100%; */
+  margin-bottom: 6px;
+  padding: 6px 6px;
+  font-size: 3.6rem;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.main-visual .header-link {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  width: 180px;
+  height: 180px;
+  background-color: #ffffff;
+  border: 5px solid #008DD5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-visual .header-link p {
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #008DD5;
+  text-align: center;
+  vertical-align:
+}
+
+/* ==========
+ ナビ
+========== */
+
+.gnav {
+  display: flex;
+  position: relative;
+  background-color: #008DD5;
+}
+
+.gnav ul {
+  padding:30px 0 30px 50px;
+}
+
+.gnav ul li {
+  float: left;
+  font-size: 1.6rem;
+  padding-left: 50px;
+}
+
+.gnav ul li a {
+  color: #ffffff;
+}
+
+.gnav .gnv-left {
+  float: left;
+}
+
+.gnav .gnav-right {
+  position: absolute;
+  right: 0px;
+  width: 160px;
+  background-color: #A9D92F;
+  display: flex;
+  align-items: center;
+}
+
+.gnav .gnav-right li {
+  padding-left: 0;
+}
+
+
+.container {
+  text-align: center;
+}
+
+.container .section-header {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+.container ul {
+  margin: 0 auto;
+  width: 640px;
+  list-style: none;
+  text-align: left;
+}
+
+.container ul li {
+  font-size: 1.6rem;
+  line-height: 1.75;
+}
+
+.container ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.container ul li a {
+  display: flex;
+  justify-content: space-between;
+  color: #000000;
+}
+
+.container ul li a:hover {
+  text-decoration: underline;
+}
+
+.container ul li a time {
+  margin-right: 90px;
+  float: left;
+}
+
+.container ul li a span {
+  width: 470px;
+}
+
+.container .old-info {
+  font-size: 1.6rem;
+  line-height: 1.75;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+
+
+.fnav {
+  display: flex;
+  background-color: #008DD5;
+}
+
+.fnav .fnav-ul {
+  float: left;
+  padding: 50px 0 50px 100px;
+  font-size: 1.4rem;
+  line-height: 2.0;
+}
+
+.fnav .fnav-ul .fnav-ul__header {
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.fnav .fnav-ul li {
+  margin-bottom: 20px;
+}
+
+.fnav .fnav-ul li a {
+  color: #ffffff;
+}

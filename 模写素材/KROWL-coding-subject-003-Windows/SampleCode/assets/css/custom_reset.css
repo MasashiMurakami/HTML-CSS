@@ -1,0 +1,55 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-width: 1000px;
+  font-family: '游ゴシック体', YuGothic, '游ゴシック Medium', 'Yu Gothic Medium', '游ゴシック', 'Yu Gothic', sans-serif;
+  font-weight: 500;
+  line-height: 2;
+  color: #333;
+}
+
+strong, b, mark, b, .typo-bold {
+  font-family: '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', '游ゴシック', 'Yu Gothic', sans-serif;
+  font-weight: 700;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  outline: none;
+}
+
+textarea {
+  display: block;
+  outline: none;
+}
+
+select {
+  background-color: transparent;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  outline: none;
+}
+
+button {
+  background-color: transparent;
+  outline: none;
+}
