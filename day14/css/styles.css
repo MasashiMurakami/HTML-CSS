@@ -1,3 +1,6 @@
+/* ==========
+ 共通部分
+========== */
 html {
   font-size: 62.5%;
   font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
@@ -11,9 +14,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  /* background-color: #008DD5; */
-}
 /* ==========
  ヘッダー 
 ========== */
@@ -32,15 +32,18 @@ a:hover {
 
 .main-visual .catch {
   position: absolute;
-  left: 100px ;
+  left: 100px;
   bottom: 188px;
 }
 
-.main-visual .catch .catch__txt {
-  /* width: 100%; */
-  margin-bottom: 6px;
-  padding: 6px 6px;
+.main-visual .catch .catch__txt:not(:last-child) {
+  padding-bottom: 9px;
+}
+
+.main-visual .catch .catch__txt span {
   font-size: 3.6rem;
+  line-height: 1.5;
+  padding: 2px 8px;
   background-color: #000000;
   color: #ffffff;
 }
@@ -68,10 +71,10 @@ a:hover {
   vertical-align:
 }
 
+
 /* ==========
  ナビ
 ========== */
-
 .gnav {
   display: flex;
   position: relative;
@@ -110,15 +113,41 @@ a:hover {
 }
 
 
+/* ==========
+ セクション：最新情報
+========== */
 .container {
   text-align: center;
 }
 
-.container .section-header {
+.section-header {
   padding-top: 100px;
   padding-bottom: 50px;
   font-size: 3.2rem;
   font-weight: bold;
+  text-align: center;
+}
+
+.section-header .section-header__before {
+  width: 0px;
+  height: 0px;
+  font-size: 0rem;
+  border: 8px solid #008DD5;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  vertical-align: top;
+  margin-right: 4px;
+}
+
+.section-header .section-header__after {
+  width: 0px;
+  height: 0px;
+  font-size: 0rem;
+  border: 8px solid #008DD5;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  vertical-align: bottom;
+  margin-left: 4px;
 }
 
 .container ul {
@@ -129,8 +158,7 @@ a:hover {
 }
 
 .container ul li {
-  font-size: 1.6rem;
-  line-height: 1.75;
+  display: list-item;
 }
 
 .container ul li:not(:last-child) {
@@ -139,17 +167,14 @@ a:hover {
 
 .container ul li a {
   display: flex;
+  font-size: 1.6rem;
+  line-height: 1.75;
   justify-content: space-between;
   color: #000000;
 }
 
 .container ul li a:hover {
   text-decoration: underline;
-}
-
-.container ul li a time {
-  margin-right: 90px;
-  float: left;
 }
 
 .container ul li a span {
@@ -163,9 +188,187 @@ a:hover {
   margin-bottom: 100px;
 }
 
+.container .old-info a:hover {
+  text-decoration: underline;
+}
+
+
+/* ==========
+ セクション：サービスの特長
+========== */
+.services {
+  background-color: #E6F6FF;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.services .section-container {
+  width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+  background-color: #ffffff;
+}
+
+.services .services__txt {
+  width: 460px;
+  margin: 60px 60px 0 60px;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  text-align: left;
+  float: left;
+}
+
+.services .services-icons {
+  padding-top: 60px;
+}
+
+.services .services-icons .services-icons-row1 {
+  margin-bottom: 20px;
+}
+
+.services .services-icons .services-icons-row1 img {
+  margin-right: 40px;
+}
+
+.services .services-icons .services-icons-row2 img {
+  margin-left: 40px;
+}
+
+.services-link {
+  clear: both;
+  width: 280px;
+  height: 60px;
+  margin: 40px auto 0;
+  border: 1px solid #008DD5;
+  border-radius: 5px;
+  position: relative;
+}
+
+.services-link a {
+  font-size: 1.6rem;
+  line-height: 1.75;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.services-link .section-header__after {
+  width: 0px;
+  height: 0px;
+  font-size: 0rem;
+  border: 5px solid #008DD5;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+
+/* ==========
+ セクション：Data Maniaの3つの強み
+========== */
+.points {
+  padding-bottom: 100px;
+}
+
+.imgANDarticle {
+  width: 1000px;
+  margin: 0 auto 50px;
+  display: flex;
+  align-items: center;
+}
+
+.imgANDarticle .article {
+  margin-left: 40px;
+}
+
+.imgANDarticle .article .points-header {
+  font-size: 2.4rem;
+  line-height: 1.75;
+  border-bottom: 2px solid #008DD5;
+  margin-bottom: 21px;
+}
+
+.imgANDarticle .article .points__txt {
+  font-size: 1.6rem;
+  line-height: 2.0;
+
+}
+
+
+/* ==========
+ セクション：Data Maniaの3つの強み
+========== */
+.voices {
+  background-color: #E6F6FF;
+}
+
+.voices .voices-container {
+  width: 1000px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: baseline;
+  padding-bottom: 60px;
+}
+
+.voices .voices-container .voices-contents {
+  width: 400px;
+  margin: 60px 0 20px 60px;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  border: 1px solid #dddddd;
+  /* border-bottom: none; */
+  border-radius: 6px;
+}
+
+.voices .voices-container .voices-contents:last-child {
+  margin-bottom: 0;
+}
+
+.voices .voices-container .voices-contents .voice__img {
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.voice__img01 {
+  background-image: url(/images/photo-mr_okochi.jpg);
+}
+.voice__img02 {
+  background-image: url(/images/photo-ms_kagari.jpg);
+}
+.voice__img03 {
+  background-image: url(/images/photo-mr_nakajima.jpg);
+}
+.voice__img04 {
+  background-image: url(/images/photo-mr_davis.jpg);
+}
+
+.voices .voices-container .voices-contents .voice-name {
+  background-color: #008DD5;
+  color: #ffffff;
+}
+
+.voices .voices-container .voices-contents .voice-name p {
+  padding: 20px;
+}
+
+.voices .voices-container .voices-contents .voice__txt p{
+  margin: 20px;
+}
+
+
+
 
 
 .fnav {
+  clear: both;
   display: flex;
   background-color: #008DD5;
 }
