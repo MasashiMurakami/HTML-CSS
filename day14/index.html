@@ -76,9 +76,9 @@
               <img src="/images/icon-smartphone.png" alt="smartphone">
             </div>
           </div>
-          <div class="services-link">
+          <div class="services-link" id="serviceLink">
             <a href="#">機能について詳しく知る</a>
-            <span class="section-header__after"></span>            
+            <span class="section-header__after"></span>
           </div>
         </div>
       </section>
@@ -190,6 +190,46 @@
             </div>
           </div>
         </div>
+      </section>
+
+      <section class="forms">
+        <h2 class="section-header"><span class="section-header__before"></span>お問い合わせ<span class="section-header__after"></span></h2>
+        <form action="" method="post">
+          <p>
+            <label for="name">
+              <span>お名前</span><br>
+              <input type="text" name="name" size="50" maxlength="50" required>
+            </label>
+          </p>
+          <p>
+            <label for="email">
+              <span>メールアドレス</span><br>
+              <input type="email" name="email" size="50" maxlength="50">
+            </label>
+          </p>
+          <p>
+            <label for="category">
+              <span>お問い合わせ種別</span><br>
+              <select name="category">
+                <option value="選択肢1" selected>選択肢1</option>
+                <option value="選択肢2">選択肢2</option>
+                <option value="選択肢3">選択肢3</option>
+                <option value="選択肢4">選択肢4</option>
+                <option value="選択肢5">選択肢5</option>
+              </select>
+            </label>
+          </p>
+          <p>
+            <label for="txt">
+              <span>お問い合わせ内容</span><br>
+              <textarea name="txt" id="" cols="30" rows="8" wrap="hard"></textarea>
+            </label>
+          </p>
+          <div class="submit">
+            <input type="submit" value="送信" form="contact">
+            <span class="section-header__after"></span>
+          <div/>
+        </form>
       </section>
 
     </main>
