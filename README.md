@@ -31,6 +31,8 @@ git push -u origin main
 
 ## 複数ファイル追加・削除
 ```
-git add `git ls-files --added`
+git add <任意のファイル> <任意のファイル> ... <任意のファイル>
+    or
+fit add -A
 git rm `git ls-files --deleted`
 ```
