@@ -33,6 +33,6 @@ git push -u origin main
 ```
 git add <任意のファイル> <任意のファイル> ... <任意のファイル>
     or
-fit add -A
+git add -A
 git rm `git ls-files --deleted`
 ```
