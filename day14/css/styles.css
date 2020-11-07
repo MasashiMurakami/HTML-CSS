@@ -98,6 +98,11 @@ a {
   float: left;
 }
 
+.gnav .gnav-left li a:hover {
+  color: rgba(255, 255, 255, 0.5);
+  transition-duration: 0.2s;
+}
+
 .gnav .gnav-right {
   position: absolute;
   right: 0px;
@@ -105,6 +110,11 @@ a {
   background-color: #A9D92F;
   display: flex;
   align-items: center;
+}
+
+.gnav .gnav-right:hover {
+  opacity: 0.9;
+  transition-duration: 0.2s;
 }
 
 .gnav .gnav-right li {
@@ -181,10 +191,15 @@ a {
 }
 
 .container .old-info {
-  font-size: 1.6rem;
-  line-height: 1.75;
   margin-top: 50px;
   margin-bottom: 100px;
+}
+
+.container .old-info a {
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1.75;
+  color: #008DD5;
 }
 
 .container .old-info a:hover {
@@ -241,16 +256,20 @@ a {
   border: 1px solid #008DD5;
   border-radius: 5px;
   position: relative;
+  pointer-events: none;
 }
 
 .services-link a {
   font-size: 1.6rem;
+  font-weight: bold;
+  color: #008DD5;
   line-height: 1.75;
   width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  pointer-events: auto;
 }
 
 .services-link .section-header__after {
@@ -265,6 +284,22 @@ a {
   right: 5px;
 }
 
+.services-link:hover {
+  background-color: #008DD5;
+  transition-duration: 0.2s;
+}
+
+.services-link:hover a {
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.services-link:hover span {
+  border-color: #ffffff;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  transition-duration: 0.2s;
+}
 
 /* ==========
  セクション：Data Maniaの3つの強み
@@ -303,6 +338,7 @@ a {
 ========== */
 .voices {
   background-color: #E6F6FF;
+  padding-bottom: 100px;
 }
 
 .voices .voices-container {
@@ -363,9 +399,95 @@ a {
 }
 
 
+/* ==========
+ セクション：お問い合わせ
+========== */
+form {
+  width: 600px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+form p {
+  margin-bottom: 28px;
+}
+
+form span {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+form input, form select, form textarea {
+  font-size: 1.6rem;
+  font-family: inherit;
+  padding: 5px 10px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+form input:focus, form select:focus, form textarea:focus {
+  outline: none;
+}
+
+form input {
+  width: 600px;
+  height: 40px;
+}
 
 
+form select {
+  width: 200px;
+  height: 40px;
+}
 
+form textarea {
+  width: 600px;
+  height: 200px;
+}
+
+.submit {
+  width: 280px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.submit input[type="submit"] {
+  width: 280px;
+  height: 60px;
+  background-color: #ffffff;
+  font-weight: bold;
+}
+
+.submit .section-header__after {
+  width: 0px;
+  height: 0px;
+  font-size: 0rem;
+  border: 5px solid #000000;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+.submit input[type="submit"]:hover {
+  background-color: #000000;
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.submit input[type="submit"]:hover + .section-header__after {
+  border-color: #ffffff;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  transition-duration: 0.2s;
+}
+
+
+/* ==========
+ フッター
+========== */
 .fnav {
   clear: both;
   display: flex;
