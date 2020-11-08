@@ -1,4 +1,13 @@
 /* ==========
+ 共通部分
+========== */
+.common-inner {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+
+/* ==========
  ヘッダー 
 ========== */
 .page-header__inner {
@@ -146,4 +155,45 @@
 
 .header-navigation__contact a:hover:after {
   opacity: 0.3;
+}
+
+
+/* ==========
+ フッター
+========== */
+.page-footer {
+  padding: 50px 0;
+  background-color: #008dd5;
+}
+
+.page-footer__nav {
+  display: flex;
+}
+
+.page-footer__nav .footer-nav-block:not(:last-child) {
+  margin-right: 100px;
+}
+
+.footer-nav-block__category {
+  margin-bottom: 40px;
+  font-size: 1.4rem;
+  line-height: 1.0;
+  color: #ffffff;
+}
+
+.footer-nav-block__list {
+  font-size: 1.4rem;
+  line-height: 1.0;
+}
+
+.footer-nav-block__list li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.footer-nav-block__list li a {
+  color: #ffffff;
+}
+
+.footer-nav-block__list li a:hover {
+  text-decoration: underline;
 }
