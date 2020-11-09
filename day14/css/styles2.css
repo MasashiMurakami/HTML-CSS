@@ -6,6 +6,129 @@
   margin: 0 auto;
 }
 
+.section {
+  padding: 100px 0;
+}
+
+/* セクションタイトル  */
+.section__title {
+  margin-bottom: 50px;
+  font-size: 3.2rem;
+  line-height: 1.0;
+  /* span要素がinline-blockになっているのでspanにmargin: 0 autoは適用できない */
+  /* そのため、親要素であるh2にtext-align: centerを適用する */
+  text-align: center;
+}
+
+/* 三角形 */
+.section__title span {
+  /* 文字数に依って横幅が変化するので幅指定せずに、inline-blockで可変にする */
+  display: inline-block;
+  padding: 10px 22px;
+  position: relative;
+}
+
+.section__title span::before, .section__title span::after {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  z-index: 1;
+}
+
+.section__title span::before {
+  top: 0;
+  left: 0;
+  /* 右下に向かって(135deg)グラデーション(linear-gradient)する */
+  /* 開始位置(0%)から50%までは青色、50%から終了位置(100%)までは透明 */
+  background: linear-gradient(135deg, #008dd5 0%, #008dd5 50%, transparent 50%, transparent 100%);
+}
+
+.section__title span::after {
+  right: 0;
+  bottom: 0;
+  /* 右下に向かって(135deg)グラデーション(linear-gradient)する */
+  /* 開始位置(0%)から50%までは透明、50%から終了位置(100%)までは青色 */
+  background: linear-gradient(135deg, transparent 0%, transparent 50%, #008dd5 50%, #008dd5 100%);
+}
+
+/* リンクボタン */
+.primary-button {
+  /* 文字要素を上下左右方向に中央揃え */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* 最小幅を設定し、長い文字列が入っても対応可能にする */
+  min-width: 280px;
+  /* 中身が長くなっても左右の余白20pxは取れるようにする */
+  padding: 0 20px;
+  box-sizing: border-box;
+
+  height: 60px;
+  font-size: 1.6rem;
+  color: #008dd5;
+  background-color: #ffffff;
+  border: 1px solid #008dd5;
+  border-radius: 4px;
+  position: relative;
+  /* 変化の度合いと項目 */
+  transition: 0.2s ease 0s;
+  transition-property: background-color, color;
+}
+
+/* リンクの三角形 */
+.primary-button::before, .primary-button::after {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  z-index: 1;
+  /* 変化の度合いと項目 */
+  transition: opacity 0.2s ease 0s;
+}
+
+.primary-button::before {
+  background: linear-gradient(135deg, transparent 0%, transparent 50%, #008dd5 50%, #008dd5 100%);
+  opacity: 1;
+}
+
+.primary-button::after {
+  background: linear-gradient(135deg, transparent 0%, transparent 50%, #fff 50%, #fff 100%);
+  opacity: 0;
+}
+
+.primary-button:hover {
+  background-color: #008dd5;
+  color: #fff;
+}
+
+/* hoverした際に青色三角のbefore疑似要素の不透明度を0にする（透明になる） */
+.primary-button:hover::before {
+  opacity: 0;
+}
+
+/* hoverした際に白色三角のafter疑似要素の不透明度を1にする（表示される） */
+.primary-button:hover::after {
+  opacity: 1;
+}
+
+.primary-button--monochrome {
+  color: #333333;
+  border-color: #333333;
+}
+
+.primary-button--monochrome:hover {
+  background-color: #333333;
+}
+
+.primary-button--monochrome::before {
+  background: linear-gradient(135deg, transparent 0%, transparent 50%, #333 50%, #333 100%);
+}
 
 /* ==========
  ヘッダー 
@@ -155,6 +278,288 @@
 
 .header-navigation__contact a:hover:after {
   opacity: 0.3;
+}
+
+
+/* ==========
+ 最新情報
+========== */
+.news-list {
+  width: 640px;
+}
+
+/* 過去の情報リンクがあるときにリンクリスト下にmarginをとる */
+.news-list:not(:last-child) {
+  margin: 0 auto 50px;
+}
+
+.news-list__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.news-list__item a {
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: #000000;
+}
+
+.news-list__item a:hover {
+  text-decoration: underline;
+}
+
+.news-list__item a span {
+  width: 470px;
+}
+
+.news-page-link {
+  text-align: center;
+}
+
+.news-page-link a {
+  font-size: 1.6rem;
+  color: #008dd5;
+}
+
+.news-page-link a:hover {
+  text-decoration: underline;
+}
+
+
+/* ==========
+ サービスの特長
+========== */
+#feature {
+  background-color: #e6f6ff;
+}
+
+.feature-block {
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: center;
+
+  padding: 60px;
+  background-color: #fff;
+
+}
+
+.feature-block__text {
+  width: 460px;
+  margin-right: 60px;
+  font-size: 1.6rem;
+  line-height: 1.75;
+}
+
+.feature-block__button {
+  margin-top: 40px;
+}
+
+.feature-icon-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 360px;
+}
+
+.feature-icon-list__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+/* 最初から3番目までのアイコンにmarginを設定 */
+.feature-icon-list__item:nth-child(-n+3) {
+  margin-bottom: 20px;
+}
+
+/* 4番目（2段目最初）のアイコンにmargin-left:40pxを設定 */
+.feature-icon-list__item:nth-child(4) {
+  margin-left: 40px;
+}
+
+
+/* ==========
+ サービスの特長
+========== */
+.advantage-block {
+  display: flex;
+  align-items: center;
+}
+
+.advantage-block__image {
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.advantage-block__inner {
+  flex: 1;
+}
+
+.advantage-block__title {
+  margin-bottom: 20px;
+  font-size: 2.4rem;
+  line-height: 1.5;
+  border-bottom: 2px solid #008dd5;
+}
+
+.advantage-block__text {
+  font-size: 1.6rem;
+  line-height: 2.0;
+}
+
+/* 見出しの数字 */
+.advantage-list {
+  counter-reset: advantage-counter;
+}
+
+.advantage-list .advantage-block__title::before {
+  counter-increment: advantage-counter;
+  content: counter(advantage-counter) ".";
+}
+
+.advantage-list__item:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+
+/* ==========
+ お客様の声
+========== */
+#client-voice {
+  background-color: #e6f6ff;
+}
+
+.voice-list {
+  padding: 60px;
+  background-color: #fff;
+}
+
+.voice-list::after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+.voice-list__item {
+  width: 400px;
+}
+
+.voice-list__item:nth-child(1), .voice-list__item:nth-child(4) {
+  float: left;
+}
+
+.voice-list__item:nth-child(2), .voice-list__item:nth-child(3) {
+  float: right;
+}
+
+.voice-list__item:nth-child(n+3) {
+  margin-top: 80px;
+}
+
+.voice-block {
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.voice-block__client-image figcaption {
+  /* 高さの最低値 = ( フォントサイズ x 行の高さ x 2行分 ) + ( 上下のpaddingの合計 )  */
+  min-height: calc( ( 1em * 1.75 * 2 ) + ( 28px ) );
+  padding: 14px 20px;
+  box-sizing: border-box;
+  background-color: #008dd5;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: #fff;
+}
+
+.voice-block__message {
+  padding: 20px;
+  font-size: 1.6rem;
+  line-height: 1.75;
+}
+
+
+/* ==========
+ お問い合わせ
+========== */
+.contact-form {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.form-parts {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.form-parts__label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+  line-height: 1.0;
+}
+
+input[type=text], input[type=email] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  font-size: 1.6rem;
+}
+
+.select-wrapper {
+  display: block;
+  width: 200px;
+  height: 40px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.select-wrapper select {
+  width: 100%;
+  height: 100%;
+  padding-left: 10px;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+}
+
+.select-wrapper::after {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 9px;
+  background: url(/images/icon-triangle.png) left top no-repeat;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  z-index: 1;
+  transform: translate(-50%);
+}
+
+textarea {
+  width: 600px;
+  height: 200px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  resize: none;
+}
+
+.contact-form__send-button {
+  margin: 50px auto 0;
 }
 
 
