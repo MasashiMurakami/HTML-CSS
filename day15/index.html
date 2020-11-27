@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+  </head>
+  <body>
+    <header>
+      <div class="header-menu">
+        <div class="header-menu-left">
+          クリ★スタ
+        </div>
+        <div class="header-menu-right">
+          <nav>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Contents</a></li>
+            </ul>
+          <nav/>
+        </div>
+      </div>
+      <div class="catchcopy">
+        <div class="button"><p>Cresta Design.</p></div>
+      </div>
+    </header>
+    
+    <main>
+      <section class="about">
+        <h1 class="section-header">About</h1>
+        <h2 class="txt-header">
+          ミニマルで<br>
+          洗練されたデザインを。
+        </h2>
+        <p class="txt-body">
+          近年、ミニマルなデザインが流行しています。そこで弊社では、クライアント企業様新規サービス等の課題に対してミニマルで洗練されたデザインを実現させることで解決のサポートを致します。もちろん全てのサービスにおいてミニマルなデザインが課題解決になるわけではないので、課題や今後のサービスの展開等しっかりとヒアリングを行なった上でご提案させて頂きます。
+        </p>
+      </section>
+      <section class="service">
+        <h1 class="section-header">Service</h1>
+        <div class="container">
+          <img src="/img/service-image@2x.jpg" alt="camera.jpg">
+          <div>
+            <h2 class="txt-header">
+              リリース時のサポートで<br>
+              サービスのブランディングを
+            </h2>
+            <p class="txt-body">
+              弊社では、リリース時もサポートさせて頂きます。プレスリリース用のサイトや動画制作を通して、サービスのブランディングを行わせて頂きます。
+            </p>
+          </div>
+        </div>
+        <div class="container">
+          <img src="/img/service-image02@2x.jpg" alt="phone.jpg">
+          <div>
+            <h2 class="txt-header">
+              リリース時のサポートで<br>
+              効率を最大化させる
+            </h2>
+            <p class="txt-body">
+              弊社では、リリース後もサポートさせて頂きます。サービスはリリース後に様々な課題にぶつかります。そこでクライアント様と一緒に改善を行うことで、デザインの効果を最大化させます。
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="news">
+        <h1 class="section-header">News</h1>
+        <div class="container">
+          <figure class="news-figure">
+            <img src="/img/card-image1@2x.jpg" alt="card1">
+            <figcaption class="news-figure-caption">
+              新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。
+            </figcaption>
+          </figure>
+          <figure class="news-figure">
+            <img src="/img/card-image2@2x.jpg" alt="card1">
+            <figcaption class="news-figure-caption">
+              新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。
+            </figcaption>
+          </figure>
+          <figure class="news-figure">
+            <img src="/img/card-image3@2x.jpg" alt="card1">
+            <figcaption class="news-figure-caption">
+              新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="form">
+        <h1 class="section-header form-header">お問い合わせ</h1>
+        <form action="conntact.php" method="POST">
+          <p>
+            <label for="name"><span>担当者名</span><br>
+              <input type="text" name="name">
+            </label>
+          </p>
+          <p>
+            <label for="tel"><span>電話番号</span><br>
+              <input type="tel" name="tel">
+            </label>
+          </p>
+          <p>
+            <label for="mail"><span>メールアドレス</span><br>
+              <input type="email" name="mail">
+            </label>
+          </p>
+          <p>
+            <label for="message"><span>お問い合わせ内容</span><br>
+              <textarea name="message" id="" cols="80" rows="5"></textarea>
+            </label>
+          </p>
+          <p>
+            <input type="submit" value="送信" form="contact">
+          </p>
+        </form>
+      </section>
+    </main>
+    
+    <footer>
+      <p class="footer-body">©︎crest.design all rights reserved</p>
+    </footer>
+  </body>
+</html>
