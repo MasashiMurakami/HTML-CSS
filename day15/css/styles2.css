@@ -1,0 +1,312 @@
+/* style.css */
+
+/* ------------------ */
+/* base */
+/* ------------------ */
+html{
+  font-size: 62.5%;
+}
+body{
+  color:#141414;
+  font-size:1.4rem;
+  line-height:1.8;
+  letter-spacing: 0.05em;
+  
+  font-family: 'Roboto', sans-serif,'Noto Sans JP', sans-serif;
+}
+.noscroll{
+  overflow: hidden;
+  }
+img{
+  width:100%;
+  vertical-align: bottom;
+}
+a{
+  text-decoration: none;
+  color:#fff;
+}
+.section-title{
+  font-size: 3.6rem;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.05em;
+  margin-bottom: 70px;
+}
+h3{
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height:2;
+  letter-spacing: 0.1em;
+  margin-bottom: 40px;
+}
+.section-wrapper{
+  padding:100px 10% 50px; 
+  
+}
+/* ------------------ */
+/* header */
+/* ------------------ */
+.header{
+  background-color: #1B1310;
+  color: #fff;
+  height:74px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 120px;
+  border-bottom:1px solid #fff;
+}
+.nav-list{
+  /* navの横並び */
+  display: flex;
+}
+.nav-item{
+  /* メニューの右側に余白 */
+  margin-right: 55px;
+}
+.burger-btn{
+  display: none;
+}
+/* ------------------ */
+/* fv */
+/* ------------------ */
+.fv{
+  /* 画面の高さの90に指定 */
+  height:90vh;
+  /* 背景画像の設定 */
+  background-image: url(https://drive.google.com/uc?export=view&id=1KiBAmJAbba1BglsHGnlKWEKzj6wCL9kq);
+  background-size: cover;
+  background-position: center;
+  /* メインコピーの上下左右中央寄せ */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main-copy{
+   font-size: 5rem;
+   color: #fff;
+   font-weight: bold;
+   border:2px solid #fff;
+   padding: 34px 42px;
+}
+
+/* ------------------ */
+/* about */
+/* ------------------ */
+
+/* ------------------ */
+/* service */
+/* ------------------ */
+.text-wrapper_service,.img-wrapper_service{
+  max-width: 480px;
+}
+.content-inner{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.reverse{
+  margin-top: 50px;
+  flex-direction: row-reverse;
+}
+
+/* ------------------ */
+/* news */
+/* ------------------ */
+.card-list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-item{
+  max-width: 320px;
+  box-shadow: 0px 0px 6px rgba(27, 19, 16, 0.4);
+  margin-right:10px;
+}
+.text_news{
+  color:#141414;
+  padding: 33px 25px;
+}
+
+/* ------------------ */
+/* contact */
+/* ------------------ */
+.form{
+  max-width: 700px;
+  margin: 0 auto;
+}
+input,textarea{
+  border: 1px solid #141414;
+  padding: 10px;
+}
+.form-part{
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+label{
+  margin-bottom: 5px;
+}
+#input-subject,textarea{
+  line-height: 2;
+  font-size: 1.6rem;
+}
+textarea{
+  resize: none;
+  height: 171px;
+}
+.form-send{
+  text-align: center;
+  margin-top: 50px;
+}
+.form-btn{
+  display: inline-block;
+  width: 235px;
+  padding: 20px 97px;
+  border-radius: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  background-color: #1B1310;
+  box-shadow: 0px 0px 6px #1B1310;
+}
+
+/* ------------------ */
+/* footer */
+/* ------------------ */
+footer{
+  background-color: #1B1310;
+  height: 80px;
+}
+small{
+  display: block;
+  text-align: center;
+  color: #fff;
+  padding-top: 30px;
+}
+
+@media screen and (max-width:768px){
+/* ----------------------- */
+/* base_sp
+/* ----------------------- */
+
+h3{
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+.section-wrapper{
+  padding:100px 5% 50px;  
+}
+/* ------------------ */
+/* humberger-menu */
+/* ------------------ */
+.header{
+  padding: 0 5%;
+}
+.burger-btn{
+  display: block;
+  width: 39px;
+  height: 39px;
+  position: relative;
+  z-index: 3;
+/*   codepenの挙動のため */
+  background-color:transparent;
+  border:none;
+  }
+  .bar{
+  width: 20px;
+  height: 1px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  }
+  .bar_top{
+  top: 10px;
+  }
+  .bar_mid{
+  top: 50%;
+  transform: translate(-50%,-50%);
+  }
+  .bar_bottom{
+  bottom: 10px;
+  }
+  .burger-btn.close .bar_top{
+  transform: translate(-50%,10px) rotate(45deg);
+  transition: transform .3s;
+  }
+  .burger-btn.close .bar_mid{
+  opacity: 0;
+  transition: opacity .3s;
+  }
+  .burger-btn.close .bar_bottom{
+  transform: translate(-50%,-8px) rotate(-45deg);
+  transition: transform .3s;
+  }
+  .nav-wrapper{
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;/*キービジュアルと.btn_triggerとの重なりの前後関係を調整*/
+   }
+   .header-nav{
+    width: 100%;
+    height: 100%;
+    background-color:#1B1310;
+    z-index: 2;
+  }
+   .header-nav .nav-list{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+  }
+  .header-nav .nav-item{
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+/* ------------------ */
+/* fv */
+/* ------------------ */
+.main-copy{
+  font-size: 3rem;
+}
+
+/* ------------------ */
+/* service */
+/* ------------------ */
+ .content-inner{
+  flex-direction:column;
+  margin:50px auto;
+}
+.img-wrapper_service{
+  margin-top: 40px;
+}
+.img-wrapper_service img{
+  height:150px;
+  object-fit:cover;
+}
+ 
+/* ------------------ */
+/* news */
+/* ------------------ */
+.card-list{
+  flex-direction: column;
+}
+.card-item{
+  margin: 50px 0 0;
+}
+.card-list li:first-child{
+  margin-top: 0;
+}
+}

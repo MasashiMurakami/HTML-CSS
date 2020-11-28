@@ -9,16 +9,8 @@ main {
   margin: 0 auto;
 }
 
-h1, h2, p, figure {
-  margin: 0;
-}
-
 a {
   text-decoration: none;
-  color: #000000;
-  font-size: 1.0rem;
-  font-style: normal;
-  font-weight: normal;
 }
 
 
