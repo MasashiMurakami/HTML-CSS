@@ -1,0 +1,248 @@
+@media all and (max-width: 767px) {
+  .header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+
+  .header__wrap {
+    padding-left: 10px;
+    padding-right: 23px;
+    height: 50px;
+  }
+
+  .header__logo {
+    width: 135px;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__navsp {
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 20px;
+  }
+
+  .header__navsp-line {
+    position: absolute;
+    left: 2px;
+    width: 16px;
+    height: 1px;
+    background-color: #006a80;
+  }
+
+  .header__navsp-line--1 {
+    top: 3px;
+  }
+
+  .header__navsp-line--2 {
+    top: 9px;
+  }
+
+  .header__navsp-line--3 {
+    top: 15px;
+  }
+
+
+  .mv {
+    width: 100%;
+    height: 525px;
+    /* 本来はSP用の解像度を用意して指定する */
+    background-image: url(/images/main_visual.jpg);
+  }
+
+  .mv__texts {
+    position: absolute;
+    top: 90px;
+    left: 27px;
+    color: #ffffff;
+  }
+
+  .mv__texts-title {
+    font-size: 2.0rem;
+  }
+
+  .mv__texts-p {
+    padding-top: 20px;
+    padding-left: 3px;
+    font-size: 1.1rem;
+    line-height: 2.0;
+  }
+
+
+  .news {
+    padding: 50px 10px 57px 10px;
+  }
+
+  .news__title {
+    font-size: 1.9rem;
+    text-align: center;
+  }
+
+  .news__body {
+    padding-top: 14px;
+  }
+
+  .news__body-item {
+    padding-top: 7px;
+    font-size: 1.0rem;
+    line-height: 1.0;
+  }
+
+  .news__body-item-date {
+    padding-right: 21px;
+  }
+
+
+  .message {
+    padding-top: 51px 0 50px;
+  }
+
+  .message__body-title {
+    font-size: 2.0rem;
+  }
+
+  .message__body-p {
+    padding-top: 15px;
+    font-size: 1.1rem;
+  }
+
+
+  .about {
+    padding-top: 58px;
+  }
+
+  .about__title {
+    padding-bottom: 24px;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .about__body-item:nth-child(odd), .about__body-item:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .about__body-item-img {
+    width: 100%;
+  }
+
+  .about__body-item-texts {
+    padding: 25px 10px 48px 10px;
+    width: 100%;
+  }
+
+  .about__body-item-texts-copy {
+    font-size: 1.6rem;
+  }
+
+  .about__body-item-texts-p {
+    padding-top: 10px;
+    font-size: 1.0rem;
+  }
+
+  .about__body-more {
+    padding-top: 0;
+  }
+
+  .link-more {
+    width: 250px;
+    height: 34px;
+    font-size: 1.1rem;
+  }
+
+  .interview {
+    padding-top: 58px;
+  }
+
+  .interview__title {
+    padding-bottom: 38px;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .interview__body {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .interview__body-item {
+    margin-left: 0;
+    width: calc(50% - 1px);
+  }
+
+  .interview__body-item-texts {
+    padding: 15px 10px 27px 10px;
+  }
+
+  .interview__body-item-texts-title {
+    font-size: 1.1rem;
+  }
+
+  .interview__body-item-texts-p {
+    padding-top: 4px;
+    font-size: 1.0rem;
+  }
+
+
+  .gallery {
+    padding: 28px 10px 0;
+  }
+
+  .gallery__body {
+    padding-top: 35px;
+  }
+
+  .gallery__body-item {
+    padding-top: 3px;
+    width: calc(33% - 2px);
+  }
+
+  .gallery__body-more {
+    padding-top: 38px;
+  }
+
+
+  .contact {
+    padding-top: 60px;
+  }
+
+  .contact__body a {
+    height: 115px;
+    background-image: url(/images/main_visual.jpg);
+  }
+
+  .contact__body-title-ja {
+    padding-top: 10px;
+    font-size: 1.0rem;
+  }
+
+
+  .footer__wrap {
+    flex-direction: column;
+    justify-content: center;
+    height: 68px;
+  }
+
+  .footer__nav-item {
+    padding-right: 8px;
+  }
+
+  .footer__nav-item:last-child {
+    padding-right: 0px;
+  }
+
+  .footer__nav-item a {
+    font-size: 1.0rem;
+  }
+
+  .footer__cr {
+    padding-top: 12px;
+    font-size: 1.0rem;
+  }
+
+}
