@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><HTML-19></HTML-19></title>
+    <title>HTML-19</title>
     <link rel="stylesheet" type="text/css" href="./css/html5reset-1.6.1.css">
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
   </head>
@@ -27,63 +27,76 @@
     </header>
     
     <main>
-      <section class="concept">
-        <h1 class="section-header">Concept</h1>
+      <div class="concept">
+        <section class="section-concept">
+          <h1 class="section-header">Concept</h1>
+          <p class="section-body">
+            私たちShiroは、白いお花だけを取り扱うフラワーショップです。<br>
+            色とりどりの花束も素敵だけれど、洗練された「白」の美しさを感じてほしい。<br>「白」に対する愛から生まれた静寂な時間が流れる店へ、ぜひお越しください。
+          </p>
+        </section>
         <div class="section-line"></div>
-        <p class="section-body">
-          私たちShiroは、白いお花だけを取り扱うフラワーショップです。<br>
-          色とりどりの花束も素敵だけれど、洗練された「白」の美しさを感じてほしい。<br>「白」に対する愛から生まれた静寂な時間が流れる店へ、ぜひお越しください。
-        </p>
-        <img src="/images/concept.png" alt="concept.png" class="concept-img">
-      </section>
+        <div class="section-rect concept-rect"></div>
+        <div class="concept-img-container"></div>
+      </div>
 
-      <section class="work">
-        <h1 class="section-header">Work</h1>
-        <div class="section-line"></div>
-        <p class="section-body">
-          オーダーメイドでのブーケ・アレンジメントのデザインのほか、<br>
-          ウェディングやイベントの装花なども行なっています。<br>
-          一人一人にあったご提案をさせていただきます。
-        </p>
+      <div class="work">
+        <section class="section-work">
+          <h1 class="section-header">Work</h1>
+          <div class="section-line"></div>
+          <p class="section-body">
+            オーダーメイドでのブーケ・アレンジメントのデザインのほか、<br>
+            ウェディングやイベントの装花なども行なっています。<br>
+            一人一人にあったご提案をさせていただきます。
+          </p>
+        </section>
         <div class="container">
-          <div class="work-contents">
-            <img src="/images/work_gift.png" alt="work_gift.png" class="work-img">
-            <h2 class="contents-header">Gift</h2>
-            <p class="contents-body">
-              花束をお送りしたいお相手、伝えたいお気持ちに合わせたプレゼント用花束のアレンジメントをさせていただきます。花言葉などの豆知識もお伝えします。
-            </p>
+          <div class="contents__left">
+            <div class="work-contents">
+              <img src="/images/work_gift.png" alt="work_gift.png" class="work-img">
+              <h2 class="contents-header">Gift</h2>
+              <p class="contents-body">
+                花束をお送りしたいお相手、伝えたいお気持ちに合わせたプレゼント用花束のアレンジメントをさせていただきます。花言葉などの豆知識もお伝えします。
+              </p>
+            </div>
+            <div class="work-contents">
+              <img src="/images/work_wedding.png" alt="work_wedding.png" class="work-img">
+              <h2 class="contents-header">Wedding</h2>
+              <p class="contents-body">
+                ウエディングドレスに合わせたブーケや式場の雰囲気に合う装花をご提案。お打ち合わせの流れや回数、費用などにつきましてはお問い合わせください。
+              </p>
+            </div>
           </div>
-          <div class="work-contents">
-            <img src="/images/work_wedding.png" alt="work_wedding.png" class="work-img">
-            <h2 class="contents-header">Wedding</h2>
-            <p class="contents-body">
-              ウエディングドレスに合わせたブーケや式場の雰囲気に合う装花をご提案。お打ち合わせの流れや回数、費用などにつきましてはお問い合わせください。
-            </p>
-          </div>
-          <div class="work-contents">
-            <img src="/images/work_decoretion.png" alt="work_decoration.png" class="work-img">
-            <h2 class="contents-header">Decoration</h2>
-            <p class="contents-body">
-              お写真を彩るお花を一輪から販売。一定期間のご契約で定期的にご自宅へ配送させていただくことも可能です。
-            </p>
-          </div>
-          <div class="work-contents">
-            <img src="/images/work_for_yourself.png" alt="work_for_yourself.png" class="work-img">
-            <h2 class="contents-header">For yourself</h2>
-            <p class="contents-body">
-              お部屋の雰囲気やライフスタイルをお聞きしてご自宅用の花束をご提案し、少しでも長く咲かせるコツもお教えします。花束に合った花瓶をご提案することも可能です。
-            </p>
+          <div class="contents__right">
+            <div class="work-contents work-contents__03">
+              <img src="/images/work_decoretion.png" alt="work_decoration.png" class="work-img">
+              <h2 class="contents-header">Decoration</h2>
+              <p class="contents-body">
+                お写真を彩るお花を一輪から販売。一定期間のご契約で定期的にご自宅へ配送させていただくことも可能です。
+              </p>
+            </div>
+            <div class="work-contents work-contents__04">
+              <img src="/images/work_for_yourself.png" alt="work_for_yourself.png" class="work-img">
+              <h2 class="contents-header">For yourself</h2>
+              <p class="contents-body">
+                お部屋の雰囲気やライフスタイルをお聞きしてご自宅用の花束をご提案し、少しでも長く咲かせるコツもお教えします。花束に合った花瓶をご提案することも可能です。
+              </p>
+            </div>
           </div>
         </div>
-      </section>
+        <div class="blank"></div>
+      </div>
 
-      <section class="florist">
-        <h1 class="section-header">Florist</h1>
-        <div class="section-line"></div>
-        <p class="section-body">
-          Shiro専属のフローリストたちをご紹介。<br>
-          得意の分野であなたのオーダーを最大限に叶えます。
-        </p>
+      <div class="florist">
+        <section class="section-florist">
+          <h1 class="section-header">Florist</h1>
+          <div class="section-line"></div>
+          <p class="section-body">
+            Shiro専属のフローリストたちをご紹介。<br>
+            得意の分野であなたのオーダーを最大限に叶えます。
+          </p>
+        </section>
+        <div class="section-rect florist-rect"></div>
         <div class="container">
           <div class="contents florist-contents">
             <img src="images/florist_shiyu.png" alt="florist_shiyu.png" class="florist-img">
@@ -107,23 +120,28 @@
             </p>
           </div>
         </div>
-      </section>
+        <div class="blank"></div>
+      </div>
 
-      <section class="shop">
-        <h1 class="section-header">Shop information</h1>
-        <div class="section-line"></div>
-        <p class="section-body">
-          Shiroの店舗情報をご紹介します。
-        </p>
+      <div class="shop">
+        <section class="section-shop">
+          <h1 class="section-header">Shop information</h1>
+          <div class="section-line"></div>
+          <p class="section-body">
+            Shiroの店舗情報をご紹介します。
+          </p>
+        </section>
         <div class="container">
-          <img src="images/shop_information.png" alt="shop_information.png" class="shop-img">
+          <div class="shop-img-inner">
+            <img src="images/shop_information.png" alt="shop_information.png" class="shop-img">
+          </div>
           <div class="shop-info">
             <div class="address">
               <div class="address-header">住所</div>
-              <div class="adress-body">
+              <div class="address-body">
                 〒810-0001<br>
                 福岡県福岡市中央区天神0-0-0
-                </div>
+              </div>
             </div>
             <div class="tel">
               <div class="tel-header">電話番号</div>
@@ -145,23 +163,28 @@
             </div>
           </div>
         </div>
-      </section>
+        <div class="blank"></div>
+      </div>
 
-      <section class="contact">
-        <h1 class="section-header">Contact us</h1>
-        <div class="section-line"></div>
-        <p class="section-body">
-          イベントや結婚式でご利用する装花のご相談や、<br>
-          フラワーアレンジメントのご予約などはこちらからお問い合わせください。
-        </p>
-        <form action="contact.php">
-          <div class="mail_mark"></div>
-          <input type="submit" value="お問い合わせ">
+      <div class="contact">
+        <section class="section-contact">
+          <h1 class="section-header">Contact us</h1>
+          <div class="section-line"></div>
+          <p class="section-body">
+            イベントや結婚式でご利用する装花のご相談や、<br>
+            フラワーアレンジメントのご予約などはこちらからお問い合わせください。
+          </p>
+        </section>
+        <form class="form" action="contact.php">
+          
+            <div class="mail_mark"></div>
+            <input class="form-button" type="submit" value="お問い合わせ">
+          
         </form>
-      </section>
+      </div>
     </main>
     
-    <footer>
+    <footer class="footer">
       <small>Copyright * Shiro All Rights Reserved.</small>
     </footer>
   </body>
