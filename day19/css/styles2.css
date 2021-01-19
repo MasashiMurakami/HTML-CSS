@@ -1,0 +1,351 @@
+/* Common */
+@charset "UTF-8";
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: poppins, sans-serif;
+  /* font-size: 62.5%; */
+  color: #2b2b2b;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  text-decoration: none;
+}
+
+section {
+  text-align: center;
+}
+
+.u-content-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.u-heading {
+  position: relative;
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  font-size: 3.6rem;
+  letter-spacing: 2px;
+}
+
+.u-heading::after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 40px;
+  height: 1px;
+  background: #2b2b2b;
+  transform: translateX(-50%);
+}
+
+.u-text {
+  padding-bottom: 40px;
+  line-height: 1.8;
+  letter-spacing: 1.4px;
+  font-size: 1.6rem;
+}
+
+
+
+/* Header */
+.header {
+  position: relative;
+  width: 100%;
+  height: 620px;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+              url(/images/header.png);
+  background-size: cover;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Header Menu */
+.header__nav {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  height: 640px;
+}
+
+.header__nav__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav__logo {
+  font-size: 3.6rem;
+}
+
+.hamburger-menu {
+  position: relative;
+  width: 32px;
+  height: 64px;
+  cursor: pointer;
+}
+
+.hamburger-menu__line,
+.hamburger-menu__line::before,
+.hamburger-menu__line::after {
+  position: absolute;
+  left: 0;
+  content: '';
+  display: block;
+  width: 32px;
+  height: 1px;
+  background: #ffffff;
+}
+
+.hamburger-menu__line {
+  top: 50%;
+}
+
+.hamburger-menu__line::before {
+  top: 10px;
+}
+
+.hamburger-menu__line::after {
+  bottom: 10px;
+}
+
+/* Haader Logo */
+.header__title {
+  padding-top: 240px;
+  font-size: 12.0rem;
+  font-weight: normal;
+}
+
+.header__title__sub {
+  font-size: 1.6rem;
+  word-spacing: 4px;
+}
+
+.header__title__sub::before,
+.header__title__sub::after {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 2px;
+  margin: 0 8px;
+  background: #ffffff;
+  vertical-align: middle;
+}
+
+
+/* Concept */
+.concept {
+  width: 100%;
+  padding: 80px 0;
+  background: linear-gradient(#fff 70%, #ededed 30%);
+}
+
+.concept__image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+
+
+/* Work */
+.work {
+  width: 100%;
+  padding: 80px 0;
+}
+
+.work__contents {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-between;
+  height: 1680px;
+}
+
+.work__content {
+  width: 420px;
+  padding-bottom: 80px;
+  text-align: left;
+  line-height: 1.8;
+}
+
+.work__content:nth-of-type(1) {
+  order: 1;
+}
+
+.work__content:nth-of-type(2) {
+  order: 3;
+  margin-top: 120px;
+}
+
+.work__content:nth-of-type(3) {
+  order: 2;
+}
+
+.work__content:nth-of-type(4) {
+  order: 4;
+}
+
+.work__content__image {
+  width: 100%;
+  /* object-fit: cover; */
+  margin-bottom: 16px;
+}
+
+.work__content__heading {
+  font-size: 2.4rem;
+}
+
+.work__content__txt {
+  font-size: 1.6rem;
+  letter-spacing: 1.5px;
+}
+
+
+
+/* Florist */
+.florist {
+  width: 100%;
+  padding: 80px 0;
+  background: linear-gradient(#ededed 60%, #fff 40%);
+}
+
+.florist__persons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.florist__person {
+  width: 300px;
+  padding-bottom: 40px;
+  text-align: left;
+  line-height: 1.8;
+}
+
+.florist__person__image {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.florist__person__heading {
+  font-size: 2.4rem;
+}
+
+.florist__person__desc {
+  scroll-snap-stop: 1.6rem;
+  letter-spacing: 1.5px;
+}
+
+
+
+/* Shop Information */
+.shopInformation {
+  width: 100%;
+  padding: 80px 0;
+}
+
+.shopInformation__contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shopInformation__image {
+  width: 50%;
+}
+
+.shopInformation__table {
+  width: 45%;
+  border-spacing: 16px;
+  text-align: left;
+  letter-spacing: 1.5px;
+  line-height: 2.0;
+  font-size: 1.6rem;
+}
+
+tbody {
+  vertical-align: inherit;
+}
+
+.shopInformation__table__heading {
+  width: 25%;
+  font-weight: normal;
+  border-right: 1px solid #a0a0a0;
+}
+
+
+/* Contact us */
+.contact {
+  width: 100%;
+  padding: 80px 0;
+  background: linear-gradient(rgba(255,255,255, 0.6), rgba(255,255,255, 0.6)),
+              url(/images/contact_us.png);
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  color: #2b2b2b;
+}
+
+.btn__contact {
+  position: relative;
+  display: inline-block;
+  width: 360px;
+  height: 80px;
+  padding-left: 40px;
+  line-height: 80px;
+  letter-spacing: 2px;
+  border: 1px solid #a0a0a0;
+  background: #fff;
+  font-size: 2.0rem;
+}
+
+.btn__contact::before, .btn__contact::after {
+  content: '';
+  position: absolute;
+  border-radius: 2px;
+}
+
+.btn__contact::before {
+  top: 30px;
+  left: 85px;
+  width: 30px;
+  height: 20px;
+  border: 1px solid #2b2b2b;
+}
+
+.btn__contact::after {
+  top: 21px;
+  left: 90px;
+  width: 20px;
+  height: 20px;
+  border-right: 1px solid #2b2b2b;
+  border-bottom: 1px solid #2b2b2b;
+  transform: rotate(45deg);
+}
+
+
+
+/* Footer */
+.footer {
+  width: 100%;
+  text-align: center;
+}
+
+.footer__copyright {
+  font-size: 1.6rem;
+  line-height: 40px;
+  letter-spacing: 1.4px;
+}
