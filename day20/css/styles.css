@@ -1,0 +1,402 @@
+/* Common */
+@charset "UTF-8";
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: Lato, 游ゴシック体, sans-serif;
+  color: #2b2b2b;
+}
+
+h1, h2, h3, p, figure {
+  margin: 0;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+p {
+  color: #505050;
+}
+
+a {
+  text-decoration: none;
+  /* color: #fff; */
+}
+
+li {
+  list-style: none;
+}
+
+section {
+  text-align: center;
+}
+
+.u-content-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.u-content-header {
+  padding-top: 100px;
+  font-size: 4.0rem;
+  line-height: 1.2;
+  color: #A26C54;
+}
+
+.u-content-desc {
+  padding: 50px 0;
+  width: 342px;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  line-height: 1.7;
+}
+
+
+
+/* Header */
+.header {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav__head {
+  padding: 13px 30px;
+  font-size: 4.0rem;
+  line-height: 1.2;
+}
+
+.header__nav__link {
+  display: flex;
+  padding-right: 41px;
+}
+
+.header__nav__link__body {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  margin-left: 38px;
+  padding-bottom: 6.5px;
+}
+
+.header__nav__link__body:hover {
+  border-bottom: 2px solid #A26C54;
+}
+
+.header__nav__link__body > a {
+  color: #2b2b2b;
+  /* text-decoration: underline; */
+}
+
+
+.header__logo {
+  width: 100%;
+  padding-top: 15%;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+              url(/img/keyboard-338502_1280.png);
+  background-size: cover;
+  object-fit: cover;
+  text-align: center;
+}
+
+.header__logo > h1 {
+  /* padding-top: 137px; */
+  font-size: 6.0rem;
+  line-height: 1.2;
+  color: #fff;  
+}
+
+.header__logo__sub {
+  width: 340px;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  line-height: 1.7;
+  color: #fff;
+  padding-top: 66px;
+}
+
+.header__link__wrapper {
+  /* width: 170px; */
+  height: 52px;
+  margin: 0 auto;
+  padding-top: 66px;
+  padding-bottom: 158px;
+}
+
+.header__link {
+  padding: 15px 20px;
+  background-color: #A26C54;
+  font-size: 2.2rem;
+  line-height: 1.7;
+  border-radius: 10px;
+  color: #fff;
+}
+
+
+
+/* About */
+.about {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.about__contents {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__content__image {
+  width: 570px;
+  height: 450px;
+  background-color: #cccccc;
+}
+
+.about__content__wrapper {
+  width: 570px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.about__content__header {
+  font-size: 3.0rem;
+  /* line-height: 1.7; */
+  padding-bottom: 25px;
+  color: #A26C54;
+}
+
+.about__content__body {
+  font-size: 1.8rem;
+  line-height: 1.7;
+  padding-bottom: 40px;
+}
+
+
+
+/* Works */
+.works {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.works__contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.works__content {
+  width: 370px;
+  padding-bottom: 20px;
+}
+
+.works__image {
+  width: 370px;
+  height: 280px;
+  background-color: #CCCCCC;
+}
+
+figcaption {
+  height: 90px;
+  border: 1px solid #cccccc;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.8rem;
+  line-height: 1.7;
+}
+
+
+
+/* Service */
+.service {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.service__contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.service__content {
+  width: 370px;
+  height: 250px;
+  border: 1px solid #cccccc;
+}
+
+.service__header {
+  font-size: 3.0rem;
+  /* line-height: 1.7; */
+  padding: 25px 0;
+  color: #A26C54;
+}
+
+.service__body {
+  font-size: 1.8rem;
+  line-height: 1.7;
+  text-align: left;
+  padding: 0 10px 40px 10px;
+}
+
+
+
+/* My skills */
+.skills {
+ width: 100%;
+ margin: 0 auto;
+ padding-top: 100px;
+}
+
+.skills__wrapper {
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+              url(/img/macbook-336692_1280.png);
+  background-size: cover;
+  /* padding-top: 15%; */
+}
+
+.skills__header {
+  width: 1170px;
+  margin: 0 auto;
+  text-align: left;
+  padding-top: 30px;
+  font-size: 6.0rem;
+  line-height: 1.2;
+  color: #FFFFFF;
+}
+
+.skills__contents {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 3px;
+  /* padding-left: 55px; */
+  padding-bottom: 60px;
+}
+
+.skills__content {
+  width: 342px;
+  padding-top: 35px;
+  padding-right: 58px;
+  text-align: left;
+}
+
+.skills__content__header {
+  font-size: 3.0rem;
+  line-height: 1.2;
+  color: #FFFFFF;
+}
+
+.skills__content__body {
+  padding-top: 24px;
+  color: #FFFFFF;
+  font-size: 1.8rem;
+  line-height: 1.7;
+}
+
+
+
+/* Contact */
+.contact {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contact__form {
+  width: 570px;
+  margin: 0 auto;
+  text-align: left;
+  padding-bottom: 85px;
+}
+
+.contact__form__header {
+  font-size: 1.8rem;
+  line-height: 1.7;
+  display: inline-block;
+  padding: 17px 0 10px;
+}
+
+form input {
+  width: 570px;
+  height: 40px;
+  padding: 10px;
+  font-size: 1.8rem;
+  line-height: 1.7;
+}
+
+form textarea {
+  width: 570px;
+  height: 222px;
+  font-size: 1.8rem;
+  line-height: 1.7;
+  resize: none;
+  padding: 5px;
+}
+
+.submit-wrapper {
+  width: 170px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.submit {
+  width: 170px;
+  height: 52px;
+  font-size: 2.2rem;
+  line-height: 1.2;
+  color: #fff;
+  background-color: #A26C54;
+  border-radius: 10px;
+}
+
+
+
+/* Footer */
+.footer {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #C6A394;
+}
+
+.footer-wrapper {
+  width: 400px;
+  margin: 0 auto;
+  padding: 40px 0 43px;
+  text-align: center;
+}
+
+.footer__nav {
+  text-align: center;
+}
+
+.footer__nav__list {
+  width: 360px;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 21px;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.footer__body {
+  font-size: 18px;
+  line-height: 1.2;
+  color: #fff;
+}
