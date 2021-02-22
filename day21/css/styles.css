@@ -94,7 +94,8 @@ a {
 
 .trasform {
   background-color: #282F35;
-  padding-top: 0px;
+  /* padding-top: 0px; */
+  transition: 0.3s;
 }
 
 .copytext_wrapper {
