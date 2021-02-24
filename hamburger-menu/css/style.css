@@ -1,0 +1,57 @@
+:root {
+  --hamburger-menu-size: 100px; /* メニューの大きさ */ 
+  --hamburger-menu-padding: 12px;  
+  --hamburger-menu-border-px: 6px; /* 線の太さ */
+  --hamburger-menu-border-color: #342534; /* 線の色 */
+  --hamburger-menu-transition: 0.3s; /* アニメーション秒数 */
+}
+
+.hamburger-menu {
+  margin: 0 auto;
+  cursor: pointer;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+}
+
+.hamburger-menu-line {
+  position: absolute;
+  transition: var(--hamburger-menu-transition);
+  width: calc( 100% - var(--hamburger-menu-padding) * 2 );
+  height: var(--hamburger-menu-border-px);
+  background-color: var(--hamburger-menu-border-color);
+}
+
+.line-top {
+  top: var(--hamburger-menu-padding);
+  left: var(--hamburger-menu-padding);
+}
+
+.line-middle {
+  top: calc( 50% - var(--hamburger-menu-border-px) / 2 );
+  left: var(--hamburger-menu-padding);
+}
+
+.line-bottom {
+  bottom: var(--hamburger-menu-padding);
+  left: var(--hamburger-menu-padding);
+}
+
+
+
+.hamburger-menu-active > .line-top {
+  top: calc( 50% - var(--hamburger-menu-border-px) / 2 );
+  transform: rotate(45deg);
+}
+
+.hamburger-menu-active > .line-middle {
+  width: 0;
+  height: 0;
+  left: var(--hamburger-menu-padding);
+}
+
+.hamburger-menu-active > .line-bottom {
+  bottom: calc( 50% - var(--hamburger-menu-border-px) / 2);
+  transform: rotate(-45deg);
+}
