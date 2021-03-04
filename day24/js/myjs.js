@@ -12,3 +12,35 @@ $(function(){
   });
 });
 
+// 
+// Header Scroll
+// 
+$(function(){
+  //変更するcssクラス
+  var nav = $('.hNavWrap');
+  
+  $(window).on('load scroll', function(){
+    if ($(window).scrollTop() ) {
+      nav.addClass('transform');
+    } else {
+      nav.removeClass('transform');
+    }
+  });
+});
+
+// 
+// Pager Button
+// 
+$(function(){
+  // var pageHeight = $('.TopView__heading').offset().top;
+  var pageHeight = 300;
+  var pager = $('.scroll__button');
+
+  $(window).on('load scroll', function() {
+    if ($(window).scrollTop() < pageHeight) {
+      pager.removeClass('hidden');
+    } else {
+      pager.addClass('hidden');
+    }
+  });
+});
