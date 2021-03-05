@@ -362,6 +362,33 @@ a {
   margin: 60px 20px 80px 0px;
 }
 
+.works__slider > .works__img {
+  width: 100%;
+  height: auto;
+}
+
+.slick-dots {
+  text-align: end;
+}
+
+.slick-dots li {
+  margin: 0 2px;
+}
+
+.slick-dots li button {
+  padding: 2px;
+}
+
+.slick-prev {
+  left: 25px;
+  z-index: 10;
+}
+
+.slick-next {
+  right: 25px;
+}
+
+
 .works__right {
   width: 430px;
 }

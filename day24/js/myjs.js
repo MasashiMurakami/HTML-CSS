@@ -1,7 +1,8 @@
+
+$(function(){
 // 
 // SmoothScroll
 // 
-$(function(){
   $('a[href^="#"]').click(function(){
     var speed = 500;
     var href= $(this).attr("href");
@@ -10,12 +11,10 @@ $(function(){
     $("html, body").animate({scrollTop:position}, speed, "swing");
     return false;
   });
-});
 
 // 
 // Header Scroll
 // 
-$(function(){
   //変更するcssクラス
   var nav = $('.hNavWrap');
   
@@ -26,21 +25,30 @@ $(function(){
       nav.removeClass('transform');
     }
   });
-});
 
 // 
-// Pager Button
+// Scroll Button
 // 
-$(function(){
   // var pageHeight = $('.TopView__heading').offset().top;
   var pageHeight = 300;
-  var pager = $('.scroll__button');
+  var scrollBtn = $('.scroll__button');
 
   $(window).on('load scroll', function() {
     if ($(window).scrollTop() < pageHeight) {
-      pager.removeClass('hidden');
+      scrollBtn.removeClass('hidden');
     } else {
-      pager.addClass('hidden');
+      scrollBtn.addClass('hidden');
     }
   });
+
+// 
+// slick
+// 
+  $('.works__slider').slick({
+    autoplay: false,
+    arrows: true,
+    dots: true,
+  });
+
+  
 });
