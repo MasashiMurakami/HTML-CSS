@@ -168,7 +168,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
+  padding: 24.5px 30px;
   z-index: 10;
   transition: 0.3s ease 0s;
 }
@@ -183,16 +183,38 @@ a {
 }
 
 .hNav__rightItem {
-  padding-left: 25px;
+  margin-left: 25px;
+  padding: 5.5px 0px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hNav__rightLink::after {
+  position: absolute;
+  content: '';
+  overflow: hidden;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  border-bottom: 1px solid #fff;
+  transform: translateX(-100%);
+  transition: 0.3s ease 0s;
+}
+
+.hNav__rightLink:hover::after {
+  transform: translateX(0%);
+  transition: 0.3s ease 0s;
 }
 
 .transform {
   /* height: 65px; */
   background-color: #21054D;
-  padding: 23px 30px;
+  padding: 17.5px 30px;
   z-index: 10;
   transition: 0.3s ease 0s;
 }
+
+
 
 
 /*        */
@@ -245,6 +267,51 @@ a {
 
 .TopView__linkButton::before, .TopView__linkButton::after {
   background: none;
+}
+
+.TopView__scrollAnimationWrap {
+  position: absolute;
+  bottom: 0px;
+  right: 22px;
+  /* display: flex; */
+}
+
+.TopView__scrollText {
+  writing-mode: vertical-rl;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  /* line-height: 4.33; */
+  color: #fff;
+}
+
+@keyframes loop {
+  0% {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(25%);
+  }
+}
+
+.TopView__scrollAnimation {
+  width: 1px;
+  height: 90px;
+  margin: 10px auto 0px;
+  overflow: hidden;
+  position: relative;
+}
+
+.TopView__scrollAnimation::after {
+  position: absolute;
+  content: '';
+  top: 0px;
+  height: 400%;
+  border-left: 1px solid #fff;
+  /* animation: 1.5s ease-in-out infinite running loop; */
+  animation: 1.5s cubic-bezier(1, 0, 0, 1) infinite loop;
+  
 }
 
 

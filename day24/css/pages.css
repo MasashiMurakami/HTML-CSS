@@ -333,3 +333,283 @@
 .worksPage__text:hover {
   text-decoration: underline;
 }
+
+
+
+/*         */
+/* company */
+/*         */
+.companyPage_Wrap::after {
+  top: 35px;
+}
+
+.companyPage__contents {
+  width: 1100px;
+  margin: 140px auto 133px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.companyPage__img {
+  width: 445px;
+  height: 330px;
+}
+
+.companyPage__text {
+  width: 605px;
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
+  line-height: calc(25 / 15);
+}
+
+.companyInfo__heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.2rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  /* line-height: calc(98/32); */
+  text-align: center;
+  color: #391E88;
+}
+
+.page__table {
+  width: 1110px; 
+  margin: 26px auto 60px;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.page__tr {
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.page__th, .page__td {
+  font-size: 1.5rem;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  text-align: left;
+  padding: 28.5px 0px 28.5px 30px;
+}
+
+.page__th {
+  width: 143px;
+}
+
+.companyInfo__gmap {
+  width: 1110px;
+  margin: 0 auto 109px;
+}
+
+.companyInfo__gmapLink {
+  padding-top: 7px;
+  font-size: 1.6rem;
+  letter-spacing: 0.05em;
+  color: #240C6A;
+}
+
+
+
+/*         */
+/* recruit */
+/*         */
+.recruitPage__wrap {
+  background: url(/img/bg-geometry.png);
+  padding-bottom: 110px;
+}
+
+.recruitPage__title {
+  padding-top: 116px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 7.2rem;
+  font-weight: bold;
+  letter-spacing: 0.01em;
+  color: #391E88;
+}
+
+.recruitPage__heading {
+  margin-top: 8px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.2rem;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  color: #391E88;
+}
+
+.recruitPage__headingText {
+  margin-top: 34px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  line-height: calc(28/16);
+  color: #333;
+}
+
+.recruitPage__imgWrap {
+  width: 100%;
+  height: 780px;
+  margin-top: 38px;
+  overflow: hidden;
+  background: url(/img/recruit01.jpg) center center no-repeat;
+  background-size: cover;
+  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);
+}
+
+.recruitPageInfo__title {
+  padding-top: 57px;
+}
+
+.recruitPageInfo__wrap {
+  width: 1110px;
+  margin: 35px auto 76px;
+  background-color: #fff;
+  border: 1px solid #B8AED5;
+  border-radius: 10px;
+}
+
+.recruitPageInfo__heading {
+  margin-top: 57px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  color: #333;
+}
+
+.recruit__table {
+  width: 920px;
+  margin: 45px auto 50.5px;
+}
+
+.recruit__th, .recruit__td {
+  padding: 28.5px 0px 28.5px 22px;
+}
+
+.page__th {
+  width: 158px;
+}
+
+.recruit__td > p {
+  line-height: calc(27/15);
+  margin-bottom: 15px;
+}
+
+.recruit__td li {
+  line-height: calc(27/15);
+  margin-left: 15px;
+  position: relative;
+}
+
+.recruit__td li::before {
+  content: '・';
+  position: absolute;
+  top: 0px;
+  left: -15px;
+}
+
+.recruitPageInfo__linkText {
+  margin: 8px 0 58px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  color: #333;
+}
+
+.recruitPageMovie__title {
+  margin-top: 0px;
+  padding-top: 133px;
+  margin-bottom: 35px;
+}
+
+.recruitPageMovie__wrap {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+
+
+/*         */
+/* contact */
+/*         */
+.contactPage__heading {
+  margin: 67px 0px 38px;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  color: #333;
+}
+
+.contactPageForm__wrap {
+  width: 1110px;
+  margin: 0 auto 70px;
+  padding: 87px 0px 90px 90px;
+  background-color: #F7F7F7;
+  /* border: 1px solid #AAAAAA; */
+}
+
+.contactPageForm__h {
+  padding-top: 27px;
+  font-size: 1.6rem;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  color: #333;
+}
+
+.contactPageForm > .contactPageForm__h {
+  padding-top: 0px;
+  padding-bottom: 12px;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+}
+
+input[type=radio] {
+  margin-top: 0px;
+  margin-bottom:3px;
+}
+
+.contactPageForm__radio {
+  margin-right: 55px;
+  font-size: 1.4rem;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  color: #333;
+}
+
+.contactPageForm .input__txt, textarea, select {
+  margin-top: 8px;
+  width: 278px;
+  height: 18px;
+  padding: 10px;
+  border: 1px solid #AAAAAA;
+  border-radius: 6px;
+}
+
+input[type=tel] {
+  width: 178px;
+}
+
+textarea {
+  width: 578px;
+  height: 233px;
+  resize: none;
+}
+
+select {
+  width: 298px;
+  height: 38px;
+}
+
+.contactForm__link {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+}
