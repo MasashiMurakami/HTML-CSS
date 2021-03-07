@@ -12,8 +12,7 @@
     <link rel="stylesheet" type="text/css" href="/js/slick.css" media="screen">
     <link rel="stylesheet" type="text/css" href="/js/slick-theme.css" media="screen">
     <!-- my css -->
-    <link rel="stylesheet" type="text/css" href="/css/styles.css">
-    <link rel="stylesheet" type="text/css" href="/css/pages.css">
+    <link rel="stylesheet" type="text/css" href="/css/pages/contact.css">
     <!-- javascript -->
     <!-- Font Awesome -->
     <link rel="stylesheet" 
@@ -102,7 +101,7 @@
 
          <div class="contactPageForm__wrap">
             <form action="#" method="POST" class="contactPageForm">
-              <p class="contactPageForm__h">お問い合わせ種別</p>
+              <p class="contactPageForm__h req">お問い合わせ種別</p>
               <input type="radio" name="type" id="type" required>
               <span class="contactPageForm__radio">お仕事のご依頼・ご相談</span>
               <input type="radio" name="type" id="type">
@@ -112,7 +111,7 @@
               <input type="radio" name="type" id="type">
               <span class="contactPageForm__radio">その他</span>
               <label for="name">
-                <p class="contactPageForm__h">お名前</p>
+                <p class="contactPageForm__h req">お名前</p>
                 <input type="text" name="name" id="name" class="input__txt" required maxlength="30">
               </label>
               <label for="company">
@@ -120,7 +119,7 @@
                 <input type="text" name="company" id="company" class="input__txt" maxlength="30">
               </label>
               <label for="email">
-                <p class="contactPageForm__h">メールアドレス</p>
+                <p class="contactPageForm__h req">メールアドレス</p>
                 <input type="email" name="email" id="email" class="input__txt" required maxlength="100">
               </label>
               <label for="tel">
@@ -128,15 +127,15 @@
                 <input type="tel" name="tel" id="tel" class="input__txt" required maxlength="15">
               </label>
               <label for="paragraph">
-                <p class="contactPageForm__h">お問い合わせ内容</p>
+                <p class="contactPageForm__h req">お問い合わせ内容</p>
                 <textarea name="paragraph" id="paragraph" cols="30" rows="10" required></textarea>
               </label>
               <label for="known">
-                <p class="contactPageForm__h">
+                <p class="contactPageForm__h req">
                   PON DESIGNをどちらでお知りになりましたか？
                 </p>
                 <select name="known" id="known" required>
-                  <option value="0">選択してください</option>
+                  <option value="">選択してください</option>
                   <option value="1">Google/Yahoo検索</option>
                   <option value="2">SNS</option>
                   <option value="3">ブログ</option>

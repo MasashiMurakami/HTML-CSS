@@ -1,0 +1,94 @@
+/* import common parts */
+@import url("/css/common.css");
+@import url("/css/pages/pages__common.css");
+
+
+/*         */
+/* contact */
+/*         */
+.contactPage__heading {
+  margin: 67px 0px 38px;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  color: #333;
+}
+
+.contactPageForm__wrap {
+  width: 1110px;
+  margin: 0 auto 70px;
+  padding: 87px 0px 90px 90px;
+  background-color: #F7F7F7;
+  /* border: 1px solid #AAAAAA; */
+}
+
+.contactPageForm__h {
+  padding-top: 27px;
+  font-size: 1.6rem;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  color: #333;
+}
+
+.contactPageForm > .contactPageForm__h {
+  padding-top: 0px;
+  padding-bottom: 12px;
+}
+
+.req::after {
+  content: "*必須";
+  padding-left: 21px;
+  font-size: 1.2rem;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  color: #391E88;
+
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+}
+
+input[type=radio] {
+  margin-top: 0px;
+  margin-bottom:3px;
+}
+
+.contactPageForm__radio {
+  margin-right: 55px;
+  font-size: 1.4rem;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  color: #333;
+}
+
+.contactPageForm .input__txt, textarea, select {
+  margin-top: 8px;
+  width: 278px;
+  height: 18px;
+  padding: 10px;
+  border: 1px solid #AAAAAA;
+  border-radius: 6px;
+}
+
+input[type=tel] {
+  width: 178px;
+}
+
+textarea {
+  width: 578px;
+  height: 233px;
+  resize: none;
+}
+
+select {
+  width: 298px;
+  height: 38px;
+}
+
+.contactForm__link {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+}

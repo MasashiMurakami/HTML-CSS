@@ -1,0 +1,47 @@
+/* import common parts */
+@import url("/css/common.css");
+@import url("/css/pages/pages__common.css");
+
+
+/*      */
+/* news */
+/*      */
+.news__listWrap {
+  padding: 60px 0 0 260px;
+}
+
+.news__pageLinkWrap {
+  width: 155px;
+  margin: 40px auto 110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.news__pageLinkButton {
+  width: 45px;
+  height: 45px;
+  border-radius: 45px;
+  background: linear-gradient(to bottom, #7633A4, #250D65);
+}
+
+.news__pageLink {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.0rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  color: #fff;
+}
+
+.news__nowPageLinkButton {
+  background: #F1EBF8;
+}
+
+.news__nowPageLink {
+  color: #4F31A5;
+}

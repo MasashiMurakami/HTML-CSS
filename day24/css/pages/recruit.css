@@ -1,0 +1,127 @@
+/* import common parts */
+@import url("/css/common.css");
+@import url("/css/pages/pages__common.css");
+
+
+/*         */
+/* recruit */
+/*         */
+.recruitPage__wrap {
+  background: url(/img/bg-geometry.png);
+  padding-bottom: 110px;
+}
+
+.recruitPage__title {
+  padding-top: 116px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 7.2rem;
+  font-weight: bold;
+  letter-spacing: 0.01em;
+  color: #391E88;
+}
+
+.recruitPage__heading {
+  margin-top: 8px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.2rem;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  color: #391E88;
+}
+
+.recruitPage__headingText {
+  margin-top: 34px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  line-height: calc(28/16);
+  color: #333;
+}
+
+.recruitPage__imgWrap {
+  width: 100%;
+  height: 780px;
+  margin-top: 38px;
+  overflow: hidden;
+  background: url(/img/recruit01.jpg) center center no-repeat;
+  background-size: cover;
+  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);
+}
+
+.recruitPageInfo__title {
+  padding-top: 57px;
+}
+
+.recruitPageInfo__wrap {
+  width: 1110px;
+  margin: 35px auto 76px;
+  background-color: #fff;
+  border: 1px solid #B8AED5;
+  border-radius: 10px;
+}
+
+.recruitPageInfo__heading {
+  margin-top: 57px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  color: #333;
+}
+
+.recruit__table {
+  width: 920px;
+  margin: 45px auto 50.5px;
+}
+
+.recruit__th, .recruit__td {
+  padding: 28.5px 0px 28.5px 22px;
+}
+
+.page__th {
+  width: 158px;
+}
+
+.recruit__td > p {
+  line-height: calc(27/15);
+  margin-bottom: 15px;
+}
+
+.recruit__td li {
+  line-height: calc(27/15);
+  margin-left: 15px;
+  position: relative;
+}
+
+.recruit__td li::before {
+  content: '・';
+  position: absolute;
+  top: 0px;
+  left: -15px;
+}
+
+.recruitPageInfo__linkText {
+  margin: 8px 0 58px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  color: #333;
+}
+
+.recruitPageMovie__title {
+  margin-top: 0px;
+  padding-top: 133px;
+  margin-bottom: 35px;
+}
+
+.recruitPageMovie__wrap {
+  width: 1110px;
+  margin: 0 auto;
+}

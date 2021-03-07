@@ -1,0 +1,313 @@
+/* import common parts */
+@import url("/css/common.css");
+
+
+/*        */
+/* Header */
+/*        */
+.TopView__wrap {
+  width: 100%;
+  height: 768px;
+  background: url(/img/hero.jpg) center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.TopView__headingWrap {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+
+}
+
+.TopView__heading {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 7.2rem;
+  font-weight: bold;
+  line-height: 1.25;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.TopView__subHeading {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: normal;
+  letter-spacing: 0.108em;
+  line-height: 1.58;
+  color: #fff;
+  margin-bottom: 47px;
+}
+
+.TopView__linkButton {
+  border: solid 1px #fff;
+}
+
+.TopView__linkButton:hover {
+  opacity: 0.7;
+  transition: 0.3s ease 0s;
+}
+
+.TopView__linkButton::before, .TopView__linkButton::after {
+  background: none;
+}
+
+.TopView__scrollAnimationWrap {
+  position: absolute;
+  bottom: 0px;
+  right: 22px;
+  /* display: flex; */
+}
+
+.TopView__scrollText {
+  writing-mode: vertical-rl;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  /* line-height: 4.33; */
+  color: #fff;
+}
+
+@keyframes loop {
+  0% {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(25%);
+  }
+}
+
+.TopView__scrollAnimation {
+  width: 1px;
+  height: 90px;
+  margin: 10px auto 0px;
+  overflow: hidden;
+  position: relative;
+}
+
+.TopView__scrollAnimation::after {
+  position: absolute;
+  content: '';
+  top: 0px;
+  height: 400%;
+  border-left: 1px solid #fff;
+  /* animation: 1.5s ease-in-out infinite running loop; */
+  animation: 1.5s cubic-bezier(1, 0, 0, 1) infinite loop;
+  
+}
+
+
+
+/*      */
+/* news */
+/*      */
+.news__wrap {
+  width: 917px;
+  margin: 70px auto;
+  display: flex;
+}
+
+.news__headingWrap {
+  text-align: left;
+  padding-top: 0px;
+  margin-right: 50px;
+}
+
+/* news__link -> common.css */
+
+
+
+/*         */
+/* service */
+/*         */
+.service__contents {
+  width: 1110px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service__content {
+  width: 350px;
+}
+
+.service__contentImg {
+  width: 350px;
+  height: 220px;
+}
+
+.service__contentHeading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  line-height: 0.088;
+  text-align: center;
+  padding: 22px 0 17px;
+}
+
+.service__contentText {
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
+  line-height: 1.8;
+}
+
+
+
+/*       */
+/* works */
+/*       */
+.works__wrap {
+  width: 1261px;
+  margin: 140px auto 60px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, #fff 0%, #fff 34%, #F0F0F0 34%, #F0F0F0 100%);
+}
+
+.works__left {
+  width: 750px;
+  height: 510px;
+  margin: 60px 20px 80px 0px;
+}
+
+.works__slider > .works__img {
+  width: 100%;
+  height: auto;
+}
+
+.slick-dots {
+  text-align: end;
+}
+
+.slick-dots li {
+  margin: 0 2px;
+}
+
+.slick-dots li button {
+  padding: 2px;
+}
+
+.slick-prev {
+  left: 25px;
+  z-index: 10;
+}
+
+.slick-next {
+  right: 25px;
+}
+
+
+.works__right {
+  width: 430px;
+}
+
+.works__text {
+  margin-top: 28px;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  line-height: 1.8;
+}
+
+
+
+/*         */
+/* company */
+/*         */
+.company__wrap {
+  width: 1300px;
+  margin: 0 auto;
+  background: url(/img/bg-circle.png) center center no-repeat;
+  background-size: contain;
+  position: relative;
+}
+
+.company__wrap::after {
+  position: absolute;
+  content: '';
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: url(/img/bg-face.png) center center no-repeat;
+  z-index: -10;
+}
+
+.company__headingWrap {
+  padding-top: 135px;
+}
+
+.company__copyWrap {
+  width: 666px;
+  margin: 30px auto 0;
+}
+
+.company__copy {
+  font-size: 4.0rem;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  line-height: 0.64;
+  position: relative;
+}
+
+.company__copy::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0px;
+  width: 100%;
+  border-bottom: solid 12px #F5F534;
+  z-index: -10;
+}
+
+.company__text {
+  width: 451px;
+  margin: 51px auto 30px;
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
+  line-height: 1.8;
+  text-align: center;
+}
+
+
+
+/*         */
+/* recruit */
+/*         */
+.recruit__wrap {
+  width: 1110px;
+  height: 340px;
+  margin: 65px auto 100px;
+  display: flex;
+  align-items: top;
+  background-color: #F7F7F7;
+}
+
+.recruit__headingWrap {
+  margin: 0 auto;
+}
+
+.recruit__text {
+  margin: 28px 0 30px;
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
+  line-height: 1.866;
+}
+
+.recruit__img {
+  width: 665px;
+  height: 340px;
+}
+
+
+
+/*                      */
+/* cotact -> common.css */
+/*                      */
