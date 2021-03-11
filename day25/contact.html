@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="/css/html5reset-1.6.1.css">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Noto+Serif|Noto+Serif+JP&display=swap">
+    <script type="text/javascript"
+          src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/vegas.min.js"></script>
+    <script type="text/javascript" src="js/my.js"></script>
+  </head>
+  <body>
+    <header class="header contact-form__header">
+      
+    </header>
+    
+    <main>
+      <nav class="gNav">
+        <div class="gNav-left">
+          <a href="index.html" class="gNav-left__link">
+            <h3>Cresta Design</h3>
+          </a>
+        </div>
+        <div class="gNav-right">
+          <li class="gNav-right__list">
+            <a href="index.html#concept" class="gNav-right__link"><span>Concept</span></a>
+          </li>
+          <li class="header__nav-right__list">
+            <a href="index.html#service" class="gNav-right__link"><span>Service</span></a>
+          </li>
+          <li class="gNav-right__list">
+            <a href="index.html#works" class="gNav-right__link"><span>Works</span></a>
+          </li>
+          <li class="gNav-right__list">
+            <a href="#" class="gNav-right__link"><span>Contact</span></a>
+          </li>
+        </div>
+      </nav>
+      
+      <section class="contact-form">
+        <form class="form" action="/index.html" method="POST">
+          <p class="form__label">お問い合わせ内容</p>
+          <div class="form__checkboxLine">
+            <input type="checkbox" name="type" value="1">
+            <span>資料請求</span>
+            <input type="checkbox" name="type" value="2">
+            <span>お電話でのご相談を希望</span>
+            <input type="checkbox" name="type" value="3">
+            <span>申し込み</span>
+          </div>
+          <label for="name"><p class="form__label">担当者名</p></label>
+          <input type="text" name="name" id="name" maxlength="30" required>
+          <label for="tel"><p class="form__label">電話番号</p></label>
+          <input type="text" name="tel" id="tel" maxlength="20" required>
+          <label for="email"><p class="form__label">メールアドレス</p></label>
+          <input type="text" name="email" id="email" maxlength="50" required>
+          <label for="etc"><p class="form__label">その他</p></label>
+          <textarea name="etc" id="etc"></textarea>
+          <button type="submit" class="form__button link__button">Submit</button>
+        </form>
+      </section>
+    </main>
+    
+    <footer class="footer">
+      ©︎cresta.design all rights reserved
+  </footer>
+  </body>
+</html>

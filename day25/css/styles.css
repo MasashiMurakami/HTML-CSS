@@ -68,6 +68,36 @@ a {
   background-color: #fff;
 }
 
+.link__button {
+  width: 235px;
+  height: 60px;
+  margin: 0 auto;
+  background-color: #F7D43F;
+  border-radius: 50px;
+  position: relative;
+}
+
+.link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  transition: 0.3s ease 0s;
+}
+
+.link:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: rgba(255, 255, 255, 0.7);
+  transition: 0.3s ease 0s;
+}
+
+
+
 /*        */
 /* header */
 /*        */
@@ -112,6 +142,8 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 10;
+  transition: 0.3s ease 0s;
 }
 
 .gNav-left {
@@ -138,6 +170,22 @@ a {
   font-style: italic;
   letter-spacing: 0.05em;
   color: #fff;
+}
+
+.gNav-left__link > h3,
+.gNav-right__link > span {
+  transition: 0.3s ease 0s;  
+}
+
+.gNav-left__link > h3:hover,
+.gNav-right__link > span:hover {
+  color: rgba(255, 255, 255, 0.7);
+  transition: 0.3s ease 0s;
+}
+
+.transform {
+  background-color: #282F35;
+  transition: 0.5s ease 0s;
 }
 
 
@@ -202,6 +250,32 @@ a {
 .works__content {
   width: 320px;
   height: 334px;
+  transition: 0.3s ease 0s;
+}
+
+.works__contentLink {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.works__contentLink::before {
+  content: '';
+  box-sizing: border-box;
+  display: flex;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0;
+  transition: 0.3s ease 0s;
+}
+
+.works__contentLink:hover::before {
+  opacity: 0.3;
 }
 
 .works__image {
@@ -226,41 +300,254 @@ a {
   color: rgba(255, 255, 255, 0.05);
 }
 
-.link__button {
-  width: 235px;
-  height: 60px;
-  margin: 0 auto;
-  background-color: #F7D43F;
-  border-radius: 50px;
-  position: relative;
+
+
+/*         */
+/* service */
+/*         */
+.service__wrap {
+  width: 100%;
+  overflow: hidden;
 }
 
-.link {
+.service__wrap::after {
+  right: 120px;
+  content: "Our Service";
+}
+
+.service__heading {
+  margin-left: 220px;
+}
+
+.service__contents {
+  width: 100vw;
+  margin-bottom: 248px;
+  display: flex;
+}
+
+.service__content {
+  width: 33vw;
+  height: calc(33vw * (4/6));
+  
+}
+
+.service__link {
   display: flex;
   width: 100%;
   height: 100%;
   justify-content: center;
   align-items: center;
-  font-size: 1.6rem;
+  position: relative;
+}
+
+.service__link::after {
+  font-size: 4.0rem;
   font-weight: bold;
+  font-style: italic;
   letter-spacing: 0.05em;
+  line-height: calc(50/40);
+  color: #fff;
+  z-index: 10;
+}
+
+.service__link-hearing {
+  background: url(/img/service-img01@2x.jpg) center/cover no-repeat;
+}
+
+.service__link-hearing::after {
+  content: "Hearing";
+}
+
+.service__link-planning {
+  background: url(/img/service-img02@2x.jpg) center/cover no-repeat;
+}
+
+.service__link-planning::after {
+  content: "Planning";
+}
+
+.service__link-direction {
+  background: url(/img/sevice-img03@2x.jpg) center/cover no-repeat;
+}
+
+.service__link-direction::after {
+  content: "Direction";
+}
+
+.service__link::before {
+  content: '';
+  box-sizing: border-box;
+  display: flex;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #282F35;
+  border: 1px solid #707070;
+  opacity: 0;
+  transition: 0.3s ease 0s;
+}
+
+.service__link:hover::before {
+  opacity: 0.85;
 }
 
 
-
-
-
-
-
-
-.service__wrap::after {
-  content: "Our Service";
-}
-
-
-
-
+/*         */
+/* contact */
+/*         */
 .contact__bg-dark {
   background: url(/img/contact-bgi@2x.jpg) center/cover no-repeat;
 
+}
+
+.contact__wrap {
+  padding-bottom: 262px;
+}
+
+.contact__text {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 2.0rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  color: #fff;
+}
+
+
+
+/*        */
+/* footer */
+/*        */
+.footer {
+  height: 79px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  color: #282F35;
+}
+
+
+
+/*              */
+/* form page */
+/*              */
+.contact-form__header {
+  width: 100%;
+  height: 453px;
+  background: url(/img/fv-bgi_03@2x.jpg) center/cover no-repeat;
+  position: relative;
+}
+
+.contact-form__header::after {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  content: 'Contact';
+  font-size: 6.0rem;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 0.10em;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(40, 47, 53, 0.85);
+}
+
+.form {
+  width: 700px;
+  margin: 0 auto;
+  padding-top: 97px;
+  padding-bottom: 80px;
+  font-size: 1.6rem;
+  letter-spacing: 0.05em;
+  color: #171717;
+}
+
+.form__checkboxLine {
+  margin-bottom: 22px;
+}
+
+.form__checkboxLine span {
+  margin-right: 20px;
+}
+
+.form__label {
+  padding-bottom: 5px;
+}
+
+input[type=checkbox] {
+  width: 10px;
+  height: 10px;
+  margin: 0px;
+  margin-bottom: 3px;
+}
+
+input[type=text] {
+  width: 690px;
+  height: 20px;
+  padding: 5px;
+  margin-bottom: 22px;
+}
+
+input[type=text]:focus, textarea:focus {
+  outline: none;
+  border: 2px solid skyblue;
+  box-shadow: 0px 0px 3px skyblue;
+}
+
+textarea {
+  width: 690px;
+  height: 161px;
+  padding: 5px;
+  resize: none;
+  margin-bottom: 80px; 
+}
+
+.form__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  border: none;
+  box-shadow: 0px 0px 6px #1B1310;
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  position: relative;
+  transition: 0.3s ease 0s;
+}
+
+.form__button::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  opacity: 0;
+  background-color: #000;
+  transition: 0.3s ease 0s;
+}
+
+.form__button:hover {
+  cursor: pointer;
+  color: #fff;
+  transition: 0.3s ease 0s;
+}
+
+.form__button:focus {
+  outline: none;
+}
+
+.form__button:hover::after {
+  opacity: 0.1;
+  transition: 0.3s ease 0s;
 }
