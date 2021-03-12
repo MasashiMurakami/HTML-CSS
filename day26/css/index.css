@@ -1,10 +1,57 @@
+/* Hamburger menu */
+@import url("/css/hamburger.css");
+
+
 /*        */
 /* common */
 /*        */
 html {
-  font-family: 'Motserrat', 'Yugothic', sans-serif,
-               'Noto Sans JP', serif;
   font-size: 62.5%;
+}
+
+body {
+  font-family: 'Montserrat', 'Yugothic', sans-serif,
+               'Noto Sans JP', serif;
+}
+
+.contents__heading {
+  font-family: 'Montserrat';
+  font-size: 3.2rem;
+  font-weight: bolder;
+  letter-spacing: 0.068em;
+}
+
+.link__button {
+  width: 160px;
+  height: 36px;
+  background-color: #000;
+}
+
+.link {
+  display: flex;
+  width: calc(100%-41px);
+  height: 100%;
+  /* justify-content: center; */
+  padding-left: 41px;
+  align-items: center;
+  font-family: 'Montserrat';
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #525252;
+  font-family: 'Montserrat';
+  font-size: 1.0rem;
+  letter-spacing: 0.15em;
+  color: #fff;
 }
 
 
@@ -14,7 +61,7 @@ html {
 /*        */
 .header {
   width: 100%;
-  height: 740px;
+  height: 740px; 
   overflow: hidden;
   position: relative;
 }
@@ -59,14 +106,16 @@ html {
 
 .header__heading-sub {
   padding-bottom: 10px;
+  font-family: 'Montserrat', 'Yugothic';
   font-size: 2.0rem;
   font-weight: bold;
-  line-height: calc(17/20);
+  line-height: 1.4;
   color: #fff;
   z-index: 10;
 }
 
 .header__heading-main {
+  font-family: 'Montserrat';
   font-size: 7.2rem;
   font-weight: bolder;
   line-height: calc(86/72);
@@ -82,12 +131,7 @@ html {
 .gNav {
   position: fixed;
   top: 30px;
-  /* left: 0;
-  right: 0; */
-  /* width: 100%; */
-  /* overflow: hidden; */
   display: flex;
-  justify-content: space-between;
   z-index: 20;
 }
 
@@ -106,123 +150,83 @@ html {
 }
 
 
-#menu-btn-check {
-  display: none;
+
+/*       */
+/* About */
+/*       */
+.about {
+  position: relative;
 }
 
-.menu-btn {
-  position: fixed;
-  top: 36px;
-  right: 58px;
-  width: 61px;
-  height: 13px;
+.about__background {
+  width: 1100px;
+  height: 607px;
+  margin: 120px auto 0;
+  padding-top: 110px;
+  padding-left: 50px;
+  background: url(/img/about-img@2x.jpg) center/cover no-repeat;
+}
+
+.about__contents {
+  width: 590px;
+  height: 387px;
+  padding: 50px 30px;
+  background-color: #fff;
+  position: relative;
+}
+
+.about__text {
+  padding: 30px 0;
+  font-family: 'Noto Sans JP';
+  font-size: 1.6rem;
+  letter-spacing: 0;
+  line-height: 2.0;
+}
+
+.link__button-about {
+  position: absolute;
+  bottom: 50px;
+}
+
+.about__background-gray {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #F0F0F0;
+  z-index: -10; 
+}
+
+
+
+/*                 */
+/* Works - Culture */
+/*                 */
+.works-culture__background {
+  background-color: #F0F0F0;
+  padding: 0 170px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  z-index: 30;
 }
 
-.menu-btn span,
-.menu-btn span::before,
-.menu-btn span::after {
-  position: absolute;
-  content: '';
-  display: flex;
-  height: 2px;
-  width: 22px;
-  align-items: center;
-  border-radius: 2px;
-  background-color: #fff;
-  transition: all 0.3s ease 0s;
-}
-
-.menu-btn span::before {
-  bottom: 5px;
-  transition: all 0.3s ease 0s;
-}
-
-.menu-btn span::after {
- top: 5px;
- transition: all 0.3s ease 0s;
-}
-
-.menu-text {
-  position: absolute;
-  padding-left: 29px;
-  font-size: 1.0rem;
-  font-weight: bolder;
-  letter-spacing: 0.05em;
-  color: #fff;
-}
-
-/*                       */
-/* hamburger 3 line -> x */
-/*                       */
-#menu-btn-check:checked ~ .menu-btn span {
-  background-color: rgba(255, 255, 255, 0);
-}
-
-#menu-btn-check:checked ~ .menu-btn span::before {
-  bottom: 0px;
-  transform: rotate(45deg);
-  transition: all 0.3s ease 0s;
-}
-
-#menu-btn-check:checked ~ .menu-btn span::after {
-  top: 0px;
-  transform: rotate(-45deg);
-  transition: all 0.3s ease 0s;
-}
-
-/*      */
-/* Menu */
-/*      */
-.menu-content {
+.works-culture {
   width: 520px;
-  height: 900px;
-  position: fixed;
-  top: 0;
-  /* put menu outside screen */
-  right: -520px;
-  z-index: 21;
-  background-color: rgba(34, 34, 34, 0.95);
-  transition: all 0.3s ease 0s;
-  transition-delay: 200ms;
+  height: 531px;
+  padding-top: 80px;
+  padding-bottom: 60px;
 }
 
-#menu-btn-check:checked ~ .menu-content {
-  right: 0;
-}
-
-.menu-other-bg {
-  position: absolute;
-  top: -30px;
-  left: 0;
+.works-culture__img {
   width: 100%;
-  height: 900px;
-  background-color: rgba(34, 34, 34, 0.6);
-  opacity: 0;
-  z-index: 21;
-  transition: all 0.3s ease 0s;
+  padding-top: 30px;
 }
 
-#menu-btn-check:checked ~ .menu-other-bg {
-  opacity: 1;
+.works-culture__text {
+  margin-top: 27px;
+  font-family: 'Yugothic';
+  font-size: 1.6rem;
 }
 
-/*        */
-/* footer */
-/*        */
-.footer {
-  width: 100%;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #525252;
-  font-family: 'Montserrat';
-  font-size: 1.0rem;
-  letter-spacing: 0.15em;
-  color: #fff;
+.link__button__works-culture {
+  margin-top: 28px;
 }

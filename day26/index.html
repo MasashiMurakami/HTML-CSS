@@ -1,16 +1,21 @@
  <!DOCTYPE html>
  <html lang="ja">
    <head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <title>Crista 03 index</title>
-     <link rel="stylesheet" type="text/css" href="/css/html5reset-1.6.1.css">
-     <link rel="stylesheet" type="text/css" href="/css/index.css">
-     <script type="text/javascript"
-            src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-     <script src="//cdn.jsdelivr.net/npm/desvg@1.0.2/desvg.min.js"></script>
-     <script type="text/javascript" src="/js/my.js"></script>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Crista 03 index</title>
+      <link rel="stylesheet" type="text/css" href="/css/html5reset-1.6.1.css">
+      <link rel="stylesheet" type="text/css" href="/css/index.css">
+      <link rel="stylesheet" type="text/css" href="/css/hamburger.css">
+
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+      
+      <script type="text/javascript"
+              src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="//cdn.jsdelivr.net/npm/desvg@1.0.2/desvg.min.js"></script>
+      <script type="text/javascript" src="/js/my.js"></script>
    </head>
    <body>
      <header class="header">
@@ -43,9 +48,11 @@
         <span></span>
         <p class="menu-text">MENU</p>
       </label>
-      
       <div class="menu-content">
         <ul>
+          <li class="menu-content__imgList">
+            <img src="/img/logo-objeck@2x.png" alt="logo-object@2x.png" class="menu-content__img">
+          </li>
           <li><a href="#">ABOUT US</a></li>
           <li><a href="#">WORKS</a></li>
           <li><a href="#">CULTURE</a></li>
@@ -53,24 +60,97 @@
           <li><a href="#">CONTACT</a></li>
         </ul>
       </div>
-      <div class="menu-other-bg">
-        
-      </div>
+      <div class="menu-other-bg"></div>
 
        <section class="about">
-
+         <div class="about__background">
+           <div class="about__contents">
+             <h3 class="contents__heading">ABOUT US</h3>
+             <p class="about__text">
+              DIGSMILEは、デザインで人を笑顔にする会社。<br>
+              なんでもない日常に少しのワクワクと遊び心を提供します。笑顔には世界を変える力がある、デザインには人を幸せにする力がある。毎日に幸せを感じて生きていきたい。<br>
+              DIGSMILEの社名にはそんな想いが込められています。
+             </p>
+             <div class="link__button link__button-about">
+               <a href="#" class="link">READ MORE</a>
+             </div>
+           </div>
+          </div>
+          <div class="about__background-gray"></div>
        </section>
 
-       <serction class="worksAndCulture">
-
+       <serction class="works-culture">
+        <div class="works-culture__background">
+          <div class="works-culture">
+            <h3 class="contents__heading">WORKS</h3>
+            <img src="/img/works-img@2x.jpg" alt="works.jpg" class="works-culture__img">
+            <p class="works-culture__text">
+              DIGSMILEの制作実績を紹介します。
+            </p>
+            <div class="link__button link__button__works-culture">
+              <a href="#" class="link">READ MORE</a>
+            </div>
+          </div>
+          <div class="works-culture">
+            <h3 class="contents__heading">CULTURE</h3>
+            <img src="/img/culture-img@2x.jpg" alt="culture.jpg" class="works-culture__img">
+            <p class="works-culture__text">
+              DIGSMILEの社内文化について紹介します。
+            </p>
+            <div class="link__button link__button__works-culture">
+              <a href="#" class="link">READ MORE</a>
+            </div>
+          </div>
+        </div>
        </serction>
 
        <section class="topic">
-
+        <div class="topic__contents">
+          <h3 class="contents__heading">LATEST TOPICS</h3>
+          <ul class="topic__ul">
+            <li class="topic__list">
+              <small class="topic__date">2020.02.01</small>
+              <a href="#" class="topic__link">
+                イベントレポート「VRクリエイター座談会 〜5Gの次に来るもの〜」
+              </a>
+            </li>
+            <li class="topic__list">
+              <small class="topic__date">2020.01.18</small>
+              <a href="#" class="topic__link">
+                プレスリリースのお知らせ DIGGIN’ RECORDS
+              </a>
+            </li>
+            <li class="topic__list">
+              <small class="topic__date">2020.01.01</small>
+              <a href="#" class="topic__link">
+                新年明けましておめでとうございます
+              </a>
+            </li>
+          </ul>
+          <div class="link__button">
+            <a href="#" class="link">READ MORE</a>
+          </div>
+        </div>
        </section>
 
        <section class="contact">
-
+        <div class="contact__background">
+          <div class="contact__contents">
+            <div class="contact__cotents-left">
+              <h3 class="contents__heading">CONTACT</h3>
+              <p class="contact__text">
+                制作の依頼、取材の依頼、IRや採用についての連絡・お問い合わせはコンタクトページから承っております。<br>
+                まずはお気軽にご連絡ください。担当者から改めて返信いたします。
+              </p>
+              <div class="link__button">
+                <a href="#" class="link">READ MORE</a>
+              </div>
+            </div>
+            <div class="contact__contetns-right">
+              <img src="/img/contact-hv.jpg" alt="contact-hv.jpg" class="contact__img">
+            </div>
+          </div>
+        </div>
        </section>
      </main>
      
