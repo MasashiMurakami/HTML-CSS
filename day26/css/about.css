@@ -1,0 +1,107 @@
+/* Hamburger menu */
+@import url("/css/hamburger.css");
+/* common parts */
+@import url("/css/common.css");
+/* pages common parts */
+@import url("/css/pages-common.css");
+
+
+
+.header__image {
+  background: url(/img/about-hv@2x.jpg) center center no-repeat;
+}
+
+
+
+/*        */
+/* vision */
+/*        */
+.vision__contents {
+  width: 648px;
+  margin: 0 auto;
+  padding: 120px 0;
+}
+
+.vision__heading-sub {
+  margin-top: 25px;
+}
+
+.vision__text {
+  margin-top: 27px;
+}
+
+
+
+/*             */
+/* ceo message */
+/*             */
+.ceo__background {
+  width: 1100px;
+  margin: 0 auto;
+  padding-top: 144px;
+  position: relative;
+}
+
+.ceo__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 420px;
+  height: 282.45px;
+}
+
+.ceo__contents {
+  width: 400px;
+  margin-left: auto;
+  padding: 120px 185px 90px;
+  background-color: #F0F0F0;
+}
+
+.ceo__text {
+  margin-top: 30px;
+}
+
+
+/*         */
+/* company */
+/*         */
+.company__contents {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.company__border {
+  width: 100%;
+  height: 30px;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.company__info {
+  width: 800px;
+  margin: 0 0 40px auto;
+}
+
+.company__info dl {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.company__info dt {
+  width: 144px;
+  font-family: 'Yugothic';
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 0.004em;
+}
+
+.company__info dd {
+  font-family: 'Yugothic';
+  font-size: 1.6rem;
+  letter-spacing: 0.004em;
+}
+
+.company__map {
+  margin-bottom: 120px;
+}
