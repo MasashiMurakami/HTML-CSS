@@ -1,0 +1,71 @@
+
+@media screen and (max-width:375px) {
+  .header__image {
+    width: 287px;
+    height: calc( 100vh - 87px );
+  }
+
+  .header__bg-black {
+    width: 283px;
+    height: 100vh;
+  }
+
+  .header__heading {
+    right: 20px;
+  }
+
+  /* about */
+  .about__background {
+    max-width: 100%;
+    min-height: 441px;
+    margin: 78px auto 0;
+    padding: 50px 0;
+  }
+
+  .about__contents {
+    max-width: 300px;
+    min-height: 341px;
+    margin: 0 auto;
+    padding: 50px 15px 50px 30px;
+  }
+
+  .about__text {
+    padding: 30px 0;
+    font-family: 'Noto Sans JP';
+    font-size: 1.4rem;
+    letter-spacing: 0;
+    line-height: 2.0;
+  }
+
+  /* works culture */
+  .works-culture:first-child {
+    margin-top: 40px;
+  }
+  
+  .works-culture {
+    display: flex;
+    flex-flow: column wrap;
+    width: 345px;
+    height: 408px;
+    margin: 40px 15px 0;
+  }
+
+  /* topic */
+  .topic__contents {
+    padding: 40px 15px;
+  }
+
+  .topic__link {
+    font-size: 1.2rem;
+  }
+
+  /* contact */
+  .contact__background {
+    padding-bottom: 40px;
+  }
+
+  .contact__contents {
+    padding: 0 15px;
+  }
+
+}

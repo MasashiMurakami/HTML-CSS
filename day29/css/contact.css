@@ -1,0 +1,124 @@
+/* Hamburger menu */
+@import url("/css/hamburger.css");
+/* common parts */
+@import url("/css/common.css");
+/* pages common parts */
+@import url("/css/pages-common.css");
+
+
+
+.header__image {
+  background: url(/img/contact-hv@2x.jpg) center center no-repeat;
+}
+
+
+
+/*         */
+/* contact */
+/*         */
+.contact__contents {
+  width: 700px;
+  margin: 120px auto;
+}
+
+.contact__text {
+  line-height: calc(24/16);
+}
+
+.contact__form {
+  margin-top: 52px;
+}
+
+.contact__label {
+  margin-top: 42px;
+  font-family: 'Noto Sans JP';
+  font-size: 1.6rem;
+  letter-spacing: 0.004em;
+}
+
+.contact__radio {
+  margin-top: 23px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  margin-top: 0;
+  margin-right: 10px;
+}
+
+.contact__radio__text {
+  margin-right: 50px;
+  font-family: 'Yugothic';
+  font-size: 1.6rem;
+  letter-spacing: 0.004em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] { 
+  margin-top: 8px;
+  width: 680px;
+  height: 31px;
+  padding: 5px 10px;
+}
+
+textarea {
+  width: 680px;
+  height: 192px;
+  padding: 10px 10px;
+  margin-top: 9px;
+  resize: none;
+  font-family: 'Noto Sans JP';
+  font-size: 1.6rem;
+  letter-spacing: 0.004em;
+  line-height: calc(24/16);
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border: 1px solid skyblue;  
+}
+
+.contact__policy__heading {
+  margin-top: 40px;
+  font-family: 'Montserrat';
+  font-size: 1.6rem;
+  font-weight: bolder;
+  letter-spacing: 0.004em;
+}
+
+.contact__check {
+  margin-top: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="checkbox"] {
+  margin-top: 5px;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.contact__check span {
+  font-family: 'Noto Sans JP';
+  font-size: 1.6rem;
+  letter-spacing: 0.004em;
+  line-height: calc(24/16);
+}
+
+.contact__submit__button {
+  display: block;
+  margin: 41px auto 120px;
+}
+
+.contact__submit {
+  width: 100%;
+  padding-left: 0;
+  justify-content: center;
+}

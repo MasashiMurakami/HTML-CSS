@@ -1,0 +1,256 @@
+/* Hamburger menu */
+@import url("./hamburger.css");
+/* common parts */
+@import url("./common.css");
+
+
+
+/*        */
+/* header */
+/*        */
+.header {
+  width: 100%;
+  height: 100vh; 
+  overflow: hidden;
+  position: relative;
+}
+
+.header__image {
+  width: 1100px;
+  height: 640px;
+  background: url(../img/kv-img@2x.jpg) center/cover no-repeat;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.header__image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.34);
+  z-index: 2;
+}
+
+.header__bg-black {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  width: 780px;
+  height: 740px;
+  background-color: #222;
+  z-index: 0;
+}
+
+.header__heading {
+  position: absolute;
+  top: 157px;
+  right: 194px;
+  width: 292px;
+  z-index: 10; 
+}
+
+.header__heading-sub {
+  padding-bottom: 10px;
+  font-family: 'Montserrat', 'Yugothic';
+  font-size: 2.0rem;
+  font-weight: bold;
+  line-height: 1.4;
+  color: #fff;
+  z-index: 10;
+}
+
+.header__heading-main {
+  font-family: 'Montserrat';
+  font-size: 7.2rem;
+  font-weight: bolder;
+  line-height: calc(86/72);
+  color: #fff;
+  z-index: 10;
+}
+
+
+
+/*       */
+/* About */
+/*       */
+.about {
+  position: relative;
+}
+
+.about__background {
+  max-width: 1100px;
+  min-height: 607px;
+  margin: 120px auto 0;
+  padding-top: 110px;
+  padding-left: 50px;
+  background: url(../img/about-img@2x.jpg) center/cover no-repeat;
+}
+
+.about__contents {
+  max-width: 590px;
+  min-height: 387px;
+  padding: 50px 30px;
+  background-color: #fff;
+  position: relative;
+}
+
+.about__text {
+  padding: 30px 0;
+  font-family: 'Noto Sans JP';
+  font-size: 1.6rem;
+  letter-spacing: 0;
+  line-height: 2.0;
+}
+
+.link__button-about {
+  position: absolute;
+  bottom: 50px;
+}
+
+.about__background-gray {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #F0F0F0;
+  z-index: -10; 
+}
+
+
+
+/*                 */
+/* Works - Culture */
+/*                 */
+.works-culture__background {
+  background-color: #F0F0F0;
+  width: 100%;
+}
+
+.works-culture__contents {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.works-culture {
+  display: flex;
+  flex-flow: column wrap;
+  width: 520px;
+  height: 531px;
+  margin: 80px 30px 0;
+}
+
+.works-culture__img {
+  width: 100%;
+  padding-top: 30px;
+}
+
+.works-culture__text {
+  margin-top: 27px;
+  font-family: 'Yugothic';
+  font-size: 1.6rem;
+}
+
+.link__button__works-culture {
+  margin-top: 28px;
+}
+
+
+
+/*        */
+/* TOPICS */
+/*        */
+.topic__contents {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 60px 30px;
+}
+
+.topic__ul {
+  max-width: 700px;
+  padding-top: 30px;
+  margin-left: auto;
+}
+
+.topic__list {
+  list-style: none;
+  height: 52px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.topic__date {
+  font-family: 'Montserrat';
+  font-size: 1.0rem;
+  font-weight: bold;
+  letter-spacing: 0.015em;
+  color: #CECECE;
+  margin-bottom: 9px;
+}
+
+.topic__link {
+  font-family: 'Yugothic';
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 0.04em;
+  color: #333;
+}
+
+.link__button__topic {
+  margin-left: auto;
+}
+
+
+
+/*         */
+/* contact */
+/*         */
+.contact__background {
+  background-color: #F0F0F0;
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+
+.contact__contents {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+  flex-flow: row-reverse wrap;
+  justify-content: flex-end;
+}
+
+.contact__contents-left {
+  max-width: 580px;
+  /* height: auto; */
+}
+
+.contact__img {
+  max-width: 100%;
+  height: auto;
+}
+
+.contact__contents-right {
+  width: 440px;
+  margin-top: 72px;
+  margin-right: auto;
+}
+
+.contact__text {
+  margin-top: 30px;
+  font-family: 'Yugothic';
+  font-size: 1.6rem;
+  line-height: 2.0;
+}
+
+.link__button__contact {
+  margin-top: 53px;
+}
