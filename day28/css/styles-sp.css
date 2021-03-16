@@ -1,0 +1,143 @@
+@import url("./hamburger.css");
+
+@media screen and (max-width:768px) {
+  /*        */
+  /* common */
+  /*        */
+  body {
+    width: 375px;
+    /* margin: 0 auto; */
+  }
+
+  .section_title {
+    font-size: 3.0rem;
+  }
+
+  .section_title::after {
+    content: "";
+    width: 90px;
+    margin-left: 35px;
+  }
+  
+  .section_background {
+    font-size: 4.0rem;
+    padding: 40px 15px;
+  }
+
+
+
+  /*        */
+  /* header */
+  /*        */
+  .nav {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 36px;
+    width: 375px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav_left_wrapper {
+    left: 0;
+  }
+
+  .nav_left {
+    padding-left: 15px;
+  }
+
+  .copytext_wrapper {
+    position: static;
+    width: 348px;
+    height: 194px;
+    margin: 202px 15px;
+  }
+  
+  .copytext {
+    font-size: 3.7rem;
+    padding-bottom: 53px;
+  }
+
+  .copytext_sub {
+    width: 240px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 3.0rem;
+    line-height: calc(5/3);
+  }
+
+
+
+  /*         */
+  /* concept */
+  /*         */
+  .concept_copytext {
+    width: 320px;
+    padding-top: 51px;
+    font-size: 2.0rem;
+    line-height: calc(3/2);
+    text-align: center;
+  }
+
+  .concept_body_wrapper {
+    padding-top: 30px;
+  }
+
+  .concept_body_left {
+    padding-bottom: 30px;
+  }
+
+  .concept_image {
+    width: 345px;
+    height: 150px;
+    margin: 0 auto;
+  }
+
+
+
+  /*         */
+  /* service */
+  /*         */
+  .service_contents_wrapper {
+    flex-wrap: wrap;
+  }
+
+  .service_content:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+
+
+  /*         */
+  /* contact */
+  /*         */
+  .contact_bg_wrapper {
+    margin-top: 24px;
+  }
+
+  .form_header {
+    height: 360px;
+  }
+
+  .form_title {
+    top: 175px;
+    font-size: 3.0rem;
+    font-style: italic;
+    color: #fff;
+  }
+
+  label {
+    display: block;
+    width: 100%;
+  }
+
+  input[type="checkbox"] {
+    margin-top: 0;
+  }
+
+
+
+}
