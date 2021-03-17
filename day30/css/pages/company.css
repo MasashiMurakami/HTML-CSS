@@ -1,0 +1,130 @@
+/* import common parts */
+@import url("/css/common.css");
+@import url("/css/pages/pages__common.css");
+
+
+/*         */
+/* company */
+/*         */
+.company__wrap {
+  width: 1300px;
+  margin: 0 auto;
+  background: url(/img/bg-circle.png) center center no-repeat;
+  background-size: contain;
+  position: relative;
+}
+
+.company__wrap::after {
+  position: absolute;
+  content: '';
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: url(/img/bg-face.png) center center no-repeat;
+  z-index: -10;
+}
+
+.company__headingWrap {
+  padding-top: 135px;
+}
+
+.company__copyWrap {
+  width: 666px;
+  margin: 30px auto 0;
+}
+
+.company__copy {
+  font-size: 4.0rem;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  line-height: 0.64;
+  position: relative;
+}
+
+.company__copy::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0px;
+  width: 100%;
+  border-bottom: solid 12px #F5F534;
+  z-index: -10;
+}
+
+.company__text {
+  width: 451px;
+  margin: 51px auto 30px;
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.companyPage_Wrap::after {
+  top: 35px;
+}
+
+.companyPage__contents {
+  width: 1100px;
+  margin: 140px auto 133px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.companyPage__img {
+  width: 445px;
+  height: 330px;
+}
+
+.companyPage__text {
+  width: 605px;
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
+  line-height: calc(25 / 15);
+}
+
+.companyInfo__heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.2rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  /* line-height: calc(98/32); */
+  text-align: center;
+  color: #391E88;
+}
+
+.page__table {
+  width: 1110px; 
+  margin: 26px auto 60px;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.page__tr {
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.page__th, .page__td {
+  font-size: 1.5rem;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  text-align: left;
+  padding: 28.5px 0px 28.5px 30px;
+}
+
+.page__th {
+  width: 143px;
+}
+
+.companyInfo__gmap {
+  width: 1110px;
+  margin: 0 auto 109px;
+}
+
+.companyInfo__gmapLink {
+  padding-top: 7px;
+  font-size: 1.6rem;
+  letter-spacing: 0.05em;
+  color: #240C6A;
+}

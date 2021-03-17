@@ -1,0 +1,46 @@
+/* import common parts */
+@import url("/css/common.css");
+@import url("/css/pages/pages__common.css");
+
+
+/*         */
+/* service */
+/*         */
+.servicePage__wrap {
+  width: 1110px;
+  margin: 70px auto 110px;
+}
+
+.servicePage__content {
+  display: flex; 
+}
+
+.servicePage__content:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.servicePage__img {
+  width: 445px;
+  height: 280px;
+}
+
+.servicePage__body {
+  margin-left: 50px;
+}
+
+.servicePage__heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  /* line-height: 4.0; */
+  margin-bottom: 20px;
+}
+
+.servicePage__text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  line-height: 1.8;
+}

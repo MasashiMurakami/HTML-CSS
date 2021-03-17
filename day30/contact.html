@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CONTACT - お問い合わせ</title>
+    <!-- css -->
+    <!-- Reset css -->
+    <link rel="stylesheet" type="text/css" href="/css/html5reset-1.6.1.css">
+    <!-- slick.js -->
+    <link rel="stylesheet" type="text/css" href="/js/slick.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="/js/slick-theme.css" media="screen">
+    <!-- my css -->
+    <link rel="stylesheet" type="text/css" href="/css/pages/contact.css">
+    <!-- javascript -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" 
+          href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+          integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" 
+          crossorigin="anonymous">
+    <!-- jQuery CDN -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <!-- slick.js -->
+    <script type="text/javascript" src="/js/slick.min.js"></script>
+    <!-- My javascript -->
+    <script type="text/javascript" src="/js/myjs.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <!-- ヘッダーナビ　ここから -->
+      <nav class="hNav">
+        <div class="hNavWrap">
+          <ul class="hNav__left">
+              <li class="hNav__leftItem">
+                <a href="/index.html" class="hNav__leftLink">
+                  <img src="/img/logo.svg" alt="logo.svg" class="hNav__leftLinkLogo">
+                </a>
+              </li>
+            </ul>
+            <ul class="hNav__right">
+              <li class="hNav__rightItem">
+                <a href="/news/2030.02.01.html" class="hNav__rightLink">
+                  <span>NEWS</span>
+                </a>
+              </li>
+              <li class="hNav__rightItem">
+                <a href="/service.html" class="hNav__rightLink">
+                  <span>SERVICE</span>
+                </a>
+              </li>
+              <li class="hNav__rightItem">
+                <a href="/works.html" class="hNav__rightLink">
+                  <span>WORKS</span>
+                </a>
+              </li>
+              <li class="hNav__rightItem">
+                <a href="/company.html" class="hNav__rightLink">
+                  <span>COMPANY</span>
+                </a>
+              </li>
+              <li class="hNav__rightItem">
+                <a href="/recruit.html" class="hNav__rightLink">
+                  <span>RECRUIT</span>
+                </a>
+              </li>
+              <li class="hNav__rightItem">
+                <a href="/contact.html" class="hNav__rightLink">
+                  <span>CONTACT</span>
+                </a>
+              </li>
+            </ul>
+        </div>
+      </nav>
+        <!-- ヘッダーナビ　ここまで -->
+        <div class="pages__topView">
+          <div class="contents__headingWrap pages__headingWrap">
+            <h2 class="contents__heading pages__heading">CONTACT</h2>
+            <small class="contents__subHeading pages__subHeading">お問い合わせ</small>
+          </div>
+        </div>
+        <div class="page__navWrap">
+          <ul class="page__nav">
+            <li class="page__list">
+              <a href="/index.html" class="page__link">HOME</a>
+              <span>></span>
+            </li>
+            <li class="page__list">
+              CONTACT
+            </li>
+          </ul>
+        </div>
+    </header>
+    
+    <main>
+      
+      <section class="contactPage">
+         <p class="contactPage__heading">
+          Webサイトの制作のご依頼やお見積りなど、お気軽にご相談ください。
+         </p>
+
+         <div class="contactPageForm__wrap">
+            <form action="#" method="POST" class="contactPageForm">
+              <p class="contactPageForm__h req">お問い合わせ種別</p>
+              <input type="radio" name="type" id="type" required>
+              <span class="contactPageForm__radio">お仕事のご依頼・ご相談</span>
+              <input type="radio" name="type" id="type">
+              <span class="contactPageForm__radio">お見積りのご依頼</span>
+              <input type="radio" name="type" id="type">
+              <span class="contactPageForm__radio">採用について</span>
+              <input type="radio" name="type" id="type">
+              <span class="contactPageForm__radio">その他</span>
+              <label for="name">
+                <p class="contactPageForm__h req">お名前</p>
+                <input type="text" name="name" id="name" class="input__txt" required maxlength="30">
+              </label>
+              <label for="company">
+                <p class="contactPageForm__h">会社名</p>
+                <input type="text" name="company" id="company" class="input__txt" maxlength="30">
+              </label>
+              <label for="email">
+                <p class="contactPageForm__h req">メールアドレス</p>
+                <input type="email" name="email" id="email" class="input__txt" required maxlength="100">
+              </label>
+              <label for="tel">
+                <p class="contactPageForm__h">お電話番号</p>
+                <input type="tel" name="tel" id="tel" class="input__txt" required maxlength="15">
+              </label>
+              <label for="paragraph">
+                <p class="contactPageForm__h req">お問い合わせ内容</p>
+                <textarea name="paragraph" id="paragraph" cols="30" rows="10" required></textarea>
+              </label>
+              <label for="known">
+                <p class="contactPageForm__h req">
+                  PON DESIGNをどちらでお知りになりましたか？
+                </p>
+                <select name="known" id="known" required>
+                  <option value="">選択してください</option>
+                  <option value="1">Google/Yahoo検索</option>
+                  <option value="2">SNS</option>
+                  <option value="3">ブログ</option>
+                  <option value="4">友人や知人</option>
+                  <option value="5">その他</option>
+                </select>
+              </label>
+              <div class="contents__linkButton">
+                <button type="submit" class="contents__link contactForm__link">
+                  <span>送信する</span>
+                </button>
+              </div> 
+            </form>
+         </div>
+      </section>
+
+    </main>
+    
+    <footer class="footer">
+      <nav class="fNav">
+        <ul class="fNav__list">
+          <li class="fNav__item">
+            <a href="/news.html" class="fNav__link">NEWS</a>
+          </li>
+          <li class="fNav__item">
+            <a href="/service.html" class="fNav__link">SERVICE</a>
+          </li>
+          <li class="fNav__item">
+            <a href="/works.html" class="fNav__link">WORKS</a>
+          </li>
+          <li class="fNav__item">
+            <a href="/company.html" class="fNav__link">COMPANY</a>
+          </li>
+          <li class="fNav__item">
+            <a href="/recruit.html" class="fNav__link">RECRUIT</a>
+          </li>
+          <li class="fNav__item">
+            <a href="/contact.html" class="fNav__link">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+      <small class="footer__copyright">© PON DESIGN</small>
+      <div class="scroll__button">
+        <a href="#" class="scroll__link">
+          <i class="fas fa-arrow-up fa-2x"></i>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

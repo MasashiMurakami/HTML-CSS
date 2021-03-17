@@ -1,0 +1,69 @@
+/* import common parts */
+@import url("/css/common.css");
+
+.pages__topView {
+  width: 100%;
+  height: 240px;
+  background: url(/img/hero.jpg) center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.pages__headingWrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pages__heading, .pages__subHeading {
+  color: #fff;
+}
+
+.page__navWrap {
+  width: 100%;
+  height: 45px;
+  background-color: #F7F7F7;
+  display: flex;
+  align-items: center;
+}
+
+.page__nav {
+  margin-left: 165px;
+  display: flex;
+}
+
+.page__list {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+}
+
+.page__list > span {
+  padding: 0px 6px;
+}
+
+.page__link {
+  color: #391E88;
+}
+
+/*        */
+/* cotact */
+/*        */
+.contact__wrap {
+  background-color: #F7F7F7;
+  padding-bottom: 79px;
+}
+
+.contact__headingWrap {
+  padding-top: 80px;
+}
+
+.contact__text {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
+  line-height: 2.133;
+}
