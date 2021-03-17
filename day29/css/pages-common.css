@@ -9,16 +9,16 @@
 /*        */
 .header {
   width: 100%;
-  height: 464px;
-  overflow: hidden;
+  height: 50vh;
+  /* overflow: hidden; */
   position: relative;
 }
 
 .header__image {
-  width: 1100px;
-  height: 387px;
-  /* background: url(/img/about-hv@2x.jpg) center center no-repeat; */
+  max-width: 1100px;
+  height: calc( 50vh - 77px );
   position: relative;
+  object-fit: cover;
   z-index: 1;
 }
 
@@ -39,7 +39,7 @@
   right: 0;
   display: flex;
   width: 780px;
-  height: 464px;
+  height: 50vh;
   background-color: #222;
   z-index: 0;
 }
@@ -67,4 +67,47 @@
   font-size: 2.0rem;
   color: #fff;
   z-index: 10;
+}
+
+@media screen and (max-width:768px) {
+  .header__image {
+    max-width: 587px;
+    height: calc( 50vh - 86px );
+    object-fit: cover;
+  }
+  
+  .header__bg-black {
+    width: 406px;
+  }
+
+  .header__heading {
+    top: 25vh;
+    right: 98px;
+    width: 312px;
+  }
+
+  .header__heading-main {
+    font-size: 5.2rem;
+  }
+
+  .header__heading-sub {
+    font-size: 1.6rem;
+  }
+
+}
+
+@media screen and (max-width:375px) {
+  .header__image {
+    max-width: 287px;
+    height: calc( 50vh - 62px );
+    object-fit: cover;
+  }
+  
+  .header__bg-black {
+    width: 198px;
+  }
+
+  .header__heading {
+    right: 29px;
+  }
 }

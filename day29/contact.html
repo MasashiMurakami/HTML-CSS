@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Crista 03 - contact</title>
-    <link rel="stylesheet" type="text/css" href="/css/html5reset-1.6.1.css">
-    <link rel="stylesheet" type="text/css" href="/css/hamburger.css">
-    <link rel="stylesheet" type="text/css" href="/css/contact.css">
+    <link rel="stylesheet" type="text/css" href="./css/html5reset-1.6.1.css">
+    <link rel="stylesheet" type="text/css" href="./css/contact.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
@@ -15,7 +14,7 @@
     <script type="text/javascript"
             src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/desvg@1.0.2/desvg.min.js"></script>
-    <script type="text/javascript" src="/js/my.js"></script>
+    <script type="text/javascript" src="./js/my.js"></script>
  </head>
   <body>
     <header class="header">
@@ -33,8 +32,8 @@
     <main>
       <nav class="gNav">
         <div class="gNav-left">
-          <a href="/index.html" class="gNav-left__link">
-            <img src="/img/site-logo.svg" alt="site-logo.svg" class="gNav-left__img">
+          <a href="./index.html" class="gNav-left__link">
+            <img src="./img/site-logo.svg" alt="site-logo.svg" class="gNav-left__img">
           </a>
         </div>
       </nav>
@@ -46,14 +45,14 @@
       <div class="menu-content">
         <ul>
           <li class="menu-content__imgList">
-            <a href="/index.html">
-              <img src="/img/logo-objeck@2x.png" alt="logo-object@2x.png" class="menu-content__img">
+            <a href="./index.html">
+              <img src="./img/logo-objeck@2x.png" alt="logo-object@2x.png" class="menu-content__img">
             </a>
           </li>
-          <li><a href="/about.html">ABOUT US</a></li>
-          <li><a href="#">WORKS</a></li>
-          <li><a href="#">CULTURE</a></li>
-          <li><a href="#">TOPICS</a></li>
+          <li><a href="./about.html">ABOUT US</a></li>
+          <li><a href="./index.html#works">WORKS</a></li>
+          <li><a href="./index.html#culture">CULTURE</a></li>
+          <li><a href="./index.html#topic">TOPICS</a></li>
           <li><a href="#">CONTACT</a></li>
         </ul>
       </div>
@@ -64,27 +63,35 @@
           <p class="page__text contact__text">
             ご依頼やご相談についてのご質問やご要望がございましたら、下記フォームよりお気軽にお問い合わせください。送付いただいた内容を確認の上、担当者からご連絡させていただきます。
           </p>
-          <form action="/index.html" method="POST" class="contact__form">
+          <form action="./index.html" method="POST" class="contact__form">
             <label for="">
               <p class="contact__label">お問い合わせ種別</p>
             </label>
             <div class="contact__radio">
-              <input type="radio" name="type" value="1">
-              <label for="product">
-                <span class="contact__radio__text">制作依頼</span>
-              </label>
-              <input type="radio" name="type" value="2">
-              <label for="recruit">
-                <span class="contact__radio__text" id="recruit">採用</span>
-              </label>
-              <input type="radio" name="type" value="3">
-              <label for="ir">
-                <span class="contact__radio__text" id="ir">IR</span>
-              </label>
-              <input type="radio" name="type" value="4">
-              <label for="etc">
-                <span class="contact__radio__text" id="etc">その他</span>
-              </label>
+              <div class="contact__radio__list">
+                <input type="radio" name="type" value="1">
+                <label for="product">
+                  <span class="contact__radio__text">制作依頼</span>
+                </label>
+              </div>
+              <div class="contact__radio__list">
+                <input type="radio" name="type" value="2">
+                <label for="recruit">
+                  <span class="contact__radio__text" id="recruit">採用</span>
+                </label>
+              </div>
+              <div class="contact__radio__list">
+                <input type="radio" name="type" value="3">
+                <label for="ir">
+                  <span class="contact__radio__text" id="ir">IR</span>
+                </label>
+              </div>
+              <div class="contact__radio__list">
+                <input type="radio" name="type" value="4">
+                <label for="etc">
+                  <span class="contact__radio__text" id="etc">その他</span>
+                </label>
+              </div>
             </div>
             <label for="company_name"><p class="contact__label">会社名・団体名</p></label>
             <input type="text" name="company_name" maxlength="50" id="company_name">
@@ -99,38 +106,42 @@
   
             <p class="contact__policy__heading">PRIVACY POLICY</p>
 
-            <textarea name="policy" class="contact__policy__text" id="policy__text" cols="30" rows="10">
-個人情報保護方針
-株式会社DIGSMILE（以下、当社）では、個人情報の重要性を認識し、以下の基準に従って、適切な管理、保護に努めます。
-
-1.個人情報の収集、利用
-当社では、お客様との取引、サービスの提供のために個人情報を適法に収集し、収集した目的の範囲内で、個人情報を利用いたします。
-
-2.個人情報の第三者への開示と提供
-収集したお客様の個人情報は、法的な要請等によらない限り、お客様の承諾を得ない第三者に対して提供・開示はいたしません。
-業務の都合上、業務委託先に個人情報を提供する場合は、機密保持契約等によって業務委託先に個人情報保護を義務付けるとともに、業務委託先が適切に個人情報を取り扱うように管理いたします。
-
-3.個人情報の保護
-当社では、個人情報の紛失、破壊、改ざん、不正アクセス、および漏えい等を防止するため、適切な対策を行います。
-
-4.法令および関連規範の遵守
-当社は、個人情報の取り扱いに関して、個人情報保護法をはじめとする個人情報に関する法令および関連する規範を遵守します。
-
-5.個人情報の開示・訂正・削除
-当社では、個人情報の開示・訂正・削除等の依頼があった場合、情報提供者本人であることを確認の上、すみやかに対応いたします。
-
-法令や当社方針により、プライバシー・ポリシーを予告なく改訂することがあります。
-
-お問い合わせ窓口
-当社の個人情報の取扱いに関するお問い合わせは下記までご連絡お願いいたします。
-株式会社ファイアープレイス
-044-589-4333
-            </textarea>
-            
-            <div class="contact__check">
-              <input type="checkbox">
-              <span>個人情報の取り扱いについて同意のうえ送信します。</span>
+            <div class="contact__policy__text" id="policy__text">
+              <p>
+                <span class="bold">個人情報保護方針</span><br>
+                株式会社DIGSMILE（以下、当社）では、個人情報の重要性を認識し、以下の基準に従って、適切な管理、保護に努めます。<br>
+                <br>
+                1.個人情報の収集、利用<br>
+                当社では、お客様との取引、サービスの提供のために個人情報を適法に収集し、収集した目的の範囲内で、個人情報を利用いたします。<br>
+                <br>
+                2.個人情報の第三者への開示と提供<br>
+                収集したお客様の個人情報は、法的な要請等によらない限り、お客様の承諾を得ない第三者に対して提供・開示はいたしません。<br>
+                業務の都合上、業務委託先に個人情報を提供する場合は、機密保持契約等によって業務委託先に個人情報保護を義務付けるとともに、業務委託先が適切に個人情報を取り扱うように管理いたします。<br>
+                <br>
+                3.個人情報の保護<br>
+                当社では、個人情報の紛失、破壊、改ざん、不正アクセス、および漏えい等を防止するため、適切な対策を行います。<br>
+                <br>
+                4.法令および関連規範の遵守<br>
+                当社は、個人情報の取り扱いに関して、個人情報保護法をはじめとする個人情報に関する法令および関連する規範を遵守します。<br>
+                <br>
+                5.個人情報の開示・訂正・削除<br>
+                当社では、個人情報の開示・訂正・削除等の依頼があった場合、情報提供者本人であることを確認の上、すみやかに対応いたします。<br>
+                <br>
+                法令や当社方針により、プライバシー・ポリシーを予告なく改訂することがあります。<br>
+                <br>
+                お問い合わせ窓口<br>
+                当社の個人情報の取扱いに関するお問い合わせは下記までご連絡お願いいたします。<br>
+                株式会社ファイアープレイス<br>
+                044-589-4333<br>
+              </p>
             </div>
+            
+            <label for="policy__check">
+              <div class="contact__check">
+                <input type="checkbox" id="policy__check">
+                <span>個人情報の取り扱いについて同意のうえ送信します。</span>
+              </div>
+            </label>
 
             <button type="submit" class="contact__submit__button link__button">
               <span class="contact__submit link">送信</span>

@@ -1,23 +1,20 @@
 /* Hamburger menu */
-@import url("/css/hamburger.css");
+@import url("./hamburger.css");
 /* common parts */
-@import url("/css/common.css");
+@import url("./common.css");
 /* pages common parts */
-@import url("/css/pages-common.css");
-
+@import url("./pages-common.css");
 
 
 .header__image {
-  background: url(/img/about-hv@2x.jpg) center center no-repeat;
+  background: url(../img/about-hv@2x.jpg) center top no-repeat;
 }
-
-
 
 /*        */
 /* vision */
 /*        */
 .vision__contents {
-  width: 648px;
+  max-width: 648px;
   margin: 0 auto;
   padding: 120px 0;
 }
@@ -36,22 +33,22 @@
 /* ceo message */
 /*             */
 .ceo__background {
-  width: 1100px;
+  max-width: 1040px;
   margin: 0 auto;
-  padding-top: 144px;
+  padding: 144px 30px 0;
   position: relative;
 }
 
 .ceo__img {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 30px;
   width: 420px;
   height: 282.45px;
 }
 
 .ceo__contents {
-  width: 400px;
+  max-width: 400px;
   margin-left: auto;
   padding: 120px 185px 90px;
   background-color: #F0F0F0;
@@ -66,8 +63,9 @@
 /* company */
 /*         */
 .company__contents {
-  width: 1100px;
-  margin: 0 auto;
+  max-width: 1040px;
+  padding: 0 30px;
+  margin: 120px auto 0;
 }
 
 .company__border {
@@ -77,7 +75,7 @@
 }
 
 .company__info {
-  width: 800px;
+  max-width: 800px;
   margin: 0 0 40px auto;
 }
 
@@ -102,6 +100,94 @@
   letter-spacing: 0.004em;
 }
 
-.company__map {
+.company__mapWrap {
+  max-width: 1100px;
+  height: 360px;
   margin-bottom: 120px;
+  position: relative;
+}
+
+.company__map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width:1100px) {
+  .ceo__img {
+    width: 320px;
+    height: 216px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .vision__contents {
+    margin-left: 150px;
+    padding: 80px 0;
+  }
+
+  .vision__text {
+    font-size: 1.4rem;
+  }
+
+  .ceo__contents {
+    max-width: 400px;
+    margin-left: auto;
+    padding: 109px 40px 78px;
+  }
+
+  .company__mapWrap {
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (max-width:375px) {
+  .vision__contents {
+    max-width: 345px;
+    margin-left: 15px;
+  }
+
+  .vision__heading-sub {
+    margin-top: 32px;
+    font-family: 'Noto Sans JP';
+    font-size: 2.4rem;
+    font-weight: normal;
+  }
+
+  .ceo__img {
+    max-width: 340px;
+    /* min-height: 230px; */
+    left: 0;
+  }
+
+  .ceo__background {
+    padding: 129px 15px 0;
+  }
+
+  .ceo__contents {
+    max-width: 400px;
+    margin-left: auto;
+    padding: 126px 28px 80px;
+  }
+
+  .company__contents {
+    padding: 0 15px;
+  }
+
+  .company__info dt {
+    width: 163px;
+    font-size: 1.4rem;
+    font-weight: normal;
+  }
+
+  .company__info dd {
+    font-size: 1.4rem;
+  }
+
+  .company__mapWrap {
+    height: 470px;
+  }
+  
 }
