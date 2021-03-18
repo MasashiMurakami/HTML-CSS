@@ -19,6 +19,30 @@ a {
 }
 
 
+.slick-dots {
+  text-align: end;
+}
+
+.slick-dots li {
+  margin: 0 2px;
+}
+
+.slick-dots li button {
+  padding: 2px;
+}
+
+.slick-prev {
+  left: 25px;
+}
+
+.slick-next {
+  right: 25px;
+}
+
+.slick-arrow {
+  z-index: 1;
+}
+
 
 /*             */
 /* Link Button */
@@ -143,8 +167,12 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 24.5px 30px;
-  z-index: 10;
+  z-index: 1;
   transition: 0.3s ease 0s;
+}
+
+.hNav__hamburger {
+  display: none;
 }
 
 .hNav__right {
@@ -184,7 +212,7 @@ a {
   /* height: 65px; */
   background-color: #21054D;
   padding: 17.5px 30px;
-  z-index: 10;
+  z-index: 1;
   transition: 0.3s ease 0s;
 }
 
@@ -334,3 +362,120 @@ a {
  color: #A798B7;
 }
 
+@media screen and (max-width:768px) {
+
+  .is-hidden {
+    z-index: -10;
+  }
+
+  .hNav__hamburger {
+    position: absolute;
+    top: 24.5px;
+    right: 20px;
+    width: 30px;
+    height: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    z-index: 3;
+    transition: 0.3s ease 0s;
+  }
+
+  .transform-ham {
+    top: 17.5px;
+    transition: 0.3s ease 0s;
+  }
+
+  .hNav__hamburger__bar,
+  .hNav__hamburger__bar::before,
+  .hNav__hamburger__bar::after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 0;
+    display: flex;
+    height: 2px;
+    width: 30px;
+    align-items: center;
+    background-color: #fff;
+    transition: all 0.3s ease 0s;
+  }
+
+  .hNav__hamburger__bar::before {
+    position: absolute;
+    top: -8px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .hNav__hamburger__bar::after {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+
+  /*                       */
+  /* hamburger 3 line -> x */
+  /*                       */
+  .hNav__hamburger__bar.is-cross {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  
+  .hNav__hamburger__bar.is-cross::before {
+    top: 0;
+    transform: rotate(45deg);
+    transition: all 0.3s ease 0s;
+  }
+  
+  .hNav__hamburger__bar.is-cross::after {
+    top: 0;
+    transform: rotate(-45deg);
+    transition: all 0.3s ease 0s;
+  }
+
+  /*      */
+  /* menu */
+  /*      */
+  .hNav__right {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding-top: 35vh;
+    display: flex;
+    flex-flow: column wrap;
+    background: linear-gradient(135deg,  #642390, #19074A);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s linear;
+  }
+  
+  .hNav__right.is-active {
+    visibility: visible;
+    opacity: 1;
+    transition: all .3s linear;
+  }
+
+  .hNav__rightItem {
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+
+
+  /*        */
+  /* footer */
+  /*        */
+  .scroll__button {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .fNav__item {
+    margin-bottom: 20px;
+  }
+
+
+}

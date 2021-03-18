@@ -1,7 +1,7 @@
 
 
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:768px) {
 
   .contents__headingWrap {
     padding-top: 0;
@@ -13,6 +13,11 @@
 
   .contents__subHeading {
     text-align: center;
+  }
+
+  .break::before {
+    content: "\A";
+    white-space: pre;
   }
 
 
@@ -45,6 +50,7 @@
   /*      */
   .news__wrap {
     margin: 40px auto;
+    flex-flow: column wrap;
   }
 
   .news__headingWrap {
@@ -67,12 +73,13 @@
   /* service */
   /*         */
   .service__contents {
-    width: 335;
+    width: calc( 100% - 40px );
+    padding: 0 20px;
     margin-bottom: 25px;
   }
 
   .service__content {
-    width: 335px;
+    width: 100%;
     margin: 0;
   }
 
@@ -82,8 +89,8 @@
   }
 
   .service__contentImg {
-    width: 335px;
-    height: 210px;
+    width: 100%;
+    height: auto;
   }
 
   .service__contentHeading {
@@ -99,16 +106,15 @@
   /* works */
   /*       */
   .works__wrap {
+    width: calc( 100% - 40px );
     margin-top: 60px;
     margin-bottom: 40px;
+    background: #f0f0f0;
   }
 
   .works__left {
-    position: absolute;
-    top: 0;
-    left: 20px;
-    max-width: 335px;
-    height: 248px;
+    width: 100%;
+    height: auto;
   }
   
   .works__img {
@@ -117,13 +123,9 @@
     object-fit: contain;
   }
 
-  .slick-slide {
-    height: 248px;
-  }
-
   .works__right {
-    height: auto;
-    padding: 271px 10px 60px;
+    width: 100%;
+    padding: 23px 10px 60px;
   }
 
   .works__headingWrap {
@@ -138,10 +140,6 @@
   /*         */
   /* company */
   /*         */
-  /* .company__wrap {
-    background: url(../img/bg-circle.png) center/cover no-repeat;
-  } */
-  
   .company__wrap::after {
     display: none;
   }
@@ -175,11 +173,6 @@
     width: 295px;
   }
 
-  .company__text .break::before {
-    content: "\A";
-    white-space: pre;
-  }
-
 
   /*         */
   /* recruit */
@@ -187,26 +180,24 @@
   .recruit__wrap {
     margin-top: 125px;
     margin-bottom: 80px;
-    padding-top: 200px;
     padding-bottom: 50px;
     height: auto;
-  }
-
-  .recruit__headingWrap {
-    width: 335px;
+    flex-flow: column wrap;
   }
 
   .recruit__imgWrap {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 375px;
+    width: 100%;
     height: 140px;
   }
 
   .recruit__img {
     width: 100%;
     height: 100%;
+    object-position: top;
+  }
+
+  .recruit__headingWrap {
+    padding-top: 60px;
   }
 
 
@@ -221,16 +212,6 @@
     margin: 30px 60px;
   }
 
-  .scroll__button {
-    bottom: 20px;
-    right: 20px;
-  }
 
-  /*        */
-  /* footer */
-  /*        */
-  .fNav__item {
-    margin-bottom: 20px;
-  }
 
 }
