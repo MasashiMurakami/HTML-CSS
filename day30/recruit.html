@@ -7,12 +7,12 @@
     <title>RECRUIT - 採用情報</title>   
     <!-- css -->
     <!-- Reset css -->
-    <link rel="stylesheet" type="text/css" href="/css/html5reset-1.6.1.css">
+    <link rel="stylesheet" type="text/css" href="./css/html5reset-1.6.1.css">
     <!-- slick.js -->
-    <link rel="stylesheet" type="text/css" href="/js/slick.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="/js/slick-theme.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="./js/slick.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="./js/slick-theme.css" media="screen">
     <!-- my css -->
-    <link rel="stylesheet" type="text/css" href="/css/pages/recruit.css">
+    <link rel="stylesheet" type="text/css" href="./css/pages/recruit.css">
     <!-- javascript -->
     <!-- Font Awesome -->
     <link rel="stylesheet" 
@@ -22,9 +22,9 @@
     <!-- jQuery CDN -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
     <!-- slick.js -->
-    <script type="text/javascript" src="/js/slick.min.js"></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script>
     <!-- My javascript -->
-    <script type="text/javascript" src="/js/myjs.js"></script>
+    <script type="text/javascript" src="./js/myjs.js"></script>
   </head>
   <body>
     <header class="header">
@@ -33,39 +33,42 @@
         <div class="hNavWrap">
           <ul class="hNav__left">
               <li class="hNav__leftItem">
-                <a href="/index.html" class="hNav__leftLink">
-                  <img src="/img/logo.svg" alt="logo.svg" class="hNav__leftLinkLogo">
+                <a href="./index.html" class="hNav__leftLink">
+                  <img src="./img/logo.svg" alt="logo.svg" class="hNav__leftLinkLogo">
                 </a>
               </li>
             </ul>
+            <div class="hNav__hamburger">
+              <span class="hNav__hamburger__bar"></span>
+            </div>
             <ul class="hNav__right">
               <li class="hNav__rightItem">
-                <a href="/news/2030.02.01.html" class="hNav__rightLink">
+                <a href="./news.html" class="hNav__rightLink">
                   <span>NEWS</span>
                 </a>
               </li>
               <li class="hNav__rightItem">
-                <a href="/service.html" class="hNav__rightLink">
+                <a href="./service.html" class="hNav__rightLink">
                   <span>SERVICE</span>
                 </a>
               </li>
               <li class="hNav__rightItem">
-                <a href="/works.html" class="hNav__rightLink">
+                <a href="./works.html" class="hNav__rightLink">
                   <span>WORKS</span>
                 </a>
               </li>
               <li class="hNav__rightItem">
-                <a href="/company.html" class="hNav__rightLink">
+                <a href="./company.html" class="hNav__rightLink">
                   <span>COMPANY</span>
                 </a>
               </li>
               <li class="hNav__rightItem">
-                <a href="/recruit.html" class="hNav__rightLink">
+                <a href="./recruit.html" class="hNav__rightLink">
                   <span>RECRUIT</span>
                 </a>
               </li>
               <li class="hNav__rightItem">
-                <a href="/contact.html" class="hNav__rightLink">
+                <a href="./contact.html" class="hNav__rightLink">
                   <span>CONTACT</span>
                 </a>
               </li>
@@ -82,7 +85,7 @@
         <div class="page__navWrap">
           <ul class="page__nav">
             <li class="page__list">
-              <a href="/index.html" class="page__link">HOME</a>
+              <a href="./index.html" class="page__link">HOME</a>
               <span>></span>
             </li>
             <li class="page__list">
@@ -96,7 +99,9 @@
 
       <section class="recruitPage">
         <div class="recruitPage__wrap">
-          <h2 class="recruitPage__title">Enjoy Creation for Client</h2>
+          <h2 class="recruitPage__title">
+            Enjoy <span class="break"></span>Creation for <span class="break"></span>Client
+          </h2>
           <h3 class="recruitPage__heading">楽しむ心が良いモノを生む</h3>
           <p class="recruitPage__headingText">
             心を弾ましながら<br>
@@ -159,7 +164,9 @@
 
           <h3 class="recruitPage__heading recruitPageMovie__title">社内ムービー</h3>
           <div class="recruitPageMovie__wrap">
-            <iframe width="100%" height="624px" src="https://www.youtube.com/embed/VwbnZHvQ3CE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="iframe__wrap">
+              <iframe width="100%" height="" src="https://www.youtube.com/embed/VwbnZHvQ3CE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
           </div>
 
       </div>
@@ -172,10 +179,10 @@
             <small class="contents__subHeading">お問い合わせ</small>
           </div>
           <p class="contact__text">
-            Webサイトの制作のご依頼やお見積りなど、お気軽にご相談ください。
+            Webサイトの制作のご依頼やお見積りなど、<span class="break"></span>お気軽にご相談ください。
           </p>
           <div class="contents__linkButton">
-            <a href="/contact.html" class="contents__link">MORE</a>
+            <a href="./contact.html" class="contents__link">MORE</a>
           </div>
         </div>
       </section>
@@ -185,22 +192,22 @@
       <nav class="fNav">
         <ul class="fNav__list">
           <li class="fNav__item">
-            <a href="/news.html" class="fNav__link">NEWS</a>
+            <a href="./news.html" class="fNav__link">NEWS</a>
           </li>
           <li class="fNav__item">
-            <a href="/service.html" class="fNav__link">SERVICE</a>
+            <a href="./service.html" class="fNav__link">SERVICE</a>
           </li>
           <li class="fNav__item">
-            <a href="/works.html" class="fNav__link">WORKS</a>
+            <a href="./works.html" class="fNav__link">WORKS</a>
           </li>
           <li class="fNav__item">
-            <a href="/company.html" class="fNav__link">COMPANY</a>
+            <a href="./company.html" class="fNav__link">COMPANY</a>
           </li>
           <li class="fNav__item">
-            <a href="/recruit.html" class="fNav__link">RECRUIT</a>
+            <a href="./recruit.html" class="fNav__link">RECRUIT</a>
           </li>
           <li class="fNav__item">
-            <a href="/contact.html" class="fNav__link">CONTACT</a>
+            <a href="./contact.html" class="fNav__link">CONTACT</a>
           </li>
         </ul>
       </nav>

@@ -3,22 +3,7 @@
 
 @media screen and (max-width:768px) {
 
-  .contents__headingWrap {
-    padding-top: 0;
-  }
-
-  .contents__heading {
-    font-size: 3.0rem;
-  }
-
-  .contents__subHeading {
-    text-align: center;
-  }
-
-  .break::before {
-    content: "\A";
-    white-space: pre;
-  }
+  
 
 
   /*        */

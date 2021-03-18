@@ -1,5 +1,5 @@
 /* import common parts */
-@import url("/css/common.css");
+@import url("../common.css");
 
 .pages__topView {
   width: 100%;
@@ -29,7 +29,9 @@
 }
 
 .page__nav {
-  margin-left: 165px;
+  width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
   display: flex;
 }
 
@@ -66,4 +68,18 @@
   font-size: 1.5rem;
   letter-spacing: 0.05em;
   line-height: 2.133;
+}
+
+@media screen and (max-width:768px) {
+  .contact__wrap {
+    padding-bottom: 60px;
+  }
+
+  .contact__headingWrap {
+    padding-top: 60px;
+  }
+
+  .contact__text {
+    margin: 26px 0 28px;
+  }
 }

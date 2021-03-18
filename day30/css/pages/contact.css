@@ -1,6 +1,6 @@
 /* import common parts */
-@import url("/css/common.css");
-@import url("/css/pages/pages__common.css");
+@import url("../common.css");
+@import url("./pages__common.css");
 
 
 /*         */
@@ -16,11 +16,27 @@
 }
 
 .contactPageForm__wrap {
-  width: 1110px;
+  max-width: 1110px;
+  width: calc( 100% - 80px );
   margin: 0 auto 70px;
-  padding: 87px 0px 90px 90px;
+  padding: 87px 20px 90px;
   background-color: #F7F7F7;
   /* border: 1px solid #AAAAAA; */
+}
+
+.contactPageForm {
+  max-width: 930px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contact__radioList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact__radioItem {
+  margin-bottom: 11px;
 }
 
 .contactPageForm__h {
@@ -29,6 +45,10 @@
   font-weight: normal;
   letter-spacing: 0.05em;
   color: #333;
+}
+
+.contactPageForm__h:first-child {
+  padding-top: 16px;
 }
 
 .contactPageForm > .contactPageForm__h {
@@ -63,7 +83,9 @@ input[type=radio] {
   color: #333;
 }
 
-.contactPageForm .input__txt, textarea, select {
+.input__txt,
+textarea,
+select {
   margin-top: 8px;
   width: 278px;
   height: 18px;
@@ -91,4 +113,34 @@ select {
   background-color: transparent;
   border: none;
   color: #fff;
+}
+
+.contact__linkWrap {
+  margin-top: 50px;
+}
+
+@media screen and (max-width:768px) {
+  .contactPage__heading {
+    margin: 37px 0 28px;
+    font-size: 1.4rem;
+    line-height: calc(23/14);
+  }
+
+  .comtactPageForm__wrap {
+    width: calc( 100% - 60px );
+    padding: 27px 30px 60px 30px;
+    margin-bottom: 40px;
+  }
+
+  .contactPageForm__h {
+    font-size: 1.5rem;
+    padding-bottom: 13px;
+  }
+
+  .input__txt,
+  textarea,
+  select {
+    max-width:  273px;
+    width: calc( 100% - 22px );
+  }
 }

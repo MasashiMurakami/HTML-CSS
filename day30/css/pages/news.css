@@ -1,13 +1,20 @@
 /* import common parts */
-@import url("/css/common.css");
-@import url("/css/pages/pages__common.css");
+@import url("../common.css");
+@import url("./pages__common.css");
 
 
 /*      */
 /* news */
 /*      */
+.news__link {
+  flex-wrap: nowrap;
+}
+
 .news__listWrap {
-  padding: 60px 0 0 260px;
+  max-width: 915px;
+  margin: 60px auto 0;
+  padding: 0 20px;
+  /* padding: 60px 0 0 260px; */
 }
 
 .news__pageLinkWrap {
@@ -44,4 +51,21 @@
 
 .news__nowPageLink {
   color: #4F31A5;
+}
+
+@media screen and (max-width:768px) {
+  .news__link {
+    flex-wrap: wrap;
+  }
+
+  .news__text {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+
+  .news__pageLinkWrap {
+    margin-bottom: 80px;
+  }
+  
 }
