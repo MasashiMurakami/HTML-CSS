@@ -7,6 +7,12 @@
     <title>Example from MASA BLOG</title>
     <link rel="stylesheet" type="text/css" href="./css/html5reset-1.6.1.css">
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/myjs.js"></script>
   </head>
   <body>
     <header class="header">
@@ -25,24 +31,29 @@
 
       <nav class="gNav">
         <div class="gNav-left">
-          <h2 class="gNav-left__heading">Portfolio site</h2>
+          <h2 class="gNav-left__heading">
+            <a href="#" class="gNav-left__link">Portfolio site</a>
+          </h2>
         </div>
         <div class="gNav-right">
+          <div class="gNav__hamburger">
+            <span class="gNav__hamburger__bar"></span>
+          </div>
           <ul class="gNav-right__list">
             <li class="gNav-right__listItem">
-              <a href="#about" class="hNav-right__link">About</a>
+              <a href="#about" class="gNav-right__link">About</a>
             </li>
             <li class="gNav-right__listItem">
-              <a href="#works" class="hNav-right__link">Works</a>
+              <a href="#works" class="gNav-right__link">Works</a>
             </li>
             <li class="gNav-right__listItem">
-              <a href="#service" class="hNav-right__link">Service</a>
+              <a href="#service" class="gNav-right__link">Service</a>
             </li>
             <li class="gNav-right__listItem">
-              <a href="#skills" class="hNav-right__link">Skills</a>
+              <a href="#skills" class="gNav-right__link">Skills</a>
             </li>
             <li class="gNav-right__listItem">
-              <a href="#contact" class="hNav-right__link">Contact</a>
+              <a href="#contact" class="gNav-right__link">Contact</a>
             </li>
           </ul>
         </div>
@@ -199,7 +210,7 @@
       <section id="contact">
         <div class="section__wrap">
           <h3 class="contents__heading">Contact</h3>
-          <p class="contents__heading-sub">
+          <p class="contents__heading-sub contact__heading-sub">
             テキストテキストテキストテキストテキス トテキストテキストテキストテキスト
           </p>
           <form action="#" class="contact__form">
@@ -232,16 +243,16 @@
     <footer class="footer">
       <ul class="footer__list">
         <li class="footer__listItem">
-          <a href="" class="footer__link">About</a>
+          <a href="#about" class="footer__link">About</a>
         </li>
         <li class="footer__listItem">
-          <a href="" class="footer__link">Works</a>
+          <a href="#works" class="footer__link">Works</a>
         </li>
         <li class="footer__listItem">
-          <a href="" class="footer__link">Services</a>
+          <a href="#service" class="footer__link">Services</a>
         </li>
         <li class="footer__listItem">
-          <a href="" class="footer__link">Contact</a>
+          <a href="#contact" class="footer__link">Contact</a>
         </li>
       </ul>
       <p class="footer__copyright">
