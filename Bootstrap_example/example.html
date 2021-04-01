@@ -8,6 +8,11 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
+    <style>
+      a { text-decoration: none; }
+      a:hover { text-decoration: underline; }
+    </style>
+
     <title>Bootstrap Example</title>
   </head>
   <body class="bg-light">
@@ -411,8 +416,49 @@
     </div>
 
     <!-- footer -->
-    <footer class="footer">
+    <footer class="footer bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-12">
+            <div class="py-4">
+              <h4 class="d-inline-block py-3 border-bottom border-info">Profile</h4>
+            </div>
+            <div class="mx-5">
+              <img src="./img/img12.jpg" alt="img12.jpg" class="img-fluid rounded-circle">
+            </div>
+            <div class="py-4 text-center">
+              <h4 class="d-inline-block py-3 border-bottom border-info">しもむらともき</h4>
+            </div>
+            <p>
+              プログラミング・ブログを愛しています 普通の学生→WEB制作で稼ぎながらフリーランスエンジニア
+               自身の経験を活かし高校生から大人まで100人以上にプログラミングを教え電子書籍でAmazon WEB構築ランキング1位
+               ｜WEBで約月60万円稼ぎつつ大学生
+            </p>
+          </div>
+          <div class="col-md-4 col-12">
+            <div class="py-4">
+              <h4 class="d-inline-block py-3 border-bottom border-info">Portfolio</h4>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><a href="#">Youtube Channel</a></li>
+              <li class="list-group-item"><a href="#">Portfolio Site</a></li>
+              <li class="list-group-item"><a href="#">Amazon</a></li>
+              <li class="list-group-item"><a href="#">Twitter</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-12">
+            <div class="py-4">
+              <h4 class="d-inline-block py-3 border-bottom border-info">Twitter</h4>
+            </div>
+            <a class="twitter-timeline" data-height="500" href="https://twitter.com/shimo_tmk?ref_src=twsrc%5Etfw">Tweets by shimo_tmk</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+        </div>
+      </div>
 
+      <div class="bg-dark text-white text-center p-3">
+        Copyright - tomoki shimomura, 2020 All Rights Reserved.
+      </div>
     </footer>
 
     <script type="text/javascript" src="./js/myjs.js"></script>
