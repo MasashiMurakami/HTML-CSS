@@ -221,8 +221,7 @@ a {
 }
 
 .shop__table {
-  margin-top: 35px;
-  margin-left: 110px;
+  margin: 35px 0 70px 110px;
   text-align: left;
   font-size: 1.8rem;
 }
@@ -231,8 +230,17 @@ a {
   height: 55px;
 }
 
+.shop__table tr:last-child {
+  height: 37px;
+}
+
 .shop__table th {
   width: 170px;
+  border-right: 2px solid #A39E9F;
+}
+
+.shop__table td {
+  padding-left: 27px;
 }
 
 .shop-right {
@@ -245,20 +253,15 @@ a {
 /* footer */
 /*        */
 .footer {
-  color: #FFF5FE;
-  text-align: center;
-}
-
-.footer__bg {
   width: 100%;
   height: 470px;
-  padding-top: 55px;
+  color: #FFF5FE;
+  text-align: center;
   background: url(../images/footer-web.jpg) center/cover no-repeat;
   position: relative;
-  z-index: -2;
 }
 
-.footer__bg::before {
+.footer::after {
   content: '';
   position: absolute;
   top: 0;
@@ -266,13 +269,22 @@ a {
   width: 100%;
   height: 100%;
   background-color: #524B44;
-  opacity: 0.5;
-  z-index: -1;
+  opacity: 0.7;
+}
+
+.footer__contents {
+  position: absolute;
+  top: 55px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
 }
 
 .footer__title {
   font-size: 4.0rem;
   font-weight: 600;
+  margin-bottom: 14px;
 }
 
 .footer__address {
@@ -280,9 +292,19 @@ a {
   margin-bottom: 7px;
 }
 
-.footer__tel {
-  font-size: 1.8rem;
+.footer__tel__wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 32px;
+  font-size: 1.8rem;
+}
+
+.footer__tel__img {
+  width: 47px;
+  height: 24.8px;
+  background: url(../images/call_mark.png) center/cover no-repeat;
+  margin-right: 13px;
 }
 
 .footer__link-button {
@@ -305,13 +327,24 @@ a {
   z-index: 3;
 }
 
+.footer__link__img {
+  width: 16px;
+  height: 25px;
+  background: url(../images/pin.png) center/cover no-repeat;
+  margin-right: 9px;
+}
+
 .footer__list {
   display: flex;
   justify-content: center;
   margin-bottom: 39.3px;
 }
 
+.footer__list-item {
+  padding:0 16px;
+  border-right: 2.8px solid #FFF5FE;
+}
+
 .footer__copyright {
   font-size: 1.2rem;
-
 }
