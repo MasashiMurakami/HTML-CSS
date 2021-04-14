@@ -1,19 +1,13 @@
 html {
   font-size: 62.5%;
+}
+
+body {
   font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
 }
 
 main {
   background-color: #FAF5ED;
-}
-
-h1, h2 {
-  margin: 0;
-  padding: 0;
-}
-
-.header, .footer {
-  min-width: 1000px;
 }
 
 
@@ -35,14 +29,13 @@ h1, h2 {
 }
 
 .title-image {
-  background: url(/images/main_visual.jpg) center center no-repeat;
-  background-size: cover;
+  background: url(/images/main_visual.jpg) center/cover no-repeat;
   padding-top: 40%;
 }
 
 
 .contents {
-  width: 960px;
+  width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
   color: #707070;
@@ -62,10 +55,15 @@ h1, h2 {
   font-size: 2.4rem;
 }
 
-.container {
+.contents-container {
   margin: 0 auto;
   padding: 30px 0 0;
   display: flex;
+}
+
+.contents-image {
+  width: 480px;
+  height: 280px;
 }
 
 .contents-body {

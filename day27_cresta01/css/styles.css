@@ -178,15 +178,29 @@ a {
 }
 
 input {
-  width: calc(100% - 8px);
-  height: calc(30px - (1px + 2px) * 2);
+  width: calc(100% - 6px);
+  height: calc(30px - 6px);
+  padding: 1px 2px;
 }
 
 textarea  {
-  width: calc(100% - 8px);
-  height: calc(171px - (1px + 2px) * 2);
+  width: calc(100% - 6px);
+  height: calc(171px - 6px);
+  padding: 2px;
   resize: none;
 }
+
+/* .form-button {
+  width: 235px;
+  height: 60px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 2.0rem;
+  font-weight: bold;
+  box-shadow: 0 0 6px rgba(27, 19, 16, 0.4);
+  border-radius: 51px;
+  outline: none;
+} */
 
 input[type="submit"] {
   width: 235px;
@@ -197,6 +211,7 @@ input[type="submit"] {
   font-weight: bold;
   box-shadow: 0 0 6px rgba(27, 19, 16, 0.4);
   border-radius: 51px;
+  outline: none;
 }
 
 /****************

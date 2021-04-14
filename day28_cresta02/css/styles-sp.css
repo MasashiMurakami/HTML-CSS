@@ -1,11 +1,12 @@
 @import url("./hamburger.css");
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:375px) {
   /*        */
   /* common */
   /*        */
   body {
-    width: 375px;
+    width: 100%;
+    overflow-x: hidden;
     /* margin: 0 auto; */
   }
 
@@ -114,6 +115,11 @@
   /*         */
   /* contact */
   /*         */
+  .contact_form {
+    width: 345px;
+    margin: 0 15px;
+  }
+
   .contact_bg_wrapper {
     margin-top: 24px;
   }

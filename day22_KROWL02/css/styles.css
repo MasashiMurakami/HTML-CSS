@@ -1,9 +1,9 @@
 html {
   font-size: 62.5%;
-  font-family: "游ゴシック", "Yu Gothic";
 }
 
 body {
+  font-family: "游ゴシック", "Yu Gothic";
   min-width: 1000px;
   background-color: #FFFFF3;
 }
@@ -18,25 +18,28 @@ a {
 
 .header {
   padding-top: 40%;
-  background: url(/img/bg-main_visual.jpg) center center no-repeat;
-  background-size: cover;
+  background: url(/img/bg-main_visual.jpg) center/cover no-repeat;
 }
 
-.header__title-wrapper {
+.header__title__wrapper {
   padding: 0 0 60px 60px;
 }
 
-.section-header {
+.section__header {
   padding-top: 100px;
   padding-bottom: 50px;
   text-align: center;
   font-size: 3.2rem;
 }
 
-.section-body__text {
+.section__body__text {
   font-size: 1.6rem;
   line-height: 2.0;
   text-align: center;
+}
+
+.white {
+  color: #fff;
 }
 
 
@@ -52,51 +55,45 @@ a {
 /* section 02 */
 /*            */
 .section02__wrapper {
-  background: url(/img/bg-content.jpg) center center no-repeat;
-  background-size: cover;
+  background: url(/img/bg-content.jpg) center/cover no-repeat;
   background-attachment: fixed;
   padding-bottom: 100px;
 }
 
-.section02-bg {
+.section02__bg {
   width: 960px;
   margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.section02-header {
-  color: #fff;
-}
-
-.section02-contents__wrapper {
+.section02__contents__wrapper {
   width: 860px;
   padding: 50px 0;
   margin: 0 auto;
 }
 
-.section02-content {
+.section02__content {
   height: 280px;
   display: flex;
 }
 
-.section02-content:nth-child(even) {
+.section02__content:nth-child(even) {
   flex-direction: row-reverse;
 }
 
-.section02-body {
+.section02__body {
   background-color: #fffff3;
 }
 
-.section02-body__header {
+.section02__body__header {
   padding: 40px 0 0 20px;
   font-size: 2.0rem;
   line-height: 1.75;
 }
 
-.section02-text {
+.section02__text {
   padding: 20px;
   text-align: left;
-  font-size: 1.6rem;
   line-height: 1.75;
 }
 
@@ -104,18 +101,23 @@ a {
 /*            */
 /* section 03 */
 /*            */
-.section03-contents__wrapper {
+.section03__contents__wrapper {
   width: 780px;
   padding-top: 70px;
   padding-bottom: 100px;
   margin: 0 auto;
 }
 
-.section03-contents-list {
+.section03__contents__list {
   display: flex;
   justify-content: space-between;
 }
 
+
+
+/*        */
+/* footer */
+/*        */
 .footer {
   height: 60px;
   background-color: #000;

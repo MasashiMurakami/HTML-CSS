@@ -104,20 +104,20 @@
       <section class="form" id="contact">
         <h1 class="section-header form-header">お問い合わせ</h1>
         <div class="formWrap">
-          <form action="./#" method="POST">
+          <form action="contact.php" method="POST">
             <p>
               <label for="name"><span>担当者名</span><br>
-                <input type="text" name="name" id="name">
+                <input type="text" name="name" id="name" required>
               </label>
             </p>
             <p>
               <label for="tel"><span>電話番号</span><br>
-                <input type="tel" name="tel" id="tel">
+                <input type="tel" name="tel" id="tel" required>
               </label>
             </p>
             <p>
               <label for="mail"><span>メールアドレス</span><br>
-                <input type="email" name="mail" id="mail">
+                <input type="email" name="mail" id="mail" required>
               </label>
             </p>
             <p>
@@ -126,7 +126,8 @@
               </label>
             </p>
             <p>
-              <input type="submit" value="送信" form="contact">
+            <!-- <button type="submit" class="form-button">送信</button> -->
+              <input type="submit" value="送信">
             </p>
           </form>
         </div>
